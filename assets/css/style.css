@@ -66,6 +66,10 @@ section{
     float: left;
 }
 
+i{
+    color: #3B945E;
+}
+
 /* About */
 #about-section h1{
     color: #182628;    
