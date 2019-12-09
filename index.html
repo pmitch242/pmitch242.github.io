@@ -17,111 +17,128 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar nav-bar">
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-            </li>
-        </ul>
-    </nav>
-    <!-- /Navebar -->
+    <div class="main-container">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#intro-section">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-section">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#porfoliio-section">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact-section">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /Navebar -->
 
-    <div class="container">
-        <!-- Intro Section -->
-        <section id="intro-section">
-            <div>
-                <h1>Phill Mitchell-Matsuyama</h1>
-                <ul>
-                    <li>
-                        <h2>Coder.</h2>
-                    </li>
-                    <li>
-                        <h2>Collaborator.</h2>
-                    </li>
-                    <li>
-                        <h2><a data-toggle="popover" title="Popover title"
-                                data-content="This is Oliver Twist.">Ollie's</a> Protector.
-                        </h2>
-                    </li>
-                </ul>
+        <div class="container">
+            <!-- Intro Section -->
+            <section id="intro-section">
                 <div>
+                    <h1>Phill Mitchell-Matsuyama</h1>
                     <ul>
-                        <li><a href="">linkedIn</a></li>
-                        <li><a href="">Github</a></li>
+                        <li>
+                            <h2>Coder.</h2>
+                        </li>
+                        <li>
+                            <h2>Collaborator.</h2>
+                        </li>
+                        <li>
+                            <h2><a data-toggle="popover" title="Popover title"
+                                    data-content="This is Oliver Twist.">Ollie's</a> Protector.
+                            </h2>
+                        </li>
                     </ul>
-                </div>
-            </div>
-        </section>
-        <!-- /Intro Section -->
-
-        <!-- About Section -->
-        <section id="about-section">
-            <div class="container">
-                About Me goes here
-            </div>
-        </section>
-        <!-- /About Section -->
-
-        <!-- Portfolio Section -->
-        <section id="porfoliio-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm">
-                        Portfolio Here
+                    <div>
+                        <ul>
+                            <li><a href="">linkedIn</a></li>
+                            <li><a href="">Github</a></li>
+                        </ul>
                     </div>
-                    <div class="col-sm">
-                        <div id="skills-div">
-                            Quick look at skills Here
+                </div>
+            </section>
+            <!-- /Intro Section -->
+
+            <!-- About Section -->
+            <section id="about-section">
+                <div class="container">
+                    <h1>About Me</h1>
+                    <img class="photome" src="assets/images/profile_pic.jpg" alt="Phill Mitchell-Matsuyama">
+                    <p>Phill Mitchell-Matsuyama (they/them) is an aspiring software engineer who lives in Baltimore, MD
+                        with their wife and two cats. Currently, they work for a security firm as a security engineer,
+                        designing physical security systems for various US agencies. They are originally from The
+                        Bahamas but moved to the US in 2014 to attend school in Minnesota. In 2018, they earned a dual
+                        Bachelor of Science in Computer Engineering Technology and Electronic Engineering Technology.
+                    </p>
+                    <p>After moving to Baltimore in August of 2018, Phill obtained a job as a Control Systems Specialist
+                        at an Amazon fulfillment center. Although the pay was good, Phill decided to leave in January of
+                        2019 due to the long and irregular hours. They’ve been working at the security firm ever since.
+                        In the summer of 2019, Phill applied for and was accepted into a coding bootcamp program at
+                        Johns Hopkins University. After completing the bootcamp in April, 2020, they hope to begin
+                        utilizing what they learned in bootcamp in the field of software engineering. </p>
+
+                </div>
+            </section>
+            <!-- /About Section -->
+
+            <!-- Portfolio Section -->
+            <section id="porfoliio-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                            Portfolio Here
                         </div>
-                        <a href="#">resume</a>
+                        <div class="col-sm">
+                            <div id="skills-div">
+                                Quick look at skills Here
+                            </div>
+                            <a href="#">resume</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- /Portfolio Section -->
+            </section>
+            <!-- /Portfolio Section -->
 
-        <!-- Contact Section -->
-        <section id="contact-section">
-            <form>
-                <div class="form-group">
-                    <label for="user-name">Name</label>
-                    <input type="test" class="form-control" id="user-name" placeholder="Your Name">
-                </div>
-                <div class="form-group">
-                    <label for="user-email">Email address</label>
-                    <input type="email" class="form-control" id="user-email" placeholder="example@email.com">
-                </div>
-                <div class="form-group">
-                    <label for="user-textarea">What do you want to say to Phill?</label>
-                    <textarea class="form-control" id="user-textarea" rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </section>
-        <!-- /Contact Section -->
+            <!-- Contact Section -->
+            <section id="contact-section">
+                <form>
+                    <div class="form-group">
+                        <label for="user-name">Name</label>
+                        <input type="test" class="form-control" id="user-name" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="user-email">Email address</label>
+                        <input type="email" class="form-control" id="user-email" placeholder="example@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="user-textarea">What do you want to say to Phill?</label>
+                        <textarea class="form-control" id="user-textarea" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </section>
+            <!-- /Contact Section -->
+        </div>
+
+        <!-- Jquery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <!-- Bootstrap -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+        <!-- JavaScript -->
+        <script src="assets/javascript/script.js"></script>
     </div>
-
-    <!-- Jquery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <!-- Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <!-- Bootstrap -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-    <!-- JavaScript -->
-    <script src="assets/javascript/script.js"></script>
 </body>
 
 </html>
