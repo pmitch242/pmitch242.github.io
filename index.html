@@ -21,7 +21,7 @@
     <nav class="navbar">
         <ul class="nav justify-content-center">
             <li class="nav-item">
-                <a class="nav-link" href="#intro-section">Home</a>
+                <a class="nav-link" href="#intro-section" >Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#about-section">About</a>
@@ -70,20 +70,23 @@
         <!-- About Section -->
         <section id="about-section">
             <div class="container about-container">
-                <h1>About Me</h1>
-                <img class="photome" src="assets/images/profile_pic.jpg" alt="Phill Mitchell-Matsuyama">
-                <p>Phill Mitchell-Matsuyama (they/them) is an aspiring software engineer who lives in Baltimore, MD
-                    with their wife and two cats. Currently, they work for a security firm as a security engineer,
-                    designing physical security systems for various US agencies. They are originally from The
-                    Bahamas but moved to the US in 2014 to attend school in Minnesota. In 2018, they earned a dual
-                    Bachelor of Science in Computer Engineering Technology and Electronic Engineering Technology.
-                </p>
-                <p>After moving to Baltimore in August of 2018, Phill obtained a job as a Control Systems Specialist
-                    at an Amazon fulfillment center. Although the pay was good, Phill decided to leave in January of
-                    2019 due to the long and irregular hours. They’ve been working at the security firm ever since.
-                    In the summer of 2019, Phill applied for and was accepted into a coding bootcamp program at
-                    Johns Hopkins University. After completing the bootcamp in April, 2020, they hope to begin
-                    utilizing what they learned in bootcamp in the field of software engineering. </p>
+                <!-- <h1>Meet Phill...</h1> -->
+                <div class="circular-portrait"><img src="assets/images/profile_pic1.jpg" alt="Phill Mitchell-Matsuyama">
+                </div>
+                <div id="p-div">
+                    <p>Phill Mitchell-Matsuyama (they/them) is an aspiring software engineer who lives in Baltimore, MD
+                        with their wife and two cats. Currently, they work for a security firm as a security engineer,
+                        designing physical security systems for various US agencies. They are originally from The
+                        Bahamas but moved to the US in 2014 to attend school in Minnesota. In 2018, they earned a dual
+                        Bachelor of Science in Computer Engineering Technology and Electronic Engineering Technology.
+                    </p>
+                    <p>After moving to Baltimore in August of 2018, Phill obtained a job as a Control Systems Specialist
+                        at an Amazon fulfillment center. Although the pay was good, Phill decided to leave in January of
+                        2019 due to the long and irregular hours. They’ve been working at the security firm ever since.
+                        In the summer of 2019, Phill applied for and was accepted into a coding bootcamp program at
+                        Johns Hopkins University. After completing the bootcamp in April, 2020, they hope to begin
+                        utilizing what they learned in bootcamp in the field of software engineering. </p>
+                </div>
             </div>
         </section>
         <!-- /About Section -->
@@ -91,8 +94,8 @@
         <!-- Portfolio Section -->
         <section id="portfolio-section">
             <div class="container portfolio-container">
-                <div class="row profile-row">
-                    <div class="col-8-sm projects-container">
+                <!-- <div class="row profile-row"> -->
+                    <!-- <div class="col projects-container"> -->
                         <div class="row">
                             <!-- Pop Culture Trivia -->
                             <div class="col-sm">
@@ -134,9 +137,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    <!-- </div> -->
 
-                    <!-- Quick Skills -->
+                    <!-- Quick Skills
                     <div class="col-4-sm">
                         <div id="skills-div">
                             <h1> Quick look at skills</h1>
@@ -173,11 +176,10 @@
                                 </progress>
                             </div>
 
-
                         </div>
                         <a href="#"><i class="fas fa-file fa-2x"></i></a>
-                    </div>
-                </div>
+                    </div> -->
+                <!-- </div> -->
             </div>
         </section>
         <!-- /Portfolio Section -->
@@ -186,16 +188,13 @@
         <section id="contact-section">
             <form>
                 <div class="form-group">
-                    <label for="user-name">Name</label>
                     <input type="test" class="form-control" id="user-name" placeholder="Your Name">
                 </div>
                 <div class="form-group">
-                    <label for="user-email">Email address</label>
                     <input type="email" class="form-control" id="user-email" placeholder="example@email.com">
                 </div>
                 <div class="form-group">
-                    <label for="user-textarea">What do you want to say to Phill?</label>
-                    <textarea class="form-control" id="user-textarea" rows="3"></textarea>
+                    <textarea class="form-control" id="user-textarea" placeholder="What do you want to say to Phill?" rows="4"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
