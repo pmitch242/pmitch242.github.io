@@ -299,6 +299,7 @@ i{
     }
 
     #intro-section{
-        background-position: -195px;
+        background-position: -225px;
+        /* background-size: inherit; */
     }
 }
