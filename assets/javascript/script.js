@@ -8,19 +8,43 @@ $(document).ready(function () {
   $('.popover-dismiss').popover({
     trigger: 'focus'
   })
-  
-  // Smooth Scroll for all browsers
-  // $(".navbar a").on('click', function (event) {
-  //   if (this.hash !== '') {
-  //     event.preventDefault();
 
-  //     var hash = this.hash;
+  // Create a timeline with default parameters
+  const tl = anime.timeline({
+    easing: 'easeOutExpo',
+  })
 
-  //     $("html, body").animate({
-  //       scrollTop: $(hash).offset().top
-  //     },
-  //       700);
-  //   }
-  // });
+  tl.add({
+    targets: '#from-right',
+    translateX: [75, 0],
+    opacity: [0, 1],
+  }).add({
+    targets: '#from-left',
+    translateX: [-75, 0],
+    opacity: [0, 1],
+    offset: '-=1000',
+  }).add({
+    targets: '#from-bottom',
+    translateY: [75, 0],
+    opacity: [0, 1],
+  })
 
+  anime({
+    targets: '#ollie',
+    // opacity: [.5, 1],
+    translateY: [-5, 0, -5],
+    fontSize: [35, 30],
+    delay: 3000,
+    direction: 'alternate',
+    loop: true
+  });
+
+  anime({
+    targets: '#arrow',
+    // opacity: [.5, 1],
+    translateY: [-7,0,-7],
+    delay: 200,
+    // direction: 'alternate',
+    loop: true
+  });
 });

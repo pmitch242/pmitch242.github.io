@@ -2,6 +2,7 @@
     margin: auto;
 }
 
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     background: #182628;
@@ -22,13 +23,27 @@ body{
 
 /* Navbar */
 .navbar{
-    position: fixed;
-    width: 100%;
+    position: sticky;
+    top: 0;
+    /* width: 100%; */
     height: 50px;
     background-color: #202020;
-    border-bottom: 3px #C11C35 solid;
     opacity: 0.7;
     z-index: 999;
+}
+
+.navbar ul li{
+    text-align: center;
+}
+
+.navbar ul li i{
+    color: #f2f2f2;
+    font-size: x-large;
+    /* display: none; */
+}
+
+.navbar ul li i:hover{
+    color: #C11C35;
 }
 
 .navbar ul li a{
@@ -62,9 +77,8 @@ section{
 #intro-section{
     width: 100%;
     color: #f2f2f2;
-    text-shadow: -3px 0 #C11C35, 0 1px #C11C35,
-    1px 0 #C11C35, 0 -1px #C11C35;
-    /* background: #182628; */
+    text-shadow: 2px 2px 4px #C11C35;
+
     background-image: url("../images/backgrounds/bg13.jpg");
     background-size: cover;
 }
@@ -111,8 +125,10 @@ i{
 #about-section p{
     font-size: 20px;
     line-height: 35px;
-    color: #202020;
-    text-shadow: -1px 0 #f2f2f2, 0 1px #f2f2f2, 1px 0 #f2f2f2, 0 -1px #f2f2f2;
+    /* color: #202020;
+    text-shadow: -1px 0 #f2f2f2, 0 1px #f2f2f2, 1px 0 #f2f2f2, 0 -1px #f2f2f2; */
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .about-container{
@@ -134,8 +150,7 @@ i{
     height: 320px;
     overflow: hidden;
     border-radius: 50%;
-    /* float: left; */
-    /* padding-right: 20px; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   
   .circular-portrait img {
@@ -180,6 +195,7 @@ i{
     width: auto;
     max-width: 515px;
     margin-bottom: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #popculture-img{
@@ -200,4 +216,65 @@ i{
 #contact-section{
     background-image: url("../images/backgrounds/bg14.jpg");
     background-size: cover;
+}
+
+#contact-section form{
+    width: 30%;
+    min-width: 330px;
+}
+
+#contact-section div{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#contact-section .form-control{
+    color: #f2f2f2;
+    background-color: #182628;
+    opacity: .8;
+    border: none;
+}
+
+#contact-section::placeholder{
+    color: whitesmoke;
+    opacity: 1;
+}
+
+#contact-section button{
+    background: none;
+    border: none;
+    padding: 0;
+    color: #f2f2f2;
+    /* text-shadow: 2px 2px 4px #C11C35; */
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 30px;
+    
+}
+
+#arrow{
+    position: relative;
+    margin-bottom: 0;
+    bottom: 0;
+}
+
+@media screen and (max-width: px){
+    .navbar ul li{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:980px){
+    .navbar ul li{
+        display: block;
+        margin-right: 30px;
+    }
+
+    .navbar ul li:last-child{
+        margin-right: 0;
+    }
+
+    .navbar ul li a{
+        display: none;
+    }
+
 }

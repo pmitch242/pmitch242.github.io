@@ -17,43 +17,24 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-                <a class="nav-link" href="#intro-section" >Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#about-section">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#portfolio-section">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#contact-section">Contact</a>
-            </li>
-        </ul>
-    </nav>
-    <!-- /Navebar -->
     <div class="main-container">
         <!-- Intro Section -->
         <section id="intro-section">
             <div>
-                <h1>Phill Mitchell-Matsuyama</h1>
+                <h1  id="from-right">Phill Mitchell-Matsuyama</h1>
                 <ul>
-                    <li>
-                        <h2>Coder.</h2>
+                    <li  id="from-left">
+                        <h2 >Coder.</h2>
                     </li>
-                    <li>
-                        <h2>Collaborator.</h2>
+                    <li  id="from-right">
+                        <h2 >Collaborator.</h2>
                     </li>
-                    <li>
-                        <h2><a tabindex="0" data-toggle="popover" data-trigger="focus"
-                                data-content="This is Oliver Twist.">Ollie's</a> Protector.
-                        </h2>
+                    <li id="from-left">
+                        <h2 ><span id="ollie" tabindex="0" data-toggle="popover" data-trigger="focus"
+                                data-content="This is Oliver Twist.">Ollie's</span> Protector.</h2>
                     </li>
                 </ul>
-                <div>
+                <div id="from-bottom">
                     <ul id="social-links">
                         <!-- linkedin -->
                         <li><a href="https://www.linkedin.com/in/phillicia-mitchell-matsuyama21/" target="_blank"><i
@@ -61,11 +42,38 @@
                         <!-- github -->
                         <li><a href="https://github.com/pmitch242" target="_blank"><i
                                     class="fab fa-github fa-2x"></i></a></li>
+                        <!-- resume -->
+                        <li><a href="#" target="_blank"><i class="fas fa-file-alt fa-2x"></i></a></li>    
                     </ul>
                 </div>
             </div>
+            <a class="nav-link" id="arrow" href="#about-section"><i  class="fas fa-angle-double-down fa-3x"></i></a>
+            <!-- <i id="arrow" class="fas fa-angle-double-down fa-3x"></i> -->
         </section>
         <!-- /Intro Section -->
+
+        <!-- Navbar -->
+        <div class="navbar" id="navbar">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#intro-section">Home</a>
+                    <i class="fas fa-home "></i>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-section">About</a>
+                    <i class="fas fa-info fa-2x"></i>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio-section">Portfolio</a>
+                    <i class="fas fa-project-diagram fa-2x"></i>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact-section">Contact</a>
+                    <i class="fas fa-address-book fa-2x"></i>
+                </li>
+            </ul>
+        </div>
+        <!-- /Navbar -->
 
         <!-- About Section -->
         <section id="about-section">
@@ -73,7 +81,7 @@
                 <!-- <h1>Meet Phill...</h1> -->
                 <div class="circular-portrait"><img src="assets/images/profile_pic1.jpg" alt="Phill Mitchell-Matsuyama">
                 </div>
-                <div id="p-div">
+                <div id="p-div" class="p-div">
                     <p>Phill Mitchell-Matsuyama (they/them) is an aspiring software engineer who lives in Baltimore, MD
                         with their wife and two cats. Currently, they work for a security firm as a security engineer,
                         designing physical security systems for various US agencies. They are originally from The
@@ -95,51 +103,51 @@
         <section id="portfolio-section">
             <div class="container portfolio-container">
                 <!-- <div class="row profile-row"> -->
-                    <!-- <div class="col projects-container"> -->
-                        <div class="row">
-                            <!-- Pop Culture Trivia -->
-                            <div class="col-sm">
-                                <div class="card">
-                                    <img src="assets/images/popculture-trivia-preview.png" class="card-img-top"
-                                        alt="Pop Culture Trivia" id="popculture-img">
-                                    <div class="card-body">
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
+                <!-- <div class="col projects-container"> -->
+                <div class="row">
+                    <!-- Pop Culture Trivia -->
+                    <div class="col-sm">
+                        <div class="card">
+                            <img src="assets/images/popculture-trivia-preview.png" class="card-img-top"
+                                alt="Pop Culture Trivia" id="popculture-img">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make
+                                    up the bulk of the card's content.</p>
                             </div>
                         </div>
+                    </div>
+                </div>
 
-                        <!-- Weather App -->
-                        <div class="row">
-                            <div class="col-sm">
-                                <div class="card">
-                                    <img src="assets/images/weather-app-preview.png" class="card-img-top"
-                                        alt="Weather App" id="weather-img">
-                                    <div class="card-body">
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
+                <!-- Weather App -->
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="card">
+                            <img src="assets/images/weather-app-preview.png" class="card-img-top" alt="Weather App"
+                                id="weather-img">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make
+                                    up the bulk of the card's content.</p>
                             </div>
                         </div>
+                    </div>
+                </div>
 
-                        <!-- Day Planner -->
-                        <div class="row">
-                            <div class="col-sm">
-                                <div class="card">
-                                    <img src="assets/images/day-planner-preview.png" class="card-img-top"
-                                        alt="Day Planner" id="planner-img">
-                                    <div class="card-body">
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the bulk of the card's content.</p>
-                                    </div>
-                                </div>
+                <!-- Day Planner -->
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="card">
+                            <img src="assets/images/day-planner-preview.png" class="card-img-top" alt="Day Planner"
+                                id="planner-img">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make
+                                    up the bulk of the card's content.</p>
                             </div>
                         </div>
-                    <!-- </div> -->
+                    </div>
+                </div>
+                <!-- </div> -->
 
-                    <!-- Quick Skills
+                <!-- Quick Skills
                     <div class="col-4-sm">
                         <div id="skills-div">
                             <h1> Quick look at skills</h1>
@@ -194,13 +202,15 @@
                     <input type="email" class="form-control" id="user-email" placeholder="example@email.com">
                 </div>
                 <div class="form-group">
-                    <textarea class="form-control" id="user-textarea" placeholder="What do you want to say to Phill?" rows="4"></textarea>
+                    <textarea class="form-control" id="user-textarea" placeholder="What do you want to say to Phill?"
+                        rows="6"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </section>
         <!-- /Contact Section -->
-
+        <!-- Anime.js -->
+        <script src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js"></script>
         <!-- Jquery -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <!-- Popper -->
