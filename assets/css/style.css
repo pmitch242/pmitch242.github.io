@@ -39,7 +39,7 @@ body{
 .navbar ul li i{
     color: #f2f2f2;
     font-size: x-large;
-    /* display: none; */
+    display: none;
 }
 
 .navbar ul li i:hover{
@@ -256,25 +256,37 @@ i{
     bottom: 5%;
 }
 
-@media screen and (max-width: px){
-    .navbar ul li{
+/* @media screen and (max-width: 980px){
+    .navbar ul li i{
         display: none;
     }
 
-}
+} */
 
-@media screen and (max-width:980px){
-    .navbar ul li{
+@media screen and (max-width:480px){
+
+    .navbar ul li .nav-link{
+        display: none;
+    }
+
+    .navbar ul li i{
         display: block;
-        margin-right: 30px;
+        /* margin-right: 30px; */
+        color: #f2f2f2;
+        font-size: x-large;
+    }
+
+    /* .navbar ul:last-child{
+        margin-right: auto;
+    } */
+
+    .navbar ul li {
+        margin-right: 65px;
+        text-align: center;
     }
 
     .navbar ul li:last-child{
-        margin-right: 0;
+        margin-right: auto;
+        /* text-align: center; */
     }
-
-    .navbar ul li a{
-        display: none;
-    }
-
 }
