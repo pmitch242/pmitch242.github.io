@@ -297,4 +297,8 @@ i{
         margin-right: auto;
         /* text-align: center; */
     }
+
+    #intro-section{
+        background-position: -195px;
+    }
 }
