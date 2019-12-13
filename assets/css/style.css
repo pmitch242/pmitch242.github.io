@@ -197,7 +197,10 @@ i{
     margin-bottom: 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
+.portfolio-container .card i{
+    left: 95%;
+    position: relative;
+}
 #popculture-img{
     /* height: 190px; */
     height: auto;
@@ -253,7 +256,12 @@ i{
 #arrow{
     position: relative;
     margin-bottom: 0;
-    bottom: 5%;
+    bottom: 7%;
+    /* box-shadow: 0 4px 8px 0 #f2f2f2, 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.fa-angle-double-down:before {
+    text-shadow: 2px 2px 4px whitesmoke;
 }
 
 /* @media screen and (max-width: 980px){
