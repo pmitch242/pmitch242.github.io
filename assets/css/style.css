@@ -253,7 +253,7 @@ i{
 #arrow{
     position: relative;
     margin-bottom: 0;
-    bottom: 0;
+    bottom: 5%;
 }
 
 @media screen and (max-width: px){
