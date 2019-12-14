@@ -1,6 +1,6 @@
 # Phill Mitchll-Matsuyama - Responsive-Portfolio
 
-This repository ("pmitch242.github.io") is where I will be displaying my work as I continue to learn and grow in my joruney to becoming a full stack developer. This repository not only holds my projects, but it also containes my contact information, my github profile, my linkedIn profile and resume. 'pmitch242.github.io' is fullly responsive.
+This repository ("pmitch242.github.io") is where I will be displaying my work as I continue to learn and grow in my joruney to becoming a full stack developer. This repository not only holds my projects, but it also contains my contact information, my github profile, my linkedIn profile and my resume. 'pmitch242.github.io' is also fully responsive.
 
 Link: https://pmitch242.github.io/
 
