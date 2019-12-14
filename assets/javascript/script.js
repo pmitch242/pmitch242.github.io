@@ -47,4 +47,10 @@ $(document).ready(function () {
     // direction: 'alternate',
     loop: true
   });
+
+  const ollie = $("#ollie")
+
+  ollie.click(()=>{
+    console.log("clicked!");
+  })
 });

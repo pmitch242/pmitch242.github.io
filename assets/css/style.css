@@ -100,13 +100,18 @@ section{
 }
 
 #social-links li{
-    margin-right: 10px;
+    /* margin-right: 10px; */
+    margin-right: 55px;
     float: left;
     text-shadow: none;
 }
 
 i{
     color: #C11C35;
+}
+
+#ollie:hover{
+    cursor: pointer;
 }
 
 /* About */
