@@ -21,13 +21,13 @@ $(document).ready(function () {
   }).add({
     targets: '#from-left',
     translateX: [-75, 0],
-    opacity: [0, 1],
-    offset: '-=1000',
-  }).add({
+    opacity: [0, 1]
+  }, 200)
+  .add({
     targets: '#from-bottom',
     translateY: [75, 0],
     opacity: [0, 1],
-  })
+  }, 200)
 
   anime({
     targets: '#ollie',
