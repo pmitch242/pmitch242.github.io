@@ -12,13 +12,15 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/4b155f78bb.js" crossorigin="anonymous"></script>
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style-new.css">
 </head>
 
 <body>
     <div class="main-container">
-        <!-- As a link -->
+        <!-- Navbar -->
         <nav class="navbar navbar-light" id="navbar">
             <a class="navbar-brand" href="index-new.html">&lt;/Phill M²&gt;</a>
         </nav>
@@ -37,8 +39,8 @@
                 </div>
             </div>
         </section>
-        <section id="option-section">
-            <div class="row" id="row">
+        <section id="option-section" data-barba="wrapper">
+            <div class="row" id="row" data-barba="container" data-barba-namespace="landing">
                 <div class="col-sm" id="about-option">
                     <div class="container half-mid">
                         <div>
@@ -50,10 +52,8 @@
                             </div>
                         </div>
                         <div id="options-button-div">
-                            <a href="about.html">
-                                <button type="button" class="btn btn-outline-secondary about-btn"
+                            <button type="button" class="btn btn-outline-secondary about-btn"
                                 style="border-color: #1e1e24;">ABOUT</button>
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -68,10 +68,8 @@
                             </div>
                         </div>
                         <div id="options-button-div">
-                            <a href="portfolio.html">
-                                <button type="button" class="btn btn-outline-secondary port-btn"
+                            <button type="button" class="btn btn-outline-secondary port-btn"
                                 style="border-color: #fffd82;">PORTFOLIO</button>
-                            </a>
                         </div>
                     </div>
                 </div>
