@@ -109,13 +109,11 @@ section{
 }
 #about-option{
     width: 50%;
-    margin: 45px 0 45px 45px;
     background-color: #f6f8ff;
 }
 
 #portfolio-option{
     width: 50%;
-    margin: 45px 0 45px 45px;
-    background-color: #fffd82;
+    background-color: #083d77;
 }
 /* Options Section Ends */
