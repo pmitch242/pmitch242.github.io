@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Sriracha&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Mitr&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Krona+One&display=swap');
 
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -38,7 +39,6 @@ section{
     width: -webkit-fill-available;
     height: 45px;
     font-family: 'Rock Salt';
-
 }
 
 .navbar-brand{
@@ -110,10 +110,63 @@ section{
 #about-option{
     width: 50%;
     background-color: #f6f8ff;
+    color: #083d77;
 }
 
 #portfolio-option{
     width: 50%;
     background-color: #083d77;
+    color: #f6f8ff;
 }
+
+.half-mid{
+    text-align: center;
+    margin-top: 23%;
+}
+
+.about-des, 
+.portfolio-des{
+    font-family: 'Krona One';
+    margin-top: 50px;
+    line-height: 20px;
+}
+
+.mb-30{
+    margin-bottom: 30px;
+}
+
+.this-yellow{
+    color: #fffd82;
+}
+
+#options-button-div{
+    margin-top: 15%;
+}
+
+#options-button-div .btn{
+    width: 230px;
+    height: 45px;
+    font-family: 'Krona One';
+    font-size: 18px;
+    border: 2px solid transparent;
+}
+
+.about-btn{
+        color: #1e1e24;
+}
+
+.port-btn{
+    color: #fffd82;
+}
+
+.about-btn:hover{
+    background-color: #1e1e24;
+    color: #f6f8ff;
+}
+
+.port-btn:hover{
+    background-color: #fffd82;
+    color: #083d77;
+}
+
 /* Options Section Ends */
