@@ -49,7 +49,7 @@ section{
     width: 50%;
     height: -webkit-fill-available;
     margin: 45px 0 45px 45px;
-    background-color: #07a0c3;
+    background-color: #fffd82;
     float: right;
     position: fixed;
 }
@@ -77,7 +77,7 @@ section{
     position: absolute;
     margin-top: -13px;
     margin-left: -20px;
-    color: #07a0c3;
+    color: #fffd82;
     font-family: monospace;
 }
 
@@ -168,5 +168,59 @@ section{
     background-color: #fffd82;
     color: #083d77;
 }
-
 /* Options Section Ends */
+
+/* About Section */
+#about-section{
+    display: none;
+    background-color: #f6f8ff;
+}
+
+#about-section h1{
+    color: #f2f2f2;    
+    font-size: 50px;
+    text-shadow: -3px 0 #C11C35, 0 1px #C11C35,
+    1px 0 #C11C35, 0 -1px #C11C35;
+}
+
+#about-section p{
+    font-size: 20px;
+    line-height: 35px;
+    /* color: #202020;
+    text-shadow: -1px 0 #f2f2f2, 0 1px #f2f2f2, 1px 0 #f2f2f2, 0 -1px #f2f2f2; */
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.circular-portrait {
+    position: relative;
+    width: 285px;
+    height: 320px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .circular-portrait img {
+      position: sticky;
+    height: 330px;
+    margin-top: -60px;
+    width: 100%;
+    height: auto;
+  }
+/* About Section Ends*/
+
+/* Portfolio Section */
+#portfolio-section{
+    display: none;
+    background-color: #083d77;
+}
+
+.portfolio-container{
+    text-align: center;
+};
+
+img .this-img{
+    width: 250px;
+}
+/* Portfolio Section Ends*/
