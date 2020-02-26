@@ -2,14 +2,20 @@
 @import url('https://fonts.googleapis.com/css?family=Mitr&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Homemade+Apple|Nanum+Pen+Script&display=swap');
+
 
 body{
     font-family: Arial, Helvetica, sans-serif;
     background: #f6f8ff;
+    background-image: url('../images/ollie.jpg');
+    background-size: cover;
     color: #1e1e24;
     /* color: whitesmoke; */
     height: 100vh;
     overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .main-container{
@@ -41,6 +47,9 @@ section{
     font-family: 'Rock Salt';
 }
 
+#navbar{
+    display: none;
+}
 .navbar-brand{
     font-size: 17px;
 }
@@ -53,12 +62,17 @@ section{
     float: right;
     position: fixed;
 }
+#intro-section{
+    background: #f6f8ff;
+}
 
 .intro-div{
     font-family: 'Mitr';
     /* font-family: 'Sriracha', cursive; */
     background-color:rgba(0, 0, 0, 0);
     text-align: center;
+    visibility: hidden;
+    /* display: none; */
     /* padding: 15%; */
 }
 
@@ -90,12 +104,14 @@ section{
 }
 
 #intro-next{
-    font-family: 'Sriracha', cursive;
-    position: fixed;
-    text-shadow: 2px 2px 8px #083d77;
-    bottom: 0%;
-    left: 49%;
-    margin-bottom: 90px;
+    font-family: 'Mitr';
+    position: relative;
+    width: fit-content;
+    bottom: 5%;
+    left: 3%;
+    text-align: center;
+    margin: auto;
+    visibility: hidden;
     z-index: 1;
 }
 
@@ -103,6 +119,10 @@ section{
     cursor: pointer;
 }
 
+#intro-next p {
+    margin-bottom: 0;
+    font-weight: 600;
+}
 /* Options Section */
 #row {
     height: 100%;
@@ -211,16 +231,190 @@ section{
 /* About Section Ends*/
 
 /* Portfolio Section */
+.switch-btn{
+    width: 5%;
+    position: fixed;
+    height: -webkit-fill-available;
+    background-color: #f2f2f2;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, .4);
+};
+
+.switch-h3,
+.switch-button i {
+    left: -8%;
+    position: fixed;
+    bottom: 48%;
+    /* right: 49%; */
+    transform: rotate(-90deg);
+};
+
 #portfolio-section{
     display: none;
     background-color: #083d77;
 }
 
 .portfolio-container{
+    width: 85%;
+    margin: auto;
+}
+.card{
+    width: 225px;
+}
+
+.card{
+    margin: auto;
+    margin-bottom: 30px;
     text-align: center;
+    width: 225px;
+    border: none;
+    color: #002042;
+    height: 270px;
+    background: #083d77;
+    border-radius: 40px;
+    box-shadow: -6px -6px 20px rgba(255, 255, 255, .1),
+                6px 6px 20px rgba(0,0,0,0.2);
+    font-family: 'Krona One';
+}
+
+.card:hover{
+    box-shadow: inset -6px -6px 20px rgba(255, 255, 255, .1),
+                inset 6px 6px 20px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.card:hover i{
+    color: #fffd82;
+}
+.card i{
+    margin-bottom: 8px;
+}
+.card h5{
+    font-family: 'Krona One';
+}
+
+
+.card button{
+    font-family: 'Krona One';
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 40px;
+    color: #002042;
+    font-size: 16px;
+    background: transparent;
+    text-decoration: none;
+    border: none;
+    box-shadow: -4px -4px 15px rgba(255, 255, 255, .05), 4px 4px 15px rgba(0,0,0,0.2);
+}
+
+.card button:hover{
+    box-shadow: inset -4px -4px 15px rgba(255, 255, 255, .03),
+    inset 4px 4px 15px rgba(0,0,0,0.1);
+    color: #fffd82;
+}
+
+.info-div{
+    margin: auto;
+    font-family: 'Krona One';
+    text-align: center;
+    color: #f6f8ff;
+    text-shadow: 2px 2px 8px #010c16;
+    border-radius: 10px;
+    display: none;
+}
+
+#weather-info-div img,
+#trivia-info-div img{
+    max-width: 615px;
+    height: 315px;
+    border-radius: 10px;
+}
+
+#planner-info-div img{
+    min-width: 615px;
+    height: 315px;
+    border-radius: 10px;
+}
+
+.icon-link-div {
+    margin-top: 80px;
+}
+.icon-link-div a{
+    margin: 22px;
+    font-family: 'Krona One';
+    padding: 15px 30px;
+    border-radius: 40px;
+    color: #002042;
+    font-size: 15px;
+    text-decoration: none;
+    text-shadow: none;
+    display: inline;
+    box-shadow: -4px -4px 15px rgba(255, 255, 255, .05), 
+    4px 4px 15px rgba(0,0,0,0.2);
+}
+
+.icon-link-div a:hover{
+    box-shadow: inset -4px -4px 15px rgba(255, 255, 255, .03),
+    inset 4px 4px 15px rgba(0,0,0,0.1);
+    color: #fffd82;
+}
+
+.div-active{
+    display: block;
+}
+
+.card-active{
+    box-shadow: inset -6px -6px 20px rgba(255, 255, 255, .1),
+    inset 6px 6px 20px rgba(0,0,0,0.3);
+}
+
+.card-active i{
+    color: #fffd82;
 };
 
-img .this-img{
-    width: 250px;
+.card-inactive{
+    box-shadow: -4px -4px 15px rgba(255, 255, 255, .05), 4px 4px 15px rgba(0,0,0,0.2);
 }
+
+.card-inactive:hover{
+    box-shadow: -6px -6px 20px rgba(255, 255, 255, .1), 6px 6px 20px rgba(0,0,0,0.2);
+    color: #002042;
+    transform: scale(1);
+}
+
+.card-inactive:hover i{
+    color: #002042;
+}
+
+
+.p-div{
+    font-size: 25px;
+    line-height: 30px;
+    font-family: 'Homemade Apple';
+    padding: 0 100px;
+    color: #002042;
+}
+
+.indent{
+    margin-left: 30px;
+}
+.exit-btn{
+    float: right;
+    margin: 0 5px 20px 0;
+    color: #002042;
+    text-shadow: none;
+}
+
+.exit-btn:hover{
+    color: #fffd82;
+    cursor: pointer;
+}
+/* #container:hover + #cube { background-color: yellow; } */
+
+/* .trivia-info-div ~ .my-button:hover {
+    display: block;
+}
+.hidden{
+    display: none;
+} */
 /* Portfolio Section Ends*/

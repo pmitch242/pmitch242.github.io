@@ -26,17 +26,16 @@
         </nav>
         <!-- Intro Section -->
         <section id="intro-section">
-            <div class="background-half">
-                <div class="rotate-270" id="intro-next">
-                    <i class="fas fa-long-arrow-alt-down rotate-90"></i>
-                    <span id="next-section">More Phill?</span>
-                </div>
-            </div>
+            <div class="background-half"></div>
             <div class="intro-div h-100 row align-items-center">
                 <div class="col">
                     <h1>This is</h1>
                     <h1 id="my-name">Phill<span>.</span></h1>
                 </div>
+            </div>
+            <div id="intro-next">
+                <p>More Phill ?</p>
+                <i class="fas fa-angle-down fa-2x"></i>
             </div>
         </section>
         <section id="option-section">
@@ -96,35 +95,114 @@
                 </div>
             </div>
         </section>
+        <!-- <div class="switch-btn" id="about-switch ">
+            <i class="fas fa-info fa-2x"></i>
+            <h3>SWITCH TO ABOUT</h3>
+        </div> -->
+        <!-- <div class="switch-btn" id="port-switch">
+            <div style="
+            left: -8%;
+            position: fixed;
+            bottom: 48%;
+            transform: rotate(-90deg)">
+                <i class="fas fa-code fa-2x"></i>
+                <h3>SWITCH TO PORTFOLIO</h3>
+            </div>
+        </div> -->
         <section id="portfolio-section">
-            <div class="container portfolio-container h-100">
-                <div class="row align-items-center h-100 mx-auto">
-                  <div class="col-sm">
-                    <div class="row row-cols-2 myicons">
-                        <div class="col iconBx">
-                            <img class="this-img" src="assets/images/popculture-trivia-preview.png" alt="Pop Culture Trivia">
+            <div class="portfolio-container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-sm card-col">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card" data-id="1">
+                                    <div class="card-body">
+                                        <i class="fas fa-gamepad fa-3x"></i>
+                                        <h5 class="card-title">Pop Culture Trivia</h5>
+                                        <p class="card-text">Fun, yet challenging, game of Pop Culture Trivia!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" data-id="2">
+                                    <div class="card-body">
+                                        <i class="fas fa-cloud fa-3x"></i>
+                                        <h5 class="card-title">Weather App</h5>
+                                        <p class="card-text">An app that displays the current
+                                            weather information as well as a five day forecast.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card" data-id="3">
+                                    <div class="card-body">
+                                        <i class="fas fa-calendar-week fa-3x"></i>
+                                        <h5 class="card-title">Day Planner</h5>
+                                        <p class="card-text">A simple calendar app for scheduling your work day.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="col">Column</div> -->
                         </div>
-                        <div class="col iconBx">
-                            <img src="assets/images/day-planner-preview.png" alt="Day Planner">
+                    </div>
+                    <div class="col-sm">
+                        <div class="p-div">
+                            <p>// advice</p>
+                            <p>if ( curious() === true ) {</p>
+                            <p class="indent">curious().stop();</p>
+                            <p class="indent">clickBox();</p>
+                            <p>};</p>
                         </div>
-                        <div class="col iconBx">
-                            <img src="assets/images/weather-app-preview.png" alt="Weather App">
+                        <div class="card-hover info-div" id="trivia-info-div" data-id="1a">
+                            <i class="fas fa-times fa-lg exit-btn" data-id="1"></i>
+                            <img id="trivia-img" src="assets/images/popculture-trivia-preview.png" alt="">
+                            <div class="icon-link-div">
+                                <a href="#">Website
+                                    <i class="fas fa-chevron-right fa-lg"></i>
+                                </a>
+                                <a href="#">Repository
+                                    <i class="fas fa-chevron-right fa-lg"></i>
+                                </a>
+                            </div>
                         </div>
-                      </div>
-                  </div>
-                  <div class="col-sm">
-                    <div ></div>
-                  </div>
+
+                        <div class="card-hover info-div" id="weather-info-div" data-id="2a">
+                            <i class="fas fa-times fa-lg exit-btn" data-id="2"></i>
+                            <img id="weather-img" src="assets/images/weather-app-preview.png" alt="">
+                            <div class="icon-link-div">
+                                <a href="#">Website
+                                    <i class="fas fa-chevron-right fa-lg"></i>
+                                </a>
+                                <a href="#">Repository
+                                    <i class="fas fa-chevron-right fa-lg"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card-hover info-div" id="planner-info-div" data-id="3a">
+                            <i class="fas fa-times fa-lg exit-btn" data-id="3"></i>
+                            <img src="assets/images/day-planner-preview.png" alt="">
+                            <div class="icon-link-div">
+                                <a href="#">Website
+                                    <i class="fas fa-chevron-right fa-lg"></i>
+                                </a>
+                                <a href="#">Repository
+                                    <i class="fas fa-chevron-right fa-lg"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-        </section>
-        <!-- /Intro Section End-->
+            </div>
+    </div>
+    </section>
+    <!-- /Intro Section End-->
 
 
-        <!-- Jquery -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <!-- JavaScript -->
-        <script src="assets/javascript/script-new.js"></script>
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- JavaScript -->
+    <script src="assets/javascript/script-new.js"></script>
     </div>
 </body>
 
