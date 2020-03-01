@@ -16,7 +16,13 @@ body{
     overflow: hidden;
     overflow-y: hidden;
     overflow-x: hidden;
+    /* -ms-overflow-style: none; */
+    /* overflow: -moz-scrollbars-none;  */
 }
+
+/* body::-webkit-scrollbar{
+    display: none;
+} */
 
 .main-container{
     width: 100%;
@@ -30,14 +36,11 @@ body{
 
 /* Section */
 section{
-    display: flex;
+    display: none;
     flex-direction: column;
-    /* align-items: center; */
-    /* justify-content: center; */
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    /* scroll-snap-align: center; */
 }
 
 .navbar{
@@ -55,15 +58,21 @@ section{
 }
 
 .background-half{
-    width: 50%;
+    background-color: #428f66;
+    background-image: url('../images/backgrounds/dark-dot.png');
+    display: block;
+    opacity: 75%;
+    width: 100%;
     height: -webkit-fill-available;
-    margin: 45px 0 45px 45px;
-    background-color: #fffd82;
+    border-radius: 0px;
     float: right;
     position: fixed;
+    display: none;
 }
+
 #intro-section{
-    background: #f6f8ff;
+    display: flex;
+    color: #c3c5cc;
 }
 
 .intro-div{
@@ -77,22 +86,35 @@ section{
 }
 
 .intro-div h1{
-    font-size: 18vh;
-    text-transform: uppercase; 
-    text-shadow: 2px 2px 8px #083d77;
+    font-size: 12vh;
+    text-transform: uppercase;
+    /* text-shadow: 2px 2px 8px #424242; */
+    color: #353535;
+    opacity: 86%;
+    line-height: 100%;
 }
 
 #my-name{
-    line-height: 85%;
+    color: #fff;
+    opacity: 100%;
+    font-size: 19vh;
 }
 
 #my-name span{
-    font-size: 25vh;
+    font-size: 34vh;
     position: absolute;
-    margin-top: -13px;
-    margin-left: -20px;
-    color: #fffd82;
+    top: 36%;
+    color: #353535;
+    opacity: 86%;
     font-family: monospace;
+}
+
+#right-brac{
+    right: 30%;
+}
+
+#left-brac{
+    left: 30%;
 }
 
 .rotate-270{ 
@@ -106,13 +128,13 @@ section{
 #intro-next{
     font-family: 'Mitr';
     position: relative;
-    width: fit-content;
-    bottom: 5%;
-    left: 3%;
+    width: 100%;
+    bottom: 0;
+    /* left: 3%; */
     text-align: center;
-    margin: auto;
     visibility: hidden;
-    z-index: 1;
+    /* z-index: 1; */
+    color: #fff;
 }
 
 #intro-next :hover{
@@ -130,13 +152,49 @@ section{
 #about-option{
     width: 50%;
     background-color: #f6f8ff;
-    color: #083d77;
+    color: #212121;
+    z-index: 0;
+}
+
+#about-option::after {
+    content: "";
+    background-image: url(https://www.transparenttextures.com/patterns/inspiration-geometry.png);
+    opacity: 60%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
 }
 
 #portfolio-option{
     width: 50%;
-    background-color: #083d77;
-    color: #f6f8ff;
+    background-color: #212121;
+    color: #fff;
+    z-index: 0;
+}
+
+#portfolio-option h1,
+#portfolio-option .h1,
+#about-option h1,
+#about-option .h1{
+    color: #6d6d6d;
+    font-size: 3rem;
+}
+
+
+
+#portfolio-option::after {
+    content: "";
+    background-image: url(https://www.transparenttextures.com/patterns/inspiration-geometry.png);
+    opacity: 20%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
 }
 
 .half-mid{
@@ -147,7 +205,7 @@ section{
 .about-des, 
 .portfolio-des{
     font-family: 'Krona One';
-    margin-top: 50px;
+    margin-top: 35px;
     line-height: 20px;
 }
 
@@ -155,49 +213,45 @@ section{
     margin-bottom: 30px;
 }
 
-.this-yellow{
-    color: #fffd82;
-}
-
 #options-button-div{
-    margin-top: 15%;
+    margin-top: 22%;
 }
 
 #options-button-div .btn{
-    width: 230px;
-    height: 45px;
+    width: 269px;
+    height: 70px;
     font-family: 'Krona One';
     font-size: 18px;
-    border: 2px solid transparent;
+    border: 4px solid transparent;
 }
 
 .about-btn{
-        color: #1e1e24;
+    color: #428f66;
 }
 
 .port-btn{
-    color: #fffd82;
+    color: #428f66;
 }
 
 .about-btn:hover{
-    background-color: #1e1e24;
+    background-color: #428f66;
     color: #f6f8ff;
 }
 
 .port-btn:hover{
-    background-color: #fffd82;
-    color: #083d77;
+    background-color: #428f66;
+    color: #212121;
 }
 /* Options Section Ends */
 
 /* About Section */
 #about-section{
-    display: none;
+    /* display: none; */
     background-color: #f6f8ff;
 }
 
 #about-section h1{
-    color: #f2f2f2;    
+    color: #f6f8ff;    
     font-size: 50px;
     text-shadow: -3px 0 #C11C35, 0 1px #C11C35,
     1px 0 #C11C35, 0 -1px #C11C35;
@@ -208,7 +262,7 @@ section{
     line-height: 35px;
     /* color: #202020;
     text-shadow: -1px 0 #f2f2f2, 0 1px #f2f2f2, 1px 0 #f2f2f2, 0 -1px #f2f2f2; */
-    color: white;
+    color: f6f8ff;
     text-shadow: 2px 2px 4px #000000;
 }
 
@@ -232,24 +286,64 @@ section{
 
 /* Portfolio Section */
 .switch-btn{
-    width: 5%;
+    width: 60px;
+    /* width: 75px; */
     position: fixed;
     height: -webkit-fill-available;
-    background-color: #f2f2f2;
-    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, .4);
+    background-color: #f6f8ff;
+    z-index: 15;
+    font-family: 'Krona One';
+    color: #083d77;
+    display: none;
 };
 
-.switch-h3,
-.switch-button i {
-    left: -8%;
+/* .switch-clickable{
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, .4);
+} */
+
+.switch-h3{
+    position: fixed;
+}
+.switch-h3{
+    left: -52px;
+    /* left: -45px; */
     position: fixed;
     bottom: 48%;
-    /* right: 49%; */
+    font-size: 13px;
     transform: rotate(-90deg);
+    display: none;
 };
 
-#portfolio-section{
+.switch-info{
+    position: fixed;
+}
+
+.switch-info{
+    position: fixed;
+    bottom: 65%;
+    font-size: 24px;
+    left: 25px;
+    /* left: 30px; */
     display: none;
+}
+
+.switch-arrow{
+    position: fixed;
+}
+
+.switch-arrow{
+    position: fixed;
+    bottom: 48%;
+    font-size: 20px;
+    /* left: 52px; */
+    left: 42px;
+    transform: rotate(-90deg);
+    display: none;
+};
+
+
+#portfolio-section{
+    /* display: none; */
     background-color: #083d77;
 }
 
