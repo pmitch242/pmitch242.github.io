@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Rock+Salt&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Krona+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Homemade+Apple|Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap');
 
 
 body{
@@ -10,7 +11,7 @@ body{
     background: #f6f8ff;
     background-image: url('../images/ollie.jpg');
     background-size: cover;
-    color: #1e1e24;
+    color: #212121;
     /* color: whitesmoke; */
     height: 100vh;
     overflow: hidden;
@@ -44,17 +45,29 @@ section{
 }
 
 .navbar{
-    position: absolute;
-    width: -webkit-fill-available;
-    height: 45px;
-    font-family: 'Rock Salt';
+    max-width: 1400px;
+    margin: auto;
 }
 
-#navbar{
-    display: none;
-}
 .navbar-brand{
-    font-size: 17px;
+    font-family: 'Black Ops One';
+    font-size: 50px;
+    color:#fff;
+    margin: auto;
+}
+
+.navbar .btn{
+    color: #428f66;
+    border: #428f66 2px solid;
+}
+
+.navbar-brand:hover{
+    color:#fff;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: #428f66;
 }
 
 .background-half{
@@ -293,7 +306,7 @@ section{
     background-color: #f6f8ff;
     z-index: 15;
     font-family: 'Krona One';
-    color: #083d77;
+    color: #428f66;
     display: none;
 };
 
@@ -361,33 +374,40 @@ section{
     text-align: center;
     width: 225px;
     border: none;
-    color: #002042;
+    color: #6d6d6d;
     height: 270px;
-    background: #083d77;
+    background: inherit;
     border-radius: 40px;
-    box-shadow: -6px -6px 20px rgba(255, 255, 255, .1),
-                6px 6px 20px rgba(0,0,0,0.2);
+    box-shadow: -7px -6px 20px rgba(255, 255, 255, .12),
+    6px 6px 20px rgba(0,0,0,.5);
     font-family: 'Krona One';
 }
 
 .card:hover{
-    box-shadow: inset -6px -6px 20px rgba(255, 255, 255, .1),
-                inset 6px 6px 20px rgba(0,0,0,0.3);
+    box-shadow: inset -6px -6px 20px rgba(255, 255, 255, .12),
+                inset 6px 6px 20px rgba(0,0,0,0.8);
     cursor: pointer;
+    color: #428f66;
+}
+
+.card:hover h5{
+    color: #fff;
 }
 
 .card:hover i{
-    color: #fffd82;
+    color: #428f66;
 }
+
 .card i{
     margin-bottom: 8px;
 }
 .card h5{
     font-family: 'Krona One';
+    color: #428f66;
 }
 
 
-.card button{
+/* .card button{
     font-family: 'Krona One';
     display: inline-block;
     padding: 10px 20px;
@@ -398,14 +418,14 @@ section{
     background: transparent;
     text-decoration: none;
     border: none;
-    box-shadow: -4px -4px 15px rgba(255, 255, 255, .05), 4px 4px 15px rgba(0,0,0,0.2);
-}
+    box-shadow: -7px -6px 20px rgba(255, 255, 255, .12),
+    6px 6px 20px rgba(0,0,0,.5);}
 
 .card button:hover{
     box-shadow: inset -4px -4px 15px rgba(255, 255, 255, .03),
     inset 4px 4px 15px rgba(0,0,0,0.1);
     color: #fffd82;
-}
+} */
 
 .info-div{
     margin: auto;
@@ -438,7 +458,7 @@ section{
     font-family: 'Krona One';
     padding: 15px 30px;
     border-radius: 40px;
-    color: #002042;
+    color: #6d6d6d;
     font-size: 15px;
     text-decoration: none;
     text-shadow: none;
@@ -448,9 +468,9 @@ section{
 }
 
 .icon-link-div a:hover{
-    box-shadow: inset -4px -4px 15px rgba(255, 255, 255, .03),
-    inset 4px 4px 15px rgba(0,0,0,0.1);
-    color: #fffd82;
+    box-shadow: inset -4px -4px 15px rgba(255, 255, 255, .12),
+    inset 4px 4px 15px rgba(0,0,0,0.8);
+    color: #428f66;
 }
 
 .div-active{
@@ -458,35 +478,50 @@ section{
 }
 
 .card-active{
-    box-shadow: inset -6px -6px 20px rgba(255, 255, 255, .1),
-    inset 6px 6px 20px rgba(0,0,0,0.3);
+    box-shadow: inset -6px -6px 20px rgba(255, 255, 255, .12),
+    inset 6px 6px 20px rgba(0,0,0,0.8);
+    color: #428f66;
 }
 
+.card-active:hover{
+    color: #428f66;
+}
+
+.card-active h5{
+    color: #fff;
+}
+
+
 .card-active i{
-    color: #fffd82;
+    color: #428f66;
 };
 
 .card-inactive{
-    box-shadow: -4px -4px 15px rgba(255, 255, 255, .05), 4px 4px 15px rgba(0,0,0,0.2);
+    box-shadow: -7px -6px 20px rgba(255, 255, 255, .12),
+    6px 6px 20px rgba(0,0,0,.5);
 }
 
 .card-inactive:hover{
-    box-shadow: -6px -6px 20px rgba(255, 255, 255, .1), 6px 6px 20px rgba(0,0,0,0.2);
-    color: #002042;
+    box-shadow: -7px -6px 20px rgba(255, 255, 255, .12),
+    6px 6px 20px rgba(0,0,0,.5);
+    color: #6d6d6d;
     transform: scale(1);
 }
 
 .card-inactive:hover i{
-    color: #002042;
+    color: #6d6d6d;
 }
 
+.card-inactive:hover h5{
+    color: #428f66;
+}
 
 .p-div{
     font-size: 25px;
     line-height: 30px;
     font-family: 'Homemade Apple';
     padding: 0 100px;
-    color: #002042;
+    color: #428f66;
 }
 
 .indent{
@@ -495,12 +530,12 @@ section{
 .exit-btn{
     float: right;
     margin: 0 5px 20px 0;
-    color: #002042;
+    color: #6d6d6d;
     text-shadow: none;
 }
 
 .exit-btn:hover{
-    color: #fffd82;
+    color: #428f66;
     cursor: pointer;
 }
 /* #container:hover + #cube { background-color: yellow; } */

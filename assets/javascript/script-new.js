@@ -26,6 +26,7 @@ $(document).ready(function () {
     const switchH3 = $('.switch-h3');
     const switchInfo = $('.switch-info');
     const switchArrow = $('.switch-arrow');
+    const halfMid = $('.half-mid');
     // =======================================================
 
 
@@ -38,11 +39,14 @@ $(document).ready(function () {
 
     introNextBtn.on('click', function (event) {
         event.preventDefault();
-        introSection.addClass('animated slideOutUp');
+        introSection.addClass('animated fadeOut');
         introSection.on('animationend', function () {
             introSection.hide();
-            optionSection.show();
             optionSection.addClass('animated slideInUp');
+            optionSection.show();
+            optionSection.on('animationend', function() {
+                backgroundHalf.hide();
+            })
         });
     });
 
@@ -61,19 +65,23 @@ $(document).ready(function () {
         event.preventDefault();
         switchOption.show();
         $('body').css('background-image', 'none');
-        $('body').css('background-color', '#083d77');
-        aboutOptionDiv.addClass('animated slideOutLeft');
-        portfolioOptionDiv.addClass('animated fadeOutLeft');
-        aboutOptionDiv.on('animationend', function () {
-            optionSection.hide();
-            portfolioSection.css('display', 'flex');
-            portfolioSection.addClass('animated fadeInRight')
-            portfolioSection.on('animationend', function () {
-                switchH3.addClass('animated fadeIn');
-                switchH3.show();
-                switchOption.css('box-shadow', '4px 4px 8px 0 rgba(0, 0, 0, .4)');
+        $('body').css('background-color', '#212121');
+        portfolioOptionDiv.addClass('animated fadeOut');
+        halfMid.addClass('animated fadeOut');
+        // aboutOptionDiv.addClass('animated fadeOut');
+        halfMid.on('animationend', function () {
+            aboutOptionDiv.addClass('animated slideOutLeft');
+            aboutOptionDiv.on('animationend', function () {
+                portfolioSection.addClass('animated fadeInRight')
+                portfolioSection.css('display', 'flex');
+                portfolioSection.on('animationend', function () {
+                    optionSection.hide();
+                    switchH3.addClass('animated fadeIn');
+                    switchH3.show();
+                    switchOption.css('box-shadow', '4px 4px 8px 0 rgba(0, 0, 0, .4)');
+                });
             });
-        });
+        })
     });
 
 
@@ -122,10 +130,7 @@ $(document).ready(function () {
             switchArrow.show();
             switchOption.css('cursor', 'pointer');
             switchOption.animate({ width: '75px' });
-            switchH3.animate({ 
-                left: '-45px',
-                transform: 'scale(1.1)'
-        });
+            switchH3.animate({left: '-45px'});
             switchInfo.addClass('animated fadeIn');
             switchInfo.animate({ left: '30px' });
             switchArrow.addClass('animated fadeIn');
@@ -135,14 +140,14 @@ $(document).ready(function () {
             switchInfo.animate({
                 left: '25px',
                 opacity: 0,
-            }, 500, function () {
+            }, 250, function () {
                 switchInfo.css('left', '25px');
                 switchInfo.hide();
             });
             switchArrow.animate({
                 left: '42px',
                 opacity: 0,
-            }, 500, function () {
+            }, 250, function () {
                 switchArrow.css('left', '42px');
                 switchArrow.hide();
             })
@@ -154,41 +159,7 @@ $(document).ready(function () {
             switchArrow.removeClass('animated fadeIn faster');
             switchInfo.removeClass('animated fadeIn faster');
         });
-        // switchOption.hover(
-        //     function () {
-        //         switchOption.css('cursor', 'pointer');
-        //         switchOption.animate({ width: '75px' });
-        //         switchH3.animate({ left: '-45px' });
-        //         // switchInfo.addClass('animated fadeIn faster');
-        //         // switchInfo.show();
-        //         // switchInfo.animate({ left: '30px' });
-        //         // switchArrow.addClass('animated fadeIn faster');
-        //         // switchArrow.show();
-        //         // switchArrow.animate({ left: '52px' });
-        //     },
-        //     function () {
-        //         switchArrow.hide();
-        //         switchArrow.removeClass('animated fadeOut');
-        //         switchInfo.removeClass('animated');
-        //         resetSwitch();
-        //         // switchOption.animate({ width: '60px' });
-        //         // switchH3.animate({ left: '-52px' });
-        //         // switchArrow.animate({ left: '42px' });
-        //         // switchInfo.animate({
-        //         //     left: '25px',
-        //         //     opacity: 0,
-        //         //     // fadeOut()
-        //         // }, 500, function () {
-        //         //     switchInfo.css('left', '25px')
-        //         // });
-        //         applySwitchHover();
-        //         // switchInfo.fadeOut();
-        //         // switchOption.css('width', '60px');
-        //         // switchH3.css('left', '-52px');
-        //     }
-        // );
-        // resetSwitch();
-        // applySwitchHover();
+
     };
 
     function resetSwitch() {
@@ -257,21 +228,16 @@ $(document).ready(function () {
     });
 
     function landingPageStart() {
-        backgroundHalf.addClass('animated slideInRight');
-        // backgroundHalf.animate().show();
         backgroundHalf.show();
-        backgroundHalf.on('animationend', function () {
-            introDiv.css('visibility', 'visible');
-            introDiv.addClass('animated slideInLeft');
-            introDiv.on('animationend', function () {
-                introNextBtn.css('visibility', 'visible');
-                introNextBtn.addClass('animated bounceInUp');
-                introNextBtn.on('animationend', function () {
-                    introNextBtn.removeClass('bounceInUp');
-                    introNextBtn.addClass('infinite bounce slow');
-                })
+        introDiv.css('visibility', 'visible');
+        introDiv.addClass('animated slideInLeft');
+        introDiv.on('animationend', function () {
+            introNextBtn.css('visibility', 'visible');
+            introNextBtn.addClass('animated bounceInUp');
+            introNextBtn.on('animationend', function () {
+                introNextBtn.removeClass('bounceInUp');
+                introNextBtn.addClass('infinite bounce slow');
             })
-
         })
     };
 
