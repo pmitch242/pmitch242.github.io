@@ -4,9 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Krona+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Homemade+Apple|Nanum+Pen+Script&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap');
-
-
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     background: #f6f8ff;
     background-image: url('../images/ollie.jpg');
@@ -25,7 +23,7 @@ body{
     display: none;
 } */
 
-.main-container{
+.main-container {
     width: 100%;
     height: 100%;
     /* Smooth Scroll */
@@ -34,9 +32,9 @@ body{
     scroll-snap-type: y mandatory;
 }
 
-
 /* Section */
-section{
+
+section {
     display: none;
     flex-direction: column;
     width: 100%;
@@ -44,33 +42,68 @@ section{
     overflow: hidden;
 }
 
-.navbar{
+.navbar {
     max-width: 1400px;
     margin: auto;
+    display: none;
+    padding: 2% 4%;
 }
 
-.navbar-brand{
+.navbar-brand {
     font-family: 'Black Ops One';
     font-size: 50px;
-    color:#fff;
+    color: #fff;
     margin: auto;
+    position: fixed;
+    top: 1%;
+    right: 48%;
 }
 
-.navbar .btn{
+.navbar .btn {
     color: #428f66;
     border: #428f66 2px solid;
+    width: 218px;
+    font-family: 'Krona One';
 }
 
-.navbar-brand:hover{
-    color:#fff;
+.navbar .btn:hover {
+    color: #fff;
+    background-color: #428f66;
 }
 
+.navbar-brand:hover {
+    color: #fff;
+}
 
-.navbar-light .navbar-nav .nav-link {
+.links-div {
+    height: 80vh;
+    position: absolute;
+    right: 0;
+    margin-right: 40px;
+    padding: 12% 0;
+    margin-top: 6%;
+    text-align: center;
+    border-left: 1px #6d6d6d solid;
+    display: none;
+}
+
+.links-div ul {
+    padding-left: 25px;
+}
+
+.links-div ul li {
+    margin-bottom: 20px;
+}
+
+.links-div ul li a {
+    color: #fff;
+}
+
+.links-div ul li a:hover {
     color: #428f66;
 }
 
-.background-half{
+.background-half {
     background-color: #428f66;
     background-image: url('../images/backgrounds/dark-dot.png');
     display: block;
@@ -83,22 +116,22 @@ section{
     display: none;
 }
 
-#intro-section{
+#intro-section {
     display: flex;
     color: #c3c5cc;
 }
 
-.intro-div{
+.intro-div {
     font-family: 'Mitr';
     /* font-family: 'Sriracha', cursive; */
-    background-color:rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
     text-align: center;
     visibility: hidden;
     /* display: none; */
     /* padding: 15%; */
 }
 
-.intro-div h1{
+.intro-div h1 {
     font-size: 12vh;
     text-transform: uppercase;
     /* text-shadow: 2px 2px 8px #424242; */
@@ -107,13 +140,13 @@ section{
     line-height: 100%;
 }
 
-#my-name{
+#my-name {
     color: #fff;
     opacity: 100%;
     font-size: 19vh;
 }
 
-#my-name span{
+#my-name span {
     font-size: 34vh;
     position: absolute;
     top: 36%;
@@ -122,23 +155,23 @@ section{
     font-family: monospace;
 }
 
-#right-brac{
+#right-brac {
     right: 30%;
 }
 
-#left-brac{
+#left-brac {
     left: 30%;
 }
 
-.rotate-270{ 
-    transform:rotate(270deg);
+.rotate-270 {
+    transform: rotate(270deg);
 }
 
-.rotate-90{
+.rotate-90 {
     transform: rotate(90deg);
 }
 
-#intro-next{
+#intro-next {
     font-family: 'Mitr';
     position: relative;
     width: 100%;
@@ -150,7 +183,7 @@ section{
     color: #fff;
 }
 
-#intro-next :hover{
+#intro-next :hover {
     cursor: pointer;
 }
 
@@ -158,11 +191,14 @@ section{
     margin-bottom: 0;
     font-weight: 600;
 }
+
 /* Options Section */
+
 #row {
     height: 100%;
 }
-#about-option{
+
+#about-option {
     width: 50%;
     background-color: #f6f8ff;
     color: #212121;
@@ -181,22 +217,17 @@ section{
     z-index: -1;
 }
 
-#portfolio-option{
+#portfolio-option {
     width: 50%;
     background-color: #212121;
     color: #fff;
     z-index: 0;
 }
 
-#portfolio-option h1,
-#portfolio-option .h1,
-#about-option h1,
-#about-option .h1{
+#portfolio-option h1, #portfolio-option .h1, #about-option h1, #about-option .h1 {
     color: #6d6d6d;
     font-size: 3rem;
 }
-
-
 
 #portfolio-option::after {
     content: "";
@@ -210,27 +241,26 @@ section{
     z-index: -1;
 }
 
-.half-mid{
+.half-mid {
     text-align: center;
     margin-top: 23%;
 }
 
-.about-des, 
-.portfolio-des{
+.about-des, .portfolio-des {
     font-family: 'Krona One';
     margin-top: 35px;
     line-height: 20px;
 }
 
-.mb-30{
+.mb-30 {
     margin-bottom: 30px;
 }
 
-#options-button-div{
+#options-button-div {
     margin-top: 22%;
 }
 
-#options-button-div .btn{
+#options-button-div .btn {
     width: 269px;
     height: 70px;
     font-family: 'Krona One';
@@ -238,67 +268,81 @@ section{
     border: 4px solid transparent;
 }
 
-.about-btn{
+.about-btn {
     color: #428f66;
 }
 
-.port-btn{
+.port-btn {
     color: #428f66;
 }
 
-.about-btn:hover{
+.about-btn:hover {
     background-color: #428f66;
     color: #f6f8ff;
 }
 
-.port-btn:hover{
+.port-btn:hover {
     background-color: #428f66;
     color: #212121;
 }
+
 /* Options Section Ends */
 
 /* About Section */
-#about-section{
+
+#about-section {
     /* display: none; */
     background-color: #f6f8ff;
 }
 
-#about-section h1{
-    color: #f6f8ff;    
-    font-size: 50px;
-    text-shadow: -3px 0 #C11C35, 0 1px #C11C35,
-    1px 0 #C11C35, 0 -1px #C11C35;
+.switch-btn-about {
+    width: 60px;
+    /* width: 75px; */
+    position: fixed;
+    height: -webkit-fill-available;
+    background-color: #212121;
+    z-index: 15;
+    font-family: 'Krona One';
+    color: #428f66;
+    right: 0;
+    /* display: none; */
 }
 
-#about-section p{
+;
+.switch-h3-about {
+    position: fixed;
+}
+
+.switch-h3-about {
+    right: -72px;
+    /* right: -69px; */
+    position: fixed;
+    bottom: 48%;
+    font-size: 13px;
+    transform: rotate(-90deg);
+}
+
+.switch-arrow-about {
+    position: fixed;
+}
+
+.switch-arrow-about {
+    position: fixed;
+    bottom: 48%;
     font-size: 20px;
-    line-height: 35px;
-    /* color: #202020;
-    text-shadow: -1px 0 #f2f2f2, 0 1px #f2f2f2, 1px 0 #f2f2f2, 0 -1px #f2f2f2; */
-    color: f6f8ff;
-    text-shadow: 2px 2px 4px #000000;
+    /* right: 52px; */
+    right: 42px;
+    transform: rotate(90deg);
 }
 
-.circular-portrait {
-    position: relative;
-    width: 285px;
-    height: 320px;
-    overflow: hidden;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-  
-  .circular-portrait img {
-      position: sticky;
-    height: 330px;
-    margin-top: -60px;
-    width: 100%;
-    height: auto;
-  }
+;
 /* About Section Ends*/
 
 /* Portfolio Section */
 .switch-btn{
+    background-color: #f6f8ff;
+}
+.switch-btn {
     width: 60px;
     /* width: 75px; */
     position: fixed;
@@ -308,16 +352,16 @@ section{
     font-family: 'Krona One';
     color: #428f66;
     display: none;
-};
-
+}
 /* .switch-clickable{
     box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, .4);
 } */
 
-.switch-h3{
+.switch-h3 {
     position: fixed;
 }
-.switch-h3{
+
+.switch-h3 {
     left: -52px;
     /* left: -45px; */
     position: fixed;
@@ -325,26 +369,13 @@ section{
     font-size: 13px;
     transform: rotate(-90deg);
     display: none;
-};
+}
 
-.switch-info{
+.switch-arrow {
     position: fixed;
 }
 
-.switch-info{
-    position: fixed;
-    bottom: 65%;
-    font-size: 24px;
-    left: 25px;
-    /* left: 30px; */
-    display: none;
-}
-
-.switch-arrow{
-    position: fixed;
-}
-
-.switch-arrow{
+.switch-arrow {
     position: fixed;
     bottom: 48%;
     font-size: 20px;
@@ -354,21 +385,21 @@ section{
     display: none;
 };
 
-
-#portfolio-section{
-    /* display: none; */
-    background-color: #083d77;
+#portfolio-section {
+    background-color: #212121;
 }
 
-.portfolio-container{
+.portfolio-container {
     width: 85%;
     margin: auto;
+    margin-top: 50px;
 }
-.card{
+
+.card {
     width: 225px;
 }
 
-.card{
+.card {
     margin: auto;
     margin-bottom: 30px;
     text-align: center;
@@ -378,34 +409,32 @@ section{
     height: 270px;
     background: inherit;
     border-radius: 40px;
-    box-shadow: -7px -6px 20px rgba(255, 255, 255, .12),
-    6px 6px 20px rgba(0,0,0,.5);
+    box-shadow: -7px -6px 20px rgba(255, 255, 255, .12), 6px 6px 20px rgba(0, 0, 0, .5);
     font-family: 'Krona One';
 }
 
-.card:hover{
-    box-shadow: inset -6px -6px 20px rgba(255, 255, 255, .12),
-                inset 6px 6px 20px rgba(0,0,0,0.8);
+.card:hover {
+    box-shadow: inset -6px -6px 20px rgba(255, 255, 255, .12), inset 6px 6px 20px rgba(0, 0, 0, 0.8);
     cursor: pointer;
     color: #428f66;
 }
 
-.card:hover h5{
+.card:hover h5 {
     color: #fff;
 }
 
-.card:hover i{
+.card:hover i {
     color: #428f66;
 }
 
-.card i{
+.card i {
     margin-bottom: 8px;
 }
-.card h5{
+
+.card h5 {
     font-family: 'Krona One';
     color: #428f66;
 }
-
 
 /* .card button{
     font-family: 'Krona One';
@@ -427,7 +456,7 @@ section{
     color: #fffd82;
 } */
 
-.info-div{
+.info-div {
     margin: auto;
     font-family: 'Krona One';
     text-align: center;
@@ -437,14 +466,13 @@ section{
     display: none;
 }
 
-#weather-info-div img,
-#trivia-info-div img{
+#weather-info-div img, #trivia-info-div img {
     max-width: 615px;
     height: 315px;
     border-radius: 10px;
 }
 
-#planner-info-div img{
+#planner-info-div img {
     min-width: 615px;
     height: 315px;
     border-radius: 10px;
@@ -453,7 +481,8 @@ section{
 .icon-link-div {
     margin-top: 80px;
 }
-.icon-link-div a{
+
+.icon-link-div a {
     margin: 22px;
     font-family: 'Krona One';
     padding: 15px 30px;
@@ -463,81 +492,78 @@ section{
     text-decoration: none;
     text-shadow: none;
     display: inline;
-    box-shadow: -4px -4px 15px rgba(255, 255, 255, .05), 
-    4px 4px 15px rgba(0,0,0,0.2);
+    box-shadow: -4px -4px 15px rgba(255, 255, 255, .05), 4px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.icon-link-div a:hover{
-    box-shadow: inset -4px -4px 15px rgba(255, 255, 255, .12),
-    inset 4px 4px 15px rgba(0,0,0,0.8);
+.icon-link-div a:hover {
+    box-shadow: inset -4px -4px 15px rgba(255, 255, 255, .12), inset 4px 4px 15px rgba(0, 0, 0, 0.8);
     color: #428f66;
 }
 
-.div-active{
+.div-active {
     display: block;
 }
 
-.card-active{
-    box-shadow: inset -6px -6px 20px rgba(255, 255, 255, .12),
-    inset 6px 6px 20px rgba(0,0,0,0.8);
+.card-active {
+    box-shadow: inset -6px -6px 20px rgba(255, 255, 255, .12), inset 6px 6px 20px rgba(0, 0, 0, 0.8);
     color: #428f66;
 }
 
-.card-active:hover{
+.card-active:hover {
     color: #428f66;
 }
 
-.card-active h5{
+.card-active h5 {
     color: #fff;
 }
 
-
-.card-active i{
+.card-active i {
     color: #428f66;
-};
-
-.card-inactive{
-    box-shadow: -7px -6px 20px rgba(255, 255, 255, .12),
-    6px 6px 20px rgba(0,0,0,.5);
 }
 
-.card-inactive:hover{
-    box-shadow: -7px -6px 20px rgba(255, 255, 255, .12),
-    6px 6px 20px rgba(0,0,0,.5);
+;
+.card-inactive {
+    box-shadow: -7px -6px 20px rgba(255, 255, 255, .12), 6px 6px 20px rgba(0, 0, 0, .5);
+}
+
+.card-inactive:hover {
+    box-shadow: -7px -6px 20px rgba(255, 255, 255, .12), 6px 6px 20px rgba(0, 0, 0, .5);
     color: #6d6d6d;
     transform: scale(1);
 }
 
-.card-inactive:hover i{
+.card-inactive:hover i {
     color: #6d6d6d;
 }
 
-.card-inactive:hover h5{
+.card-inactive:hover h5 {
     color: #428f66;
 }
 
-.p-div{
+.p-div {
     font-size: 25px;
     line-height: 30px;
     font-family: 'Homemade Apple';
-    padding: 0 100px;
+    padding: 0 140px;
     color: #428f66;
 }
 
-.indent{
+.indent {
     margin-left: 30px;
 }
-.exit-btn{
+
+.exit-btn {
     float: right;
     margin: 0 5px 20px 0;
-    color: #6d6d6d;
+    color: #428f66;
     text-shadow: none;
 }
 
-.exit-btn:hover{
-    color: #428f66;
+.exit-btn:hover {
+    /* color: #428f66; */
     cursor: pointer;
 }
+
 /* #container:hover + #cube { background-color: yellow; } */
 
 /* .trivia-info-div ~ .my-button:hover {
@@ -546,4 +572,5 @@ section{
 .hidden{
     display: none;
 } */
+
 /* Portfolio Section Ends*/

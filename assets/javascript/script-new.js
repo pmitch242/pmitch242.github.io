@@ -44,7 +44,7 @@ $(document).ready(function () {
             introSection.hide();
             optionSection.addClass('animated slideInUp');
             optionSection.show();
-            optionSection.on('animationend', function() {
+            optionSection.on('animationend', function () {
                 backgroundHalf.hide();
             })
         });
@@ -68,20 +68,43 @@ $(document).ready(function () {
         $('body').css('background-color', '#212121');
         portfolioOptionDiv.addClass('animated fadeOut');
         halfMid.addClass('animated fadeOut');
-        // aboutOptionDiv.addClass('animated fadeOut');
+        // aboutOptionDiv.addClass('animated fadeOutLeft');
         halfMid.on('animationend', function () {
-            aboutOptionDiv.addClass('animated slideOutLeft');
-            aboutOptionDiv.on('animationend', function () {
-                portfolioSection.addClass('animated fadeInRight')
-                portfolioSection.css('display', 'flex');
-                portfolioSection.on('animationend', function () {
-                    optionSection.hide();
-                    switchH3.addClass('animated fadeIn');
-                    switchH3.show();
-                    switchOption.css('box-shadow', '4px 4px 8px 0 rgba(0, 0, 0, .4)');
+            optionSection.animate({ width: 'hide' }, 750).delay(100).fadeOut(100, function () {
+                portfolioSection.fadeIn('slow', function () {
+                    switchH3.fadeIn();
+                    $('.navbar').fadeIn();
+                    $('.links-div').fadeIn();
                 });
             });
+
+
+            // aboutOptionDiv.on('animationend', function () {
+            //     aboutOptionDiv.removeClass('animated slideOutLeft');
+
+            // optionSection.addClass('animated slow slideOutLeft');
+            // optionSection.on('animationend', function () {
+            //     optionSection.fadeOut();
+            // })
+            // aboutOptionDiv.hide();
+            // optionSection.hide();
+
+
+
+            //     optionSection.addClass('animated slideOutRight');
+            // });
+            // optionSection.hide();
+
         })
+        // portfolioSection.show();
+        // portfolioSection.addClass('animated fadeIn')
+        // portfolioSection.on('animationend', function () {
+        // optionSection.hide();
+        // switchH3.addClass('animated fadeIn');
+        // switchH3.show();
+        // });
+
+        // })
     });
 
 
@@ -92,7 +115,8 @@ $(document).ready(function () {
             function () {
                 let cardDataId = $(this).attr('data-id');
                 $('.p-div').hide();
-                $(this).addClass('animated bounce infinite slow');
+                $(this).css('cursor', 'pointer');
+                $(this).addClass('animated bounce');
                 $(this).children('.card-body').css('transform', 'scale(0.98)')
                 $('.info-div').each(function () {
                     if ($(this).attr('data-id') === cardDataId + 'a') {
@@ -108,7 +132,7 @@ $(document).ready(function () {
             function () {
                 $('.p-div').show();
                 let cardDataId = $(this).attr('data-id');
-                $(this).removeClass('animated bounce infinite slow');
+                $(this).removeClass('animated bounce');
                 $('.card-body').css('transform', 'scale(1)')
                 $('.info-div').each(function () {
                     if ($(this).attr('data-id') === cardDataId + 'a') {
@@ -130,7 +154,7 @@ $(document).ready(function () {
             switchArrow.show();
             switchOption.css('cursor', 'pointer');
             switchOption.animate({ width: '75px' });
-            switchH3.animate({left: '-45px'});
+            switchH3.animate({ left: '-45px' });
             switchInfo.addClass('animated fadeIn');
             switchInfo.animate({ left: '30px' });
             switchArrow.addClass('animated fadeIn');
