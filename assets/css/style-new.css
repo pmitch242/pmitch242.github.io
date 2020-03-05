@@ -78,16 +78,16 @@ section {
 .links-div {
     height: 80vh;
     position: absolute;
-    right: 0;
     margin-right: 40px;
     padding: 12% 0;
     margin-top: 6%;
     text-align: center;
-    border-left: 1px #6d6d6d solid;
+    border-left: 1px #fff solid;
     display: none;
 }
 
 .links-div ul {
+    list-style-type: none;
     padding-left: 25px;
 }
 
@@ -335,13 +335,85 @@ section {
     transform: rotate(90deg);
 }
 
+.about-container {
+    height: 100%;
+    width: 100vw;
+}
+
+.images-div {
+    background-image: url(../images/about/background-image-laptop-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    content: "";
+    margin: 5rem 0 1rem;
+    padding-left: 0;
+    height: 85%;
+    width: 70%;
+}
+
 ;
+.about-info-div {
+    position: absolute;
+}
+
+.about-info-div {
+    content: "";
+    position: absolute;
+    top: 20%;
+    right: 15%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Krona One';
+    background-color: #353535;
+    color: #fff;
+    width: 38%;
+    height: 61%;
+    padding: 60px;
+}
+
+.about-info-div h3 {
+    color: #428f66;
+}
+
+.about-info-div ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+.about-info-div ul li {
+    margin-top: 40px;
+}
+
+.about-btn-div {
+    position: absolute;
+    top: 80%;
+    right: -10%;
+}
+
+.about-btn-div button {
+    background-color: #428f66;
+    border: none;
+    margin-right: -2px;
+    width: 60px;
+    height: 60px;
+}
+
+input, button, submit { 
+    border:none; 
+} 
+
+.about-btn-div button:hover {
+    color: #fff;
+}
+
 /* About Section Ends*/
 
 /* Portfolio Section */
-.switch-btn{
+
+.switch-btn {
     background-color: #f6f8ff;
 }
+
 .switch-btn {
     width: 60px;
     /* width: 75px; */
@@ -353,6 +425,7 @@ section {
     color: #428f66;
     display: none;
 }
+
 /* .switch-clickable{
     box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, .4);
 } */
@@ -383,8 +456,9 @@ section {
     left: 42px;
     transform: rotate(-90deg);
     display: none;
-};
+}
 
+;
 #portfolio-section {
     background-color: #212121;
 }

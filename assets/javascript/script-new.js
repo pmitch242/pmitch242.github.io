@@ -1,6 +1,5 @@
 $(document).ready(function () {
     // =====================NOT USING!!!=====================
-    const navbar = $('#navbar');
     const triviaBtn = $('#trivia-btn');
     const triviaInfoDiv = $('#trivia-info-div');
     const triviaImg = $('#trivia-img');
@@ -9,6 +8,8 @@ $(document).ready(function () {
     // =======================================================
 
     // =====================USING!!!!!!!!=====================
+    const navbar = $('.navbar');
+    const linksDiv = $('.links-div');
     const introSection = $('#intro-section');
     const optionSection = $('#option-section');
     const aboutBtn = $('.about-btn');
@@ -29,6 +30,27 @@ $(document).ready(function () {
     const halfMid = $('.half-mid');
     // =======================================================
 
+    // ========================arrays=========================
+    const aboutMeInfo = [
+        {
+            'info': [
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur augue eget risus vulputate sodales. Sed sed felis a odio consectetur tincidunt ac in.',
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur augue eget risus vulputate sodales. Sed sed felis a odio consectetur tincidunt ac in.',
+            ]
+        },
+        {
+            'info': [
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur augue eget risus vulputate sodales. Sed sed felis a odio consectetur tincidunt ac in.',
+            ]
+        },
+        {
+            'info': [
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur augue eget risus vulputate sodales. Sed sed felis a odio consectetur tincidunt ac in.',
+            ]
+        }
+    ]
+
+    // =======================================================
 
     // portfolioSection.hide();
     // backgroundHalf.hide();
@@ -36,6 +58,8 @@ $(document).ready(function () {
     applyCardHover();
     applySwitchHover();
     landingPageStart();
+
+    let userPick = '';
 
     introNextBtn.on('click', function (event) {
         event.preventDefault();
@@ -51,18 +75,21 @@ $(document).ready(function () {
     });
 
     aboutBtn.on('click', function (event) {
+        userPick = 'about';
         event.preventDefault()
         optionSection.css('background-color', '#f6f8ff')
         portfolioOptionDiv.addClass('animated slideOutRight');
         aboutOptionDiv.addClass('animated fadeOutRight')
         portfolioOptionDiv.on('animationend', function () {
             optionSection.hide();
+            setAboutPage();
             aboutSection.css('display', 'flex');
         });
     });
 
     portfolioBtn.on('click', function (event) {
         event.preventDefault();
+        userPick = 'portfolio';
         switchOption.show();
         $('body').css('background-image', 'none');
         $('body').css('background-color', '#212121');
@@ -72,9 +99,10 @@ $(document).ready(function () {
         halfMid.on('animationend', function () {
             optionSection.animate({ width: 'hide' }, 750).delay(100).fadeOut(100, function () {
                 portfolioSection.fadeIn('slow', function () {
+                    setAboutPage();
                     switchH3.fadeIn();
                     $('.navbar').fadeIn();
-                    $('.links-div').fadeIn();
+                    linksDiv.fadeIn();
                 });
             });
 
@@ -265,4 +293,88 @@ $(document).ready(function () {
         })
     };
 
+    function setAboutPage() {
+        navbar.fadeIn();
+        linksDiv.fadeIn()
+
+        if (userPick === 'about') {
+            console.log('In About');
+            createList();
+            navbar.css('padding', '2% 0%');
+            $('.navbar-brand').css({
+                'color': '#212121',
+                'right': '50%'
+            });
+            $('.navbar .btn').css('float', 'right')
+            linksDiv.css({
+                'left': '0',
+                'border-left': 'none',
+                'border-right': '1px #212121 solid',
+                'margin-right': '0',
+                'padding': '12% 1%',
+
+            });
+            $('.links-div ul').css({
+                'padding-left': '0',
+                'padding-inline-start': '0',
+            });
+            $('.links-div ul li a').css({
+                'color': '#212121'
+            });
+            $('.links-div ul li a').hover(
+                function () {
+                    $(this).css('color', '#428f66')
+                },
+                function () {
+                    $(this).css('color', '#212121')
+                }
+            );
+
+        }
+
+        if (userPick === 'portfolio') {
+            console.log('In Portfolio');
+            linksDiv.css('right', '0');
+        }
+    }
+
+    function createList() {
+        let currentPage = 0;
+        console.log('The current page is: ' + currentPage);
+        for (let i = 0; i < aboutMeInfo[currentPage].info.length; i++) {
+            console.log('##################');
+            console.log(aboutMeInfo[currentPage].info[i]);
+            console.log('##################');
+        }
+
+        $('#sub-btn').on('click', function () {
+            if (currentPage !== 0) {
+                currentPage--;
+                for (let i = 0; i < aboutMeInfo[currentPage].info.length; i++) {
+                    console.log('##################');
+                    console.log(aboutMeInfo[currentPage].info[i]);
+                    console.log('##################');
+                }
+            }
+        });
+
+        $('#add-btn').on('click', function () {
+            if (currentPage !== (aboutMeInfo.length - 1)) {
+                currentPage++;
+                for (let i = 0; i < aboutMeInfo[currentPage].info.length; i++) {
+                    console.log('##################');
+                    console.log(aboutMeInfo[currentPage].info[i]);
+                    console.log('##################');
+                }
+            }
+        });
+
+        // for (let i = 0; i < aboutMeInfo.length; i++) {
+        //     console.log(aboutMeInfo[i]);
+        //     for(let j=0; j < aboutMeInfo[i].info.length; j++){
+        //         console.log(aboutMeInfo[i].info.length);
+        //         console.log(aboutMeInfo[i].info[j]);
+        //     }
+        // }
+    }
 });
