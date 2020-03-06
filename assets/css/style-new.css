@@ -340,18 +340,25 @@ section {
     width: 100vw;
 }
 
-.images-div {
-    background-image: url(../images/about/background-image-laptop-1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    content: "";
+.image-div {
     margin: 5rem 0 1rem;
     padding-left: 0;
     height: 85%;
     width: 70%;
+    overflow: hidden;
 }
 
-;
+.image-slide{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.image-div img{
+    width: 100%;
+    height: 100%;
+}
+
 .about-info-div {
     position: absolute;
 }
@@ -384,6 +391,23 @@ section {
     margin-top: 40px;
 }
 
+.ul-div {
+    height: 90%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.ul-slide{
+    width: 100%;
+    height: 100%;
+    display: -webkit-inline-box;
+}
+
+.ul-div ul{
+    width: 100%;
+    height: 100%;
+}
+
 .about-btn-div {
     position: absolute;
     top: 80%;
@@ -398,12 +422,34 @@ section {
     height: 60px;
 }
 
-input, button, submit { 
-    border:none; 
-} 
+.about-btn-div button:focus {
+    outline: none;
+}
 
 .about-btn-div button:hover {
     color: #fff;
+}
+
+.about-enable {
+    background-color: #428f66;
+    border: none;
+    margin-right: -2px;
+    width: 60px;
+    height: 60px;
+}
+
+.about-disable {
+    cursor: default;
+}
+
+;
+.about-disable {
+    cursor: default;
+}
+
+;
+.about-disable i {
+    opacity: .2;
 }
 
 /* About Section Ends*/

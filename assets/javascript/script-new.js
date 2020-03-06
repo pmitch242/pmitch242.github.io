@@ -28,24 +28,33 @@ $(document).ready(function () {
     const switchInfo = $('.switch-info');
     const switchArrow = $('.switch-arrow');
     const halfMid = $('.half-mid');
+    const imageSlide = $('.image-slide');
+    const images = $('.image-div img')
+    const ulSlide = $('.ul-slide');
+    const ul = $('.ul-div ul')
     // =======================================================
+
+    let currentPage = 0;
+    let counter = 1;
+    let ulCounter = 1;
+    let size;
+    let ulSize;
 
     // ========================arrays=========================
     const aboutMeInfo = [
         {
             'info': [
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur augue eget risus vulputate sodales. Sed sed felis a odio consectetur tincidunt ac in.',
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur augue eget risus vulputate sodales. Sed sed felis a odio consectetur tincidunt ac in.',
+                'Integer pharetra libero sed tortor fringilla sollicitudin. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.']
+        },
+        {
+            'info': [
+                'Maecenas enim nisi, ullamcorper vel convallis ut, lacinia ac nulla. Praesent non molestie justo. Morbi pellentesque ex et mollis volutpat. Aenean facilisis ante id ipsum bibendum dignissim. Praesent ac faucibus neque. Proin et turpis eros.',
             ]
         },
         {
             'info': [
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur augue eget risus vulputate sodales. Sed sed felis a odio consectetur tincidunt ac in.',
-            ]
-        },
-        {
-            'info': [
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras efficitur augue eget risus vulputate sodales. Sed sed felis a odio consectetur tincidunt ac in.',
+                'Nullam mattis dapibus elit. Donec congue purus ac mauris facilisis placerat. Aliquam ut hendrerit turpis. Duis et faucibus sapien.',
             ]
         }
     ]
@@ -84,6 +93,10 @@ $(document).ready(function () {
             optionSection.hide();
             setAboutPage();
             aboutSection.css('display', 'flex');
+            // =================================================================
+            // size = images[0].clientWidth;
+            // console.log(size);
+            createSlider();
         });
     });
 
@@ -298,8 +311,8 @@ $(document).ready(function () {
         linksDiv.fadeIn()
 
         if (userPick === 'about') {
-            console.log('In About');
-            createList();
+            // createList();
+            // createSlider();
             navbar.css('padding', '2% 0%');
             $('.navbar-brand').css({
                 'color': '#212121',
@@ -338,43 +351,61 @@ $(document).ready(function () {
         }
     }
 
-    function createList() {
-        let currentPage = 0;
-        console.log('The current page is: ' + currentPage);
-        for (let i = 0; i < aboutMeInfo[currentPage].info.length; i++) {
-            console.log('##################');
-            console.log(aboutMeInfo[currentPage].info[i]);
-            console.log('##################');
-        }
+    function createSlider() {
+        size = imageSlide.innerWidth();
+        ulSize = ulSlide.innerWidth();
+        console.log(size);
+        console.log(counter);
+
+        imageSlide.css('transform', 'translateX(' + (-size * counter) + 'px)');
+        ulSlide.css('transform', 'translateX(' + (-ulSize * counter) + 'px)');
 
         $('#sub-btn').on('click', function () {
-            if (currentPage !== 0) {
-                currentPage--;
-                for (let i = 0; i < aboutMeInfo[currentPage].info.length; i++) {
-                    console.log('##################');
-                    console.log(aboutMeInfo[currentPage].info[i]);
-                    console.log('##################');
-                }
-            }
+            if (counter <= 0) return;
+            imageSlide.css('transition', 'transform 0.4s ease-in-out');
+            ulSlide.css('transition', 'transform 0.4s ease-in-out');
+            counter--;
+            ulCounter--;
+            imageSlide.css('transform', `translateX(${-size * counter}px)`);
+            ulSlide.css('transform', `translateX(${-ulSize * ulCounter}px)`);
+
         });
 
         $('#add-btn').on('click', function () {
-            if (currentPage !== (aboutMeInfo.length - 1)) {
-                currentPage++;
-                for (let i = 0; i < aboutMeInfo[currentPage].info.length; i++) {
-                    console.log('##################');
-                    console.log(aboutMeInfo[currentPage].info[i]);
-                    console.log('##################');
-                }
-            }
+            if (counter >= images.length - 1) return;
+            imageSlide.css('transition', 'transform 0.4s ease-in-out');
+            ulSlide.css('transition', 'transform 0.4s ease-in-out');
+            counter++;
+            ulCounter++;
+            imageSlide.css('transform', `translateX(${-size * counter}px)`);
+            ulSlide.css('transform', `translateX(${-ulSize * ulCounter}px)`);
         });
 
-        // for (let i = 0; i < aboutMeInfo.length; i++) {
-        //     console.log(aboutMeInfo[i]);
-        //     for(let j=0; j < aboutMeInfo[i].info.length; j++){
-        //         console.log(aboutMeInfo[i].info.length);
-        //         console.log(aboutMeInfo[i].info[j]);
-        //     }
-        // }
+        imageSlide.on('transitionend', function () {
+            if (images[counter].id === 'last-clone') {
+                imageSlide.css('transition', 'none');
+                counter = images.length - 2;
+                imageSlide.css('transform', `translateX(${-size * counter}px)`);
+            }
+            else if (images[counter].id === 'first-clone') {
+                imageSlide.css('transition', 'none');
+                counter = images.length - counter;
+                imageSlide.css('transform', `translateX(${-size * counter}px)`);
+            }
+        })
+
+        ulSlide.on('transitionend', function () {
+            if (ul[ulCounter].id === 'last-clone-ul') {
+                ulSlide.css('transition', 'none');
+                ulCounter = ul.length - 2;
+                ulSlide.css('transform', `translateX(${-ulSize * ulCounter}px)`);
+            }
+            else if (ul[ulCounter].id === 'first-clone-ul') {
+                ulSlide.css('transition', 'none');
+                ulCounter = ul.length - ulCounter;
+                ulSlide.css('transform', `translateX(${-ulSize * ulCounter}px)`);
+            }
+        })
     }
+
 });
