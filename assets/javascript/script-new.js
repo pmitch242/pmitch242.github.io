@@ -32,9 +32,8 @@ $(document).ready(function () {
     const images = $('.image-div img')
     const ulSlide = $('.ul-slide');
     const ul = $('.ul-div ul')
-    // =======================================================
+    // ======================Variables=======================
 
-    let currentPage = 0;
     let counter = 1;
     let ulCounter = 1;
     let size;
@@ -60,10 +59,6 @@ $(document).ready(function () {
     ]
 
     // =======================================================
-
-    // portfolioSection.hide();
-    // backgroundHalf.hide();
-    // optionSection.hide();
     applyCardHover();
     applySwitchHover();
     landingPageStart();
@@ -72,7 +67,7 @@ $(document).ready(function () {
 
     introNextBtn.on('click', function (event) {
         event.preventDefault();
-        introSection.addClass('animated fadeOut');
+        introSection.addClass('animated fast fadeOut');
         introSection.on('animationend', function () {
             introSection.hide();
             optionSection.addClass('animated slideInUp');
@@ -86,16 +81,13 @@ $(document).ready(function () {
     aboutBtn.on('click', function (event) {
         userPick = 'about';
         event.preventDefault()
-        optionSection.css('background-color', '#f6f8ff')
+        optionSection.css('background-color', '#efefef')
         portfolioOptionDiv.addClass('animated slideOutRight');
         aboutOptionDiv.addClass('animated fadeOutRight')
         portfolioOptionDiv.on('animationend', function () {
             optionSection.hide();
             setAboutPage();
             aboutSection.css('display', 'flex');
-            // =================================================================
-            // size = images[0].clientWidth;
-            // console.log(size);
             createSlider();
         });
     });
@@ -227,12 +219,6 @@ $(document).ready(function () {
 
     };
 
-    function resetSwitch() {
-        switchOption.animate({ width: '60px' });
-        switchH3.animate({ left: '-52px' });
-        switchArrow.animate({ left: '42px' });
-    }
-
     card.on('click', function () {
         let thisCard = $(this);
         let cardDataId = $(this).attr('data-id');
@@ -297,8 +283,8 @@ $(document).ready(function () {
         introDiv.css('visibility', 'visible');
         introDiv.addClass('animated slideInLeft');
         introDiv.on('animationend', function () {
-            introNextBtn.css('visibility', 'visible');
             introNextBtn.addClass('animated bounceInUp');
+            introNextBtn.css('visibility', 'visible');
             introNextBtn.on('animationend', function () {
                 introNextBtn.removeClass('bounceInUp');
                 introNextBtn.addClass('infinite bounce slow');
@@ -318,11 +304,11 @@ $(document).ready(function () {
                 'color': '#212121',
                 'right': '50%'
             });
-            $('.navbar .btn').css('float', 'right')
+            // $('.navbar .btn').css('float', 'right')
             linksDiv.css({
                 'left': '0',
                 'border-left': 'none',
-                'border-right': '1px #212121 solid',
+                'border-right': '1px #fff solid',
                 'margin-right': '0',
                 'padding': '12% 1%',
 
@@ -331,15 +317,15 @@ $(document).ready(function () {
                 'padding-left': '0',
                 'padding-inline-start': '0',
             });
-            $('.links-div ul li a').css({
-                'color': '#212121'
-            });
+            // $('.links-div ul li a').css({
+            //     'color': '#212121'
+            // });
             $('.links-div ul li a').hover(
                 function () {
                     $(this).css('color', '#428f66')
                 },
                 function () {
-                    $(this).css('color', '#212121')
+                    $(this).css('color', '#fff')
                 }
             );
 
