@@ -24,6 +24,7 @@ $(document).ready(function () {
     const introDiv = $('.intro-div')
     const introNextBtn = $('#intro-next');
     const switchOption = $('.switch-btn');
+    const switchBtnAbout = $('.switch-btn-about');
     const switchH3 = $('.switch-h3');
     const switchInfo = $('.switch-info');
     const switchArrow = $('.switch-arrow');
@@ -79,17 +80,19 @@ $(document).ready(function () {
     });
 
     aboutBtn.on('click', function (event) {
-        userPick = 'about';
         event.preventDefault()
-        optionSection.css('background-color', '#efefef')
-        portfolioOptionDiv.addClass('animated slideOutRight');
-        aboutOptionDiv.addClass('animated fadeOutRight')
-        portfolioOptionDiv.on('animationend', function () {
-            optionSection.hide();
-            setAboutPage();
-            aboutSection.css('display', 'flex');
-            createSlider();
+        userPick = 'about';
+        switchBtnAbout.show();
+
+        $('body').css('background-image', 'none');
+        $('body').css('background-color', '#efefef');
+        halfMid.fadeOut(750, function () {
+            optionSection.animate({ 'margin-left': '100%' }, 1000).delay(100).fadeOut(100, function () {
+                setAboutPage();
+            });
         });
+        // halfMid.on('animationend', function () {
+        // })
     });
 
     portfolioBtn.on('click', function (event) {
@@ -100,9 +103,8 @@ $(document).ready(function () {
         $('body').css('background-color', '#212121');
         portfolioOptionDiv.addClass('animated fadeOut');
         halfMid.addClass('animated fadeOut');
-        // aboutOptionDiv.addClass('animated fadeOutLeft');
         halfMid.on('animationend', function () {
-            optionSection.animate({ width: 'hide' }, 750).delay(100).fadeOut(100, function () {
+            optionSection.animate({ width: 'hide' }, 1000).delay(100).fadeOut(100, function () {
                 portfolioSection.fadeIn('slow', function () {
                     setAboutPage();
                     switchH3.fadeIn();
@@ -111,33 +113,8 @@ $(document).ready(function () {
                 });
             });
 
-
-            // aboutOptionDiv.on('animationend', function () {
-            //     aboutOptionDiv.removeClass('animated slideOutLeft');
-
-            // optionSection.addClass('animated slow slideOutLeft');
-            // optionSection.on('animationend', function () {
-            //     optionSection.fadeOut();
-            // })
-            // aboutOptionDiv.hide();
-            // optionSection.hide();
-
-
-
-            //     optionSection.addClass('animated slideOutRight');
-            // });
-            // optionSection.hide();
-
         })
-        // portfolioSection.show();
-        // portfolioSection.addClass('animated fadeIn')
-        // portfolioSection.on('animationend', function () {
-        // optionSection.hide();
-        // switchH3.addClass('animated fadeIn');
-        // switchH3.show();
-        // });
 
-        // })
     });
 
 
@@ -183,38 +160,33 @@ $(document).ready(function () {
 
     function applySwitchHover() {
         switchOption.mouseenter(function () {
-            switchInfo.show();
+            switchArrow.addClass('animated fadeIn faster');
             switchArrow.show();
             switchOption.css('cursor', 'pointer');
-            switchOption.animate({ width: '75px' });
-            switchH3.animate({ left: '-45px' });
-            switchInfo.addClass('animated fadeIn');
-            switchInfo.animate({ left: '30px' });
-            switchArrow.addClass('animated fadeIn');
-            switchArrow.animate({ left: '52px' });
         })
         switchOption.mouseleave(function () {
-            switchInfo.animate({
-                left: '25px',
-                opacity: 0,
-            }, 250, function () {
-                switchInfo.css('left', '25px');
-                switchInfo.hide();
-            });
             switchArrow.animate({
-                left: '42px',
                 opacity: 0,
             }, 250, function () {
-                switchArrow.css('left', '42px');
                 switchArrow.hide();
             })
-            switchOption.animate({ width: '60px' });
-            switchH3.animate({
-                left: '-52px',
-                transform: 'scale(1)'
-            });
+            // switchOption.animate({ width: '60px' });
             switchArrow.removeClass('animated fadeIn faster');
-            switchInfo.removeClass('animated fadeIn faster');
+        });
+
+        switchOption.mouseenter(function () {
+            switchArrow.addClass('animated fadeIn faster');
+            switchArrow.show();
+            switchOption.css('cursor', 'pointer');
+        })
+        switchOption.mouseleave(function () {
+            switchArrow.animate({
+                opacity: 0,
+            }, 250, function () {
+                switchArrow.hide();
+            })
+            // switchOption.animate({ width: '60px' });
+            switchArrow.removeClass('animated fadeIn faster');
         });
 
     };
@@ -292,13 +264,76 @@ $(document).ready(function () {
         })
     };
 
+    function createSlider() {
+
+        if (size === null || size === '' || size > 0) {
+            return;
+        }
+
+        else {
+            size = imageSlide.innerWidth();
+            ulSize = ulSlide.innerWidth();
+            console.log(size);
+
+            imageSlide.css('transform', 'translateX(' + (-size * counter) + 'px)');
+            ulSlide.css('transform', 'translateX(' + (-ulSize * counter) + 'px)');
+
+            $('#sub-btn').on('click', function () {
+                if (counter <= 0) return;
+                imageSlide.css('transition', 'transform 0.4s ease-in-out');
+                ulSlide.css('transition', 'transform 0.4s ease-in-out');
+                counter--;
+                ulCounter--;
+                imageSlide.css('transform', `translateX(${-size * counter}px)`);
+                ulSlide.css('transform', `translateX(${-ulSize * ulCounter}px)`);
+
+            });
+
+            $('#add-btn').on('click', function () {
+                if (counter >= images.length - 1) return;
+                imageSlide.css('transition', 'transform 0.4s ease-in-out');
+                ulSlide.css('transition', 'transform 0.4s ease-in-out');
+                counter++;
+                ulCounter++;
+                imageSlide.css('transform', `translateX(${-size * counter}px)`);
+                ulSlide.css('transform', `translateX(${-ulSize * ulCounter}px)`);
+            });
+
+            imageSlide.on('transitionend', function () {
+                if (images[counter].id === 'last-clone') {
+                    imageSlide.css('transition', 'none');
+                    counter = images.length - 2;
+                    imageSlide.css('transform', `translateX(${-size * counter}px)`);
+                }
+                else if (images[counter].id === 'first-clone') {
+                    imageSlide.css('transition', 'none');
+                    counter = images.length - counter;
+                    imageSlide.css('transform', `translateX(${-size * counter}px)`);
+                }
+            })
+
+            ulSlide.on('transitionend', function () {
+                if (ul[ulCounter].id === 'last-clone-ul') {
+                    ulSlide.css('transition', 'none');
+                    ulCounter = ul.length - 2;
+                    ulSlide.css('transform', `translateX(${-ulSize * ulCounter}px)`);
+                }
+                else if (ul[ulCounter].id === 'first-clone-ul') {
+                    ulSlide.css('transition', 'none');
+                    ulCounter = ul.length - ulCounter;
+                    ulSlide.css('transform', `translateX(${-ulSize * ulCounter}px)`);
+                }
+            })
+        }
+    }
+
     function setAboutPage() {
         navbar.fadeIn();
         linksDiv.fadeIn()
 
         if (userPick === 'about') {
-            // createList();
-            // createSlider();
+            aboutSection.fadeIn();
+            createSlider();
             navbar.css('padding', '2% 0%');
             $('.navbar-brand').css({
                 'color': '#212121',
@@ -306,9 +341,8 @@ $(document).ready(function () {
             });
             // $('.navbar .btn').css('float', 'right')
             linksDiv.css({
-                'left': '0',
-                'border-left': 'none',
-                'border-right': '1px #fff solid',
+                'left': '5rem',
+                'border': 'none',
                 'margin-right': '0',
                 'padding': '12% 1%',
 
@@ -317,81 +351,13 @@ $(document).ready(function () {
                 'padding-left': '0',
                 'padding-inline-start': '0',
             });
-            // $('.links-div ul li a').css({
-            //     'color': '#212121'
-            // });
-            $('.links-div ul li a').hover(
-                function () {
-                    $(this).css('color', '#428f66')
-                },
-                function () {
-                    $(this).css('color', '#fff')
-                }
-            );
-
         }
 
         if (userPick === 'portfolio') {
-            console.log('In Portfolio');
             linksDiv.css('right', '0');
         }
     }
 
-    function createSlider() {
-        size = imageSlide.innerWidth();
-        ulSize = ulSlide.innerWidth();
-        console.log(size);
-        console.log(counter);
 
-        imageSlide.css('transform', 'translateX(' + (-size * counter) + 'px)');
-        ulSlide.css('transform', 'translateX(' + (-ulSize * counter) + 'px)');
-
-        $('#sub-btn').on('click', function () {
-            if (counter <= 0) return;
-            imageSlide.css('transition', 'transform 0.4s ease-in-out');
-            ulSlide.css('transition', 'transform 0.4s ease-in-out');
-            counter--;
-            ulCounter--;
-            imageSlide.css('transform', `translateX(${-size * counter}px)`);
-            ulSlide.css('transform', `translateX(${-ulSize * ulCounter}px)`);
-
-        });
-
-        $('#add-btn').on('click', function () {
-            if (counter >= images.length - 1) return;
-            imageSlide.css('transition', 'transform 0.4s ease-in-out');
-            ulSlide.css('transition', 'transform 0.4s ease-in-out');
-            counter++;
-            ulCounter++;
-            imageSlide.css('transform', `translateX(${-size * counter}px)`);
-            ulSlide.css('transform', `translateX(${-ulSize * ulCounter}px)`);
-        });
-
-        imageSlide.on('transitionend', function () {
-            if (images[counter].id === 'last-clone') {
-                imageSlide.css('transition', 'none');
-                counter = images.length - 2;
-                imageSlide.css('transform', `translateX(${-size * counter}px)`);
-            }
-            else if (images[counter].id === 'first-clone') {
-                imageSlide.css('transition', 'none');
-                counter = images.length - counter;
-                imageSlide.css('transform', `translateX(${-size * counter}px)`);
-            }
-        })
-
-        ulSlide.on('transitionend', function () {
-            if (ul[ulCounter].id === 'last-clone-ul') {
-                ulSlide.css('transition', 'none');
-                ulCounter = ul.length - 2;
-                ulSlide.css('transform', `translateX(${-ulSize * ulCounter}px)`);
-            }
-            else if (ul[ulCounter].id === 'first-clone-ul') {
-                ulSlide.css('transition', 'none');
-                ulCounter = ul.length - ulCounter;
-                ulSlide.css('transform', `translateX(${-ulSize * ulCounter}px)`);
-            }
-        })
-    }
 
 });
