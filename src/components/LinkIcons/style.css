@@ -1,6 +1,6 @@
 .icon-div{
     list-style-type: none;
-    display: inline-flex;
+    display: flex;
     padding: 0;
 }
 
