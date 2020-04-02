@@ -1,15 +1,30 @@
 import React, { Component } from 'react';
 import './style.css'
 import { Container, Button } from 'react-bootstrap';
+import { Redirect } from 'react-router-dom';
 
 export default class About extends Component {
+    constructor(props) {
+        super(props);
+        this.state={
+            redirect: null,
+        }
+    }
 
     handleSubmit = () =>{
-        console.log('This bitch hit me!!!!!!!!!!!!!!')
+        this.setState({ redirect: true });
     }
+
+    handleRedirect = () => {
+        if(this.state.redirect){
+            return <Redirect to ='/portfolio'/>
+        }
+    }
+
     render() {
         return (
             <Container>
+                {this.handleRedirect()}
                 <h1>Phill Mitchell-Matsuyama</h1>
 
                 <div className='about'>

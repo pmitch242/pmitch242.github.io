@@ -14,7 +14,7 @@ export default class Home extends Component {
                     <h1>Phill</h1>
                 </div>
                 <LinksIcons />
-                <span className='arrow-next'><FontAwesomeIcon icon={faChevronDown} /></span>
+                <a href='/about' className='arrow-next'><FontAwesomeIcon icon={faChevronDown} /></a>
             </Container>
         )
     }
