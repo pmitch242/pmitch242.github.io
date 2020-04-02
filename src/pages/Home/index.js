@@ -9,10 +9,12 @@ export default class Home extends Component {
     render() {
         return (
             <Container>
-                <h2>This is</h2>
-                <h1>Phill</h1>
+                <div className='intro-name-div'>
+                    <h2>This is</h2>
+                    <h1>Phill</h1>
+                </div>
                 <LinksIcons />
-                <span><FontAwesomeIcon icon={ faChevronDown } /></span>
+                <span className='arrow-next'><FontAwesomeIcon icon={faChevronDown} /></span>
             </Container>
         )
     }
