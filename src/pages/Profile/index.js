@@ -14,7 +14,7 @@ export default class Profile extends Component {
                         <Col>
                         <Switch>
                             <Route path='/about'><About /></Route>
-                            <Route path='/profolio'><Portfolio /></Route>
+                            <Route path='/portfolio'><Portfolio /></Route>
                         </Switch>                            
                         </Col>
                     </Row>
