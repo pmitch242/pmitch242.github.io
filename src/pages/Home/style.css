@@ -3,6 +3,17 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    padding: 0;
+}
+
+.home-container::before{
+    content: '';
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-color: #3ea27d;
+    opacity: .6;
+    position: fixed;
 }
 
 .intro-name-div{
