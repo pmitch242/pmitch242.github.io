@@ -1,0 +1,25 @@
+.portfolio-container h1{
+    margin-bottom: 20px;
+}
+
+.project-card-image{
+    width: 247px;
+    height: 135px;
+    border-radius: 6px;
+}
+
+.portfolio-display{
+    overflow-y: scroll;
+    height: 80vh;
+}
+
+.project-card{
+    margin-bottom: 20px;
+    height: 325px;
+}
+
+.project-card .card-link{
+    position: relative;
+    bottom: 0;
+}
+
