@@ -1,0 +1,26 @@
+body{
+    background-color: #ffffff;
+}
+
+.about-container{
+    height: 100vh;
+    padding: 50px 65px;
+}
+
+.about-container .row{
+    margin-top: 25px;
+    height: inherit;
+}
+
+.about-container .about{
+    position: relative;
+    top: 15%;
+}
+
+.about h2{
+    margin-bottom: 35px;
+}
+
+.about p{
+    margin-bottom: 35px;
+}

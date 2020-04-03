@@ -8,7 +8,7 @@ import './style.css';
 export default class Home extends Component {
     render() {
         return (
-            <Container>
+            <Container className='home-container'>
                 <div className='intro-name-div'>
                     <h2>This is</h2>
                     <h1>Phill</h1>

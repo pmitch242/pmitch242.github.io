@@ -23,9 +23,9 @@ export default class About extends Component {
 
     render() {
         return (
-            <Container>
+            <Container className='about-container'>
                 {this.handleRedirect()}
-                <h1>Phill Mitchell-Matsuyama</h1>
+                <h3>Phill Mitchell-Matsuyama</h3>
 
                 <div className='about'>
                     <h2>Full Stack Developer</h2>
