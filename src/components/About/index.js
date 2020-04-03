@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import './style.css'
 import { Container, Button } from 'react-bootstrap';
 import { Redirect } from 'react-router-dom';
+import LinkIcons from '../LinkIcons'
+import './style.css'
 
 export default class About extends Component {
     constructor(props) {
@@ -28,7 +29,7 @@ export default class About extends Component {
                 <h3>Phill Mitchell-Matsuyama</h3>
 
                 <div className='about'>
-                    <h2>Full Stack Developer</h2>
+                    <h1>Full Stack Developer</h1>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec interdum dictum risus,
                         a scelerisque tortor ultricies non. Aenean efficitur porttitor dui ut ullamcorper.
@@ -37,8 +38,9 @@ export default class About extends Component {
                         dapibus diam id, maximus dolor. Duis nulla est, scelerisque non pretium eget, pharetra vel sapien.
                         Donec eu consequat nibh. Nullam in est in tortor dapibus ultrices id in orci.
                     </p>
-                    <Button onClick={this.handleSubmit} variant="secondary">Portfolio</Button>{' '}
+                    <Button onClick={this.handleSubmit} variant="outline-dark">PORTFOLIO</Button>
                 </div>
+                <LinkIcons />
             </Container>
         )
     }

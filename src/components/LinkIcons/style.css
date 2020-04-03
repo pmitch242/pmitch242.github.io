@@ -7,3 +7,11 @@
 .icon-div li{
     margin-right: 20px;
 }
+
+.icon-div li:first-child{
+    margin-left: 0;
+}
+
+.icon-div li:last-child{
+    margin-right: 0;
+}

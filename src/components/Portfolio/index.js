@@ -5,7 +5,7 @@ import './style.css'
 export default class Portfolio extends Component{
     render() {
         return (
-            <Container>
+            <Container className= 'portfolio-container'>
                 <h1>Portfolio</h1>
                 <Container>
                     <Row className='portfolio-display'>
