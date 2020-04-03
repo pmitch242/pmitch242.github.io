@@ -7,10 +7,10 @@ import './style.css'
 export default class LinksIcon extends Component{
     render(){
         return <ul className='icon-div'>
-            <li><FontAwesomeIcon icon={ faEnvelopeOpenRegular } /></li>
-            <li><FontAwesomeIcon icon={faLinkedinIn} /></li>
-            <li><FontAwesomeIcon icon={faFile} /></li>
-            <li><FontAwesomeIcon icon={faGithub} /></li>
+            <li><a href='mailto:phill.mitchell21@gmail.com'><FontAwesomeIcon icon={ faEnvelopeOpenRegular } /></a></li>
+            <li><a href='https://www.linkedin.com/in/phillicia-mitchell-matsuyama21/'><FontAwesomeIcon icon={faLinkedinIn} /></a></li>
+            <li><a href='./resume.pdf'><FontAwesomeIcon icon={faFile} /></a></li>
+            <li><a href='https://github.com/pmitch242'><FontAwesomeIcon icon={faGithub} /></a></li>
         </ul>
     }
 }

@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600&display=swap');
-
-body{
+body {
     font-family: 'Nunito', sans-serif;
     color: #000;
 }
+
+.svg-div svg {
+    margin: 70px 73px 0px;
+}
+
+/* @media only screen and (max-width: 1025) {
+    .first-half.col .svg-div{
+        display: none;
+    }
+} */

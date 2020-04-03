@@ -3,6 +3,10 @@
     padding: 50px 65px;
 }
 
+.portfolio-container span{
+    float: right;
+}
+
 .portfolio-display .col{
     padding: 0;
 }

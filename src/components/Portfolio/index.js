@@ -27,6 +27,7 @@ export default class Portfolio extends Component {
         })
         return (
             <Container className='portfolio-container'>
+                <span><a href='/about'>About page..</a></span>
                 <h1>Portfolio</h1>
                 <Container>
                     <Row className='portfolio-display'>
