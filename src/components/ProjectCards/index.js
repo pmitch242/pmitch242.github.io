@@ -9,10 +9,10 @@ export default class ProjectCard extends Component {
         return (
             <Card style={{ width: '18rem' }}>
                 <Card.Body>
-                    <Card.Title className="mb-2 text-muted">this.props.name</Card.Title>
+                    <Card.Title className="mb-2 text-muted">{this.props.name}</Card.Title>
                     <img alt='project' src={this.props.image}/>
                     <Card.Text>
-                        {this.props.prject}.
+                        {this.props.description}.
                     </Card.Text>
                     <Card.Link href={this.props.deployed}>Deployed Link</Card.Link>
                     <Card.Link href={this.props.github}>GitHub Link</Card.Link>

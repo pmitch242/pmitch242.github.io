@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Pop Culture Trivia",
+        "image": "https://github.com/pmitch242/Pop-Culture-Trivia/blob/master/assets/images/preview.png",
+        "github": "https://github.com/pmitch242/Pop-Culture-Trivia",
+        "deployed": "https://pmitch242.github.io/pop-culture-trivia/",
+        "description": "A jeopardy style one player game trivia game."
+    },
+    {
+        "id": 2,
+        "name": "Google Books React",
+        "image": "https://vignette.wikia.nocookie.net/spongebobgalaxy/images/0/07/SpongeBob_SquarePants.png/revision/latest?cb=20171228024014",
+        "github": "https://github.com/pmitch242/google-books",
+        "deployed": "https://young-journey-33791.herokuapp.com/",
+        "description": "A React-based Google Books Search app."
+    },
+    {
+        "id": 3,
+        "name": "Employee Directory",
+        "image": "https://github.com/pmitch242/emp-directory/blob/master/public/assets/preview.PNG",
+        "github": "https://github.com/pmitch242/emp-directory",
+        "deployed": "https://limitless-thicket-16177.herokuapp.com/",
+        "description": "An 'Employee Directory' made with React."
+    },
+    {
+        "id": 4,
+        "name": "Team Tracker",
+        "image": "https://github.com/pmitch242/team-tracker/blob/master/public/preview.PNG",
+        "github": "https://github.com/pmitch242/team-tracker",
+        "deployed": null,
+        "description": "A command-line application for managing a company's employees."
+    },
+    {
+        "id": 5,
+        "name": "Notebook",
+        "image": "https://github.com/pmitch242/notebook/blob/master/public/assets/images/notesPreview.png",
+        "github": "https://github.com/pmitch242/notebook",
+        "deployed": null,
+        "description": "A means to write, save, and delete notes."
+    },
+    {
+        "id": 6,
+        "name": "Might Be Cold",
+        "image": "https://github.com/pmitch242/might-be-cold/blob/master/assets/images/preview.png",
+        "github": "https://github.com/pmitch242/might-be-cold",
+        "deployed": "https://pmitch242.github.io/might-be-cold/",
+        "description": "A weather dashboard that displays weather for any desired city."
+    }
+]
