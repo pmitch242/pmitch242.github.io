@@ -1,12 +1,11 @@
 # Phill Mitchll-Matsuyama - React-Portfolio
 
-This repository ("pmitch242.github.io") is where I will be displaying my work as I continue to learn and grow in my joruney to becoming a full stack developer. This repository not only holds my projects, but it also contains my contact information, my github profile, my linkedIn profile and my resume. 'pmitch242.github.io' is also fully responsive.
+This repository ("pmitch242.github.io") is where I will be displaying my work as I continue to learn and grow in my joruney to becoming a full stack developer. This repository not only holds my projects, but it also contains my contact information, my github profile, my linkedIn profile and my resume.
 
-Link: https://pmitch242.github.io/
+Link: https://phillmitchell.herokuapp.com/
 
 ## pmitch242.github.io Preview
-<img alt="Preview" src="public
-/images/preview.PNG">
+<img alt="Preview" src="public/image/preview.PNG">
 
 
 ## Usage
