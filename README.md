@@ -5,7 +5,8 @@ This repository ("pmitch242.github.io") is where I will be displaying my work as
 Link: https://pmitch242.github.io/
 
 ## pmitch242.github.io Preview
-<img alt="Preview" src="assets/images/preview.PNG">
+<img alt="Preview" src="public
+/images/preview.PNG">
 
 
 ## Usage
