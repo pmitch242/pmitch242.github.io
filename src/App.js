@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from './pages/Home';
 import Profile from './pages/Profile';
+import Portfolio from './components/Portfolio';
 
 
 
@@ -12,9 +13,9 @@ function App() {
     <Router>
       <div>
         <Switch>
-          <Route exact path={['/']} ><Home /></Route>
-          <Route exact path={['/about']}><Profile /></Route>
-          {/* <Route exact path={['/portfolio']}/> */}
+          <Route exact path={'/'} ><Home /></Route>
+          <Route exact path={'/about'}><Profile /></Route>
+          <Route exact path={'/portfolio'}><Portfolio /></Route>
           <Route >
             <h1>No page found</h1>
           </Route>
