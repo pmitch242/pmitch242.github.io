@@ -11,7 +11,7 @@ export default class ProjectCard extends Component {
     }
     render() {
         return (
-            <Card className='project-card'style={{ width: '18rem' }}>
+            <Card className='project-card'>
                 <Card.Body>
                     <Card.Title className="mb-2 text-muted">{this.props.name}</Card.Title>
                     <img className='project-card-image' alt='project' src={this.props.image}/>

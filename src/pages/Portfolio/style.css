@@ -1,12 +1,19 @@
+.fist-halft{
+    display: none;
+}
 .portfolio-container{
     height: 100vh;
-    padding: 50px 65px;
+    padding: 50px 0px;
 }
 
 .portfolio-container span{
     float: right;
 }
 
+.project-card.card {
+    margin: auto;
+    margin-bottom: 40px;
+}
 .portfolio-display .col{
     padding: 0;
 }
