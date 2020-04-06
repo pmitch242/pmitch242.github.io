@@ -12,7 +12,7 @@ export default class Profile extends Component {
             <Router>
                 <Container fluid className='profile-container'>
                     <Row>
-                        <Col xs md={6} className='first-half'>
+                        <Col lg xl={6} className='first-half'>
                             <div className='svg-div'>
                                 <ReactLogo />
                             </div>
