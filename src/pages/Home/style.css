@@ -1,12 +1,13 @@
-.home-container{
+.home-container {
     background-image: url('./ollie.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: 22% 0;
     height: 100vh;
     padding: 0;
 }
 
-.home-container::before{
+.home-container::before {
     content: '';
     display: block;
     width: 100vw;
@@ -16,32 +17,35 @@
     position: fixed;
 }
 
-.intro-name-div{
+.intro-name-div {
     text-align: center;
     position: relative;
     top: 25%;
 }
 
-.intro-name-div h2{
-    font-size: 3rem;
+.intro-name-div h2 {
+    font-size: 2.5rem;
     line-height: 0%;
+    margin-bottom: 10px;
 }
 
-.intro-name-div h1{
-    font-size: 10rem;
+.intro-name-div h1 {
+    font-size: 7rem;
+    color: #ffffff;
 }
 
-.icon-div{
+.icon-div {
     width: fit-content;
     margin: auto;
-    margin-bottom: 20px;
+    margin-top: 35px;
+    margin-bottom: 27px;
 }
 
-.icon-div li{
-margin:0 15px;
+.icon-div li {
+    margin: 0 15px;
 }
 
-.arrow-next{
+.arrow-next {
     text-align: center;
     font-size: 25px;
     color: black;

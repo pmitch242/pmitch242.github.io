@@ -11,7 +11,7 @@ export default class Home extends Component {
             <Container fluid className='home-container'>
                 <div className='intro-name-div'>
                     <h2>This is</h2>
-                    <h1>Phill</h1>
+                    <h1>PHILL</h1>
                     <LinksIcons />
                     <a href='/about' className='arrow-next'><FontAwesomeIcon icon={faChevronDown} /></a>
                 </div>
