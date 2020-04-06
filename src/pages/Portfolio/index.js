@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap'
 import projects from '../../project.json'
-import ProjectCards from '../ProjectCards'
+import ProjectCards from '../../components/ProjectCards'
 import './style.css'
 
 export default class Portfolio extends Component {

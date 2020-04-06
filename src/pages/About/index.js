@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Button } from 'react-bootstrap';
 import { Redirect } from 'react-router-dom';
-import LinkIcons from '../LinkIcons'
+import LinkIcons from '../../components/LinkIcons'
 import './style.css'
 
 export default class About extends Component {

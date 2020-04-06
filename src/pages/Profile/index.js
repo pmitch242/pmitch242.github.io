@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Container, Col, Row } from 'react-bootstrap';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Portfolio from '../../components/Portfolio';
-import About from '../../components/About';
+import Portfolio from '../Portfolio';
+import About from '../About';
 import { ReactComponent as ReactLogo } from './coding.svg';
 import './style.css'
 
