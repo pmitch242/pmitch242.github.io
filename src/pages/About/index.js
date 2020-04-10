@@ -5,27 +5,10 @@ import LinkIcons from '../../components/LinkIcons'
 import './style.css'
 
 export default class About extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            redirect: null,
-        }
-    }
-
-    handleSubmit = () => {
-        this.setState({ redirect: true });
-    }
-
-    handleRedirect = () => {
-        if (this.state.redirect) {
-            return <Redirect to='/portfolio' />
-        }
-    }
 
     render() {
         return (
             <Container className='about-container'>
-                {this.handleRedirect()}
                 <h3>Phill Mitchell-Matsuyama</h3>
 
                 <div className='about'>
@@ -45,7 +28,7 @@ export default class About extends Component {
                         everything can always be improved, and I’m drawn to the nuance and attention to detail
                         required to excel as a front-end developer.
                     </p>
-                    <Button onClick={this.handleSubmit} variant="outline-dark">PORTFOLIO</Button>
+                    <a href='/portfolio'>PORTFOLIO</a>
                 </div>
                 <LinkIcons />
             </Container>

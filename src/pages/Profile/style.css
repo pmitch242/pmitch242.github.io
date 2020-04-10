@@ -7,9 +7,3 @@ body {
 .svg-div svg {
     margin: 30px 73px 50px;
 }
-
-/* @media only screen and (max-width: 1025) {
-    .first-half.col .svg-div{
-        display: none;
-    }
-} */
