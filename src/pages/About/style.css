@@ -12,15 +12,11 @@ body{
 }
 
 .about-container h3{
+    margin-top: 20px;
     margin-bottom: 25px;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.45rem;
 }
-
-/* .about-container .about{
-    position: relative;
-    top: 5%;
-} */
 
 .about h1{
     font-weight: 600;
@@ -33,25 +29,27 @@ body{
     font-weight: 200;
 }
 
-.about .btn{
+/* .about p:last-of-type{
+    margin-bottom: 15px;
+    /* font-weight: 200; */
+
+
+.about a{
     font-size: 1.25rem;
     color: #000;
     font-weight: bolder;
     border: 2.25px solid #000000;
     letter-spacing: .05rem;
-    padding: 6px 30px;
-    margin: 20px 0 50px;
+    padding: 3px 25px;
 }
 
-.about .btn:hover{
+.about a:hover{
     background-color: #000;
     color: #fff;
 }
 
 .about-container .icon-div{
-    /* position: absolute;
-    bottom: 0; */
-    margin: 0px 0;
+    margin: 15px 0 0;
 }
 
 .about-container .icon-div li a{
