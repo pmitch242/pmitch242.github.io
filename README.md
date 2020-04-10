@@ -1,11 +1,11 @@
-# Phill Mitchll-Matsuyama - Responsive-Portfolio
+# Phill Mitchll-Matsuyama - React-Portfolio
 
-This repository ("pmitch242.github.io") is where I will be displaying my work as I continue to learn and grow in my joruney to becoming a full stack developer. This repository not only holds my projects, but it also contains my contact information, my github profile, my linkedIn profile and my resume. 'pmitch242.github.io' is also fully responsive.
+This repository ("pmitch242.github.io") is where I will be displaying my work as I continue to learn and grow in my joruney to becoming a full stack developer. This repository not only holds my projects, but it also contains my contact information, my github profile, my linkedIn profile and my resume.
 
-Link: https://pmitch242.github.io/
+Link: https://phillmitchell.herokuapp.com/
 
 ## pmitch242.github.io Preview
-<img alt="Preview" src="assets/images/preview.png">
+<img alt="Preview" src="public/image/preview.PNG">
 
 
 ## Usage
@@ -13,7 +13,6 @@ About Me  - this section provides the viewer with a short discription about who 
 
 Portfolio - displays projects created by me and teams with me on them.
 
-Contact - allows the viewer to message me directly from the this repository.
 
 ## Credits
 Johns Hopkins full-Stack Bootcamp
@@ -27,7 +26,7 @@ My beautiful wife! Thanks for the support once again woman; I love you starfish!
 ## License
 MIT License
 
-Copyright (c) 2019 pmitch242
+Copyright (c) 2020 pmitch242
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
