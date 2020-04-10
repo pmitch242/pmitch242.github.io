@@ -10,8 +10,9 @@ function App() {
   return (
     <Router>
       <div>
+      <BreakpointProvider>
+
         <Switch>
-        <BreakpointProvider>
 
           <Route exact path={'/'} ><Home /></Route>
             <Route exact path={'/profile'}><Profile /></Route>
@@ -19,8 +20,8 @@ function App() {
           <Route >
             <h1>No page found</h1>
           </Route>
-          </BreakpointProvider>
         </Switch>
+        </BreakpointProvider>
       </div>
     </Router>
   );
