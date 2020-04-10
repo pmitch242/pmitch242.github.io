@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Button } from 'react-bootstrap';
-import { Redirect } from 'react-router-dom';
+import Container  from 'react-bootstrap/Container';
 import LinkIcons from '../../components/LinkIcons'
 import './style.css'
 
