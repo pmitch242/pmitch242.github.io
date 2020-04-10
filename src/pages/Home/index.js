@@ -13,7 +13,7 @@ export default class Home extends Component {
                     <h2>This is</h2>
                     <h1>PHILL</h1>
                     <LinksIcons />
-                    <a href='/about' className='arrow-next'><FontAwesomeIcon icon={faChevronDown} /></a>
+                    <a href='/profile' className='arrow-next'><FontAwesomeIcon icon={faChevronDown} /></a>
                 </div>
             </Container>
         )
