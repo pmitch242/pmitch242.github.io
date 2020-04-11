@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Col } from 'react-bootstrap'
+// , Row
 import projects from '../../project.json'
-import ProjectCards from '../../components/ProjectCards'
+// import ProjectCard from '../../components/ProjectCard'
 import './style.css'
+import ProjectCard from '../../components/ProjectCard';
 
 export default class Portfolio extends Component {
     constructor(props) {
@@ -15,7 +17,7 @@ export default class Portfolio extends Component {
         let cards = projects.map(proj => {
             return (
                 <Col key={proj.id}>
-                    <ProjectCards
+                    <ProjectCard
                         name={proj.name}
                         image={proj.image}
                         description={proj.description}
@@ -27,13 +29,7 @@ export default class Portfolio extends Component {
         })
         return (
             <Container className='portfolio-container'>
-                <span><a href='/about'>About page..</a></span>
-                <h1>Portfolio</h1>
-                <Container>
-                    <Row className='portfolio-display'>
-                        {cards}
-                    </Row>
-                </Container>
+                {cards}
             </Container>
         )
     }
