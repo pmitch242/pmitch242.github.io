@@ -21,9 +21,9 @@ export default class About extends Component {
                         University. 
                     </p>
                     <p>
-                        Despite the long hours (and occasional temper tandrums) that come with being
-                        a developer, I’ve never enjoyed my work as thoroughly as I do when creating and designing a application. Front-end
-                        engineering requires me to think creatively and analytically about problem-solving. I believe
+                        Despite the long hours (and occasional temper tantrums) that comes with being
+                        a developer, I’ve never enjoyed my work as thoroughly as I do when creating and designing an application. Front-End
+                        engineering requires me to think creatively and analytically about the user's experience. I believe
                         everything can always be improved, and I’m drawn to the nuance and attention to detail
                         required to excel as a front-end developer.
                     </p>
