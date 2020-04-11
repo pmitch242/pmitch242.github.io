@@ -58,6 +58,18 @@ body{
     font-size: 1.5rem;
 }
 
-.about-container .icon-div li a:hover{
-    color: #06b92d;
+.about-container .email-icon:hover{
+    color: #ea4335;
+}
+
+.about-container .linkedIn-icon:hover{
+    color: #0073b1;
+}
+
+.about-container .resume-icon:hover{
+    color: #fbb034;
+}
+
+.about-container .github-icon:hover{
+    color: #000000;
 }
