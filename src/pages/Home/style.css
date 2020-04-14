@@ -1,3 +1,7 @@
+/* White: #e8e8e8 */
+/* Green: #00d856 */
+
+
 .home-container {
     background-image: url('./ollie.jpg');
     background-size: cover;
@@ -12,7 +16,7 @@
     display: block;
     width: 100vw;
     height: 100vh;
-    background-color: #0ba554;
+    background-color: #000000;
     background-image: url('./dark-dot.png');
     opacity: .6;
     position: fixed;
@@ -28,11 +32,14 @@
     font-size: 2.5rem;
     line-height: 0%;
     margin-bottom: 10px;
+    color: #e8e8e8;
+    text-shadow: 2px 5px 11px #000000;
 }
 
 .intro-name-div h1 {
     font-size: 7rem;
-    color: #ffffff;
+    color: #00d856;
+    text-shadow: 2px 4px 16px #000000;
 }
 
 .icon-div {
@@ -49,7 +56,7 @@
 .arrow-next {
     text-align: center;
     font-size: 25px;
-    color: black;
+    color: #e8e8e8;
 }
 
 .arrow-next:hover {
