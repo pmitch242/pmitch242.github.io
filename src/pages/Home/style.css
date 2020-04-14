@@ -1,5 +1,6 @@
-/* White: #e8e8e8 */
-/* Green: #00d856 */
+/* White: #ffffff */
+/* Green: #55da65 */
+/* Black Background: #1d1d1d*/
 
 
 .home-container {
@@ -32,13 +33,13 @@
     font-size: 2.5rem;
     line-height: 0%;
     margin-bottom: 10px;
-    color: #e8e8e8;
+    color: #ffffff;
     text-shadow: 2px 5px 11px #000000;
 }
 
 .intro-name-div h1 {
     font-size: 7rem;
-    color: #00d856;
+    color: #55da65;
     text-shadow: 2px 4px 16px #000000;
 }
 
@@ -56,9 +57,9 @@
 .arrow-next {
     text-align: center;
     font-size: 25px;
-    color: #e8e8e8;
+    color: #ffffff;
 }
 
 .arrow-next:hover {
-    color: #1b630e;
+    color: #ffffff;
 }
