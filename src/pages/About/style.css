@@ -1,3 +1,7 @@
+/* White: #ffffff */
+/* Green: #55da65 */
+/* Black Background: #1d1d1d*/
+
 body{
     background-color: #ffffff;
 }
@@ -23,11 +27,13 @@ body{
     font-weight: 400;
     margin-bottom: 10px;
     font-size: 2rem;
+    color: #55da65;
 }
 
 .about p{
     margin-bottom: 20px;
-    font-weight: 200;
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 
 .about p:last-of-type{
@@ -36,9 +42,9 @@ body{
 
 .about a{
     font-size: 1.25rem;
-    color: #000;
+    color: #55da65;
     font-weight: bolder;
-    border: 2.25px solid #000000;
+    border: 2.25px solid #55da65;
     letter-spacing: .05rem;
     padding: 3px 25px;
     text-decoration: none;
