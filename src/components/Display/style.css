@@ -1,1 +1,19 @@
+.previews-div {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
 
+.desktop-view-div {
+    grid-area: 1 / 1 / 6 / 11;
+}
+
+.mobile-view-div {
+    grid-area: 2 / 9 / 8 / 12;
+}
+
+.project-buttons-div{
+    padding: 0 20px;
+}
