@@ -9,6 +9,7 @@ body{
 .about-container{
     height: 100vh;
     padding: .25rem;
+    text-align: center;
 }
 
 .about-container .row{
@@ -36,15 +37,16 @@ body{
     letter-spacing: 1px;
 }
 
-.about p:last-of-type{
-    margin-bottom: 30px;
-}
+/* .about p:last-of-type{
+    margin-bottom: 10px;
+} */
 
 .about a{
     font-size: 1.25rem;
     color: #55da65;
     font-weight: bolder;
     border: 2.25px solid #55da65;
+    border-radius: 20px;
     letter-spacing: .05rem;
     padding: 3px 25px;
     text-decoration: none;
@@ -56,7 +58,19 @@ body{
 } */
 
 .about-container .icon-div{
-    margin: 40px 0 0;
+    margin: 10px auto 0;
+}
+
+.about-container .icon-div li{
+    margin: 0 35px;
+}
+
+.about-container .icon-div li:first-of-type{
+    margin-left: 0;
+}
+
+.about-container .icon-div li:last-of-type{
+    margin-right: 0;
 }
 
 .about-container .icon-div li a{
