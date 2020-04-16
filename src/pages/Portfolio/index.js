@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 // import $ from "jquery";
+import Display from '../../components/Display';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaw, faGamepad, faBookOpen, faStickyNote } from '@fortawesome/free-solid-svg-icons';
 import { Container, Card } from 'react-bootstrap'
@@ -56,7 +57,7 @@ export default class Portfolio extends Component {
                     </li>
                 </ul>
                 <div className='portfolio-display-div'>
-                    <h2>Display area</h2>
+                    <Display />
                 </div>
             </Container>
         )
