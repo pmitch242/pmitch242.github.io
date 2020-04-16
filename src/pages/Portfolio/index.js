@@ -4,7 +4,7 @@ import Display from '../../components/Display';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaw, faGamepad, faBookOpen, faStickyNote } from '@fortawesome/free-solid-svg-icons';
 import { Container, Card } from 'react-bootstrap'
-// import projects from '../../project.json'
+// import projects from '../../project.json';
 import './style.css';
 
 
@@ -12,7 +12,12 @@ export default class Portfolio extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            currentProject: null,
+            desktop: null,
+            mobile: null,
+            github: null,
+            deployed: null,
+            discription: null,
         }
     }
 
@@ -21,7 +26,13 @@ export default class Portfolio extends Component {
             <Container fluid className='portfolio-container'>
                 <ul>
                     <li>
-                        <Card className='project-card yappe'>
+                        <Card 
+                            className='project-card yappe'
+                            desktop='./yappePreview.jpg'
+                            mobile=''
+                            github=''
+                            deployed=''
+                        >
                             <Card.Body>
                                 <FontAwesomeIcon icon={faPaw} />
                                 <h3>yappE</h3>

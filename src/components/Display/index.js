@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import desktopImage  from './images/desktop.png';
+import mobileImage  from './images/mobile.png';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faEnvelopeOpen as faEnvelopeOpenRegular, faFile } from '@fortawesome/free-regular-svg-icons'
 // import { faLinkedinIn, faGithub} from '@fortawesome/free-brands-svg-icons'
@@ -11,10 +13,10 @@ export default class Display extends Component {
                 <h2>{this.props.name}</h2>
                 <div className="previews-div">
                     <div className="desktop-view-div">
-                        {this.props.desktop}
+                        <img alt='Desktop View' src={desktopImage}></img>
                     </div>
                     <div className="mobile-view-div">
-                        {this.props.mobile}
+                        <img alt='Mobile View' src={mobileImage}></img>
                     </div>
                 </div>
                 <div className="project-buttons-div">
