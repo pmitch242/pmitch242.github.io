@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { Container, Col } from 'react-bootstrap'
-// , Row
+// import $ from "jquery";
+import { Container } from 'react-bootstrap'
 import projects from '../../project.json'
-// import ProjectCard from '../../components/ProjectCard'
 import './style.css'
 import ProjectCard from '../../components/ProjectCard';
 
@@ -16,7 +15,7 @@ export default class Portfolio extends Component {
     render() {
         let cards = projects.map(proj => {
             return (
-                <Col key={proj.id}>
+                <li key={proj.id}>
                     <ProjectCard
                         name={proj.name}
                         image={proj.image}
@@ -24,12 +23,17 @@ export default class Portfolio extends Component {
                         deployed={proj?.deployed}
                         github={proj.github}
                     />
-                </Col>
+                </li>
             )
         })
         return (
-            <Container className='portfolio-container'>
-                {cards}
+            <Container fluid className='portfolio-container'>
+                <ul>
+                    {cards}
+                </ul>
+                <div className='portfolio-display-div'>
+                    <h2>Display area</h2>
+                </div>
             </Container>
         )
     }

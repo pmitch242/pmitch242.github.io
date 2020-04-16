@@ -1,0 +1,35 @@
+.portfolio-container{
+    padding: 0;
+}
+
+.portfolio-container ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    overflow-x: auto;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.portfolio-container ul li{
+    margin-right: 20px;
+}
+
+.portfolio-container ul li:first-of-type{
+    margin-left: 20px;
+}
+
+.portfolio-container ul li:last-of-type{
+    padding-right: 20px;
+}
+
+.portfolio-container.project-card {
+    height: 325px;
+    max-width: 18rem;
+    min-width: 15rem;
+    margin-bottom: 20px;
+}
+
+.portfolio-display-div{
+    padding: 0 20px;
+}
