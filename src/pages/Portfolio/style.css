@@ -1,8 +1,8 @@
-.portfolio-container{
+.portfolio-container {
     padding: 0;
 }
 
-.portfolio-container ul{
+.portfolio-container ul {
     list-style: none;
     padding: 0;
     display: flex;
@@ -11,25 +11,46 @@
     margin-bottom: 0;
 }
 
-.portfolio-container ul li{
+.portfolio-container ul li {
     margin-right: 20px;
+    margin-bottom: 25px;
 }
 
-.portfolio-container ul li:first-of-type{
+.portfolio-container ul li:first-of-type {
     margin-left: 20px;
 }
 
-.portfolio-container ul li:last-of-type{
+.portfolio-container ul li:last-of-type {
     padding-right: 20px;
 }
 
-.portfolio-container.project-card {
-    height: 325px;
-    max-width: 18rem;
-    min-width: 15rem;
-    margin-bottom: 20px;
+.project-card {
+    color: #989898;
+    text-align: center;
+    background-color: inherit;
+    width: 15rem;
+    height: 11rem;
+    border-radius: 45px;
+    -webkit-box-shadow: 0px 13px 22px -1px rgba(0, 0, 0, 0.46);
+    -moz-box-shadow: 0px 13px 22px -1px rgba(0, 0, 0, 0.46);
+    box-shadow: 0px 13px 22px -1px rgba(0, 0, 0, 0.46);
 }
 
-.portfolio-display-div{
+.project-card svg {
+    color: #55da65;
+    font-size: 4rem;
+}
+
+.project-card h3 {
+    color: #989898;
+    text-shadow: 0px 3px 16px rgba(0, 0, 0, 0.87);
+}
+
+.yappe h3,
+.notes h3{
+    margin-top: 20px;
+}
+
+.portfolio-display-div {
     padding: 0 20px;
 }

@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 // import $ from "jquery";
-import { Container } from 'react-bootstrap'
-import projects from '../../project.json'
-import './style.css'
-import ProjectCard from '../../components/ProjectCard';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPaw, faGamepad, faBookOpen, faStickyNote } from '@fortawesome/free-solid-svg-icons';
+import { Container, Card } from 'react-bootstrap'
+// import projects from '../../project.json'
+import './style.css';
+
 
 export default class Portfolio extends Component {
     constructor(props) {
@@ -12,24 +14,46 @@ export default class Portfolio extends Component {
 
         }
     }
+
     render() {
-        let cards = projects.map(proj => {
-            return (
-                <li key={proj.id}>
-                    <ProjectCard
-                        name={proj.name}
-                        image={proj.image}
-                        description={proj.description}
-                        deployed={proj?.deployed}
-                        github={proj.github}
-                    />
-                </li>
-            )
-        })
         return (
             <Container fluid className='portfolio-container'>
                 <ul>
-                    {cards}
+                    <li>
+                        <Card className='project-card yappe'>
+                            <Card.Body>
+                                <FontAwesomeIcon icon={faPaw} />
+                                <h3>yappE</h3>
+                            </Card.Body>
+                        </Card>
+                    </li>
+
+                    <li>
+                        <Card className='project-card trivia'>
+                            <Card.Body>
+                                <FontAwesomeIcon icon={faGamepad} />
+                                <h3>Pop Culture Trivia</h3>
+                            </Card.Body>
+                        </Card>
+                    </li>
+
+                    <li>
+                        <Card className='project-card notes'>
+                            <Card.Body>
+                                <FontAwesomeIcon icon={faStickyNote} />
+                                <h3>Notebook</h3>
+                            </Card.Body>
+                        </Card>
+                    </li>
+
+                    <li>
+                        <Card className='project-card google-books'>
+                            <Card.Body>
+                                <FontAwesomeIcon icon={faBookOpen} />
+                                <h3>Google Books React</h3>
+                            </Card.Body>
+                        </Card>
+                    </li>
                 </ul>
                 <div className='portfolio-display-div'>
                     <h2>Display area</h2>
