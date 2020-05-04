@@ -35,7 +35,7 @@ export default class Portfolio extends Component {
                         >
                             <Card.Body>
                                 <FontAwesomeIcon icon={faPaw} />
-                                <h3>yappE</h3>
+                                <h4>yappE</h4>
                             </Card.Body>
                         </Card>
                     </li>
@@ -44,7 +44,7 @@ export default class Portfolio extends Component {
                         <Card className='project-card trivia'>
                             <Card.Body>
                                 <FontAwesomeIcon icon={faGamepad} />
-                                <h3>Pop Culture Trivia</h3>
+                                <h4>Pop Culture Trivia</h4>
                             </Card.Body>
                         </Card>
                     </li>
@@ -53,7 +53,7 @@ export default class Portfolio extends Component {
                         <Card className='project-card notes'>
                             <Card.Body>
                                 <FontAwesomeIcon icon={faStickyNote} />
-                                <h3>Notebook</h3>
+                                <h4>Notebook</h4>
                             </Card.Body>
                         </Card>
                     </li>
@@ -62,7 +62,7 @@ export default class Portfolio extends Component {
                         <Card className='project-card google-books'>
                             <Card.Body>
                                 <FontAwesomeIcon icon={faBookOpen} />
-                                <h3>Google Books React</h3>
+                                <h4>Google Books React</h4>
                             </Card.Body>
                         </Card>
                     </li>
