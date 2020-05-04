@@ -21,12 +21,18 @@ export default class Portfolio extends Component {
         }
     }
 
+    renderDisplay = (project) =>{
+        console.log(project);
+    }
+
     render() {
         return (
             <Container fluid className='portfolio-container'>
                 <ul>
                     <li>
-                        <Card 
+                        <Card
+                            key='yappe'
+                            onClick={() => this.renderDisplay('yappe')} 
                             className='project-card yappe'
                             desktop='./yappePreview.jpg'
                             mobile=''
