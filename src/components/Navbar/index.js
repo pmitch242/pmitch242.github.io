@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 import './style.css';
 
@@ -22,7 +22,9 @@ export default function Navbar() {
     return (
         <div>
             <div id='mySidenav' className='sidenav'>
-                <span className='closebtn' onClick={closeNav}>X</span>
+                <span className='closebtn' onClick={closeNav}>
+                    <FontAwesomeIcon icon={faTimes}/>
+                </span>
                 <a href='/'>Home</a>
                 <a href='/profile'>About</a>
                 <a href='/portfolio'>Portfolio</a>
