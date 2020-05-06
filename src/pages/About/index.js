@@ -27,7 +27,6 @@ export default class About extends Component {
                         everything can always be improved, and I’m drawn to the nuance and attention to detail
                         required to excel as a front-end developer.
                     </p>
-                    <a href='/portfolio'>PORTFOLIO</a>
                 </div>
                 <LinkIcons />
             </Container>
