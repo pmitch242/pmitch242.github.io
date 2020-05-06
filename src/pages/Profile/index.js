@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Container, Col, Row } from 'react-bootstrap';
 import Portfolio from '../Portfolio';
 import About from '../About';
-import './style.css'
+import './style.css';
 import { Breakpoint } from 'react-socks';
 
 export default class Profile extends Component {

@@ -1,4 +1,8 @@
 import React from 'react';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+
 import './style.css';
 
 export default function Navbar() {
@@ -24,7 +28,9 @@ export default function Navbar() {
                 <a href='/portfolio'>Portfolio</a>
             </div>
 
-            <span onClick={openNav}>Open</span>
+            <span onClick={openNav}>
+                <FontAwesomeIcon icon={faBars}/>
+            </span>
         </div>
     )
 }

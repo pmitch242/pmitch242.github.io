@@ -2,7 +2,7 @@
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 99;
     top: 0;
     left: 0;
     background-color: #111;
@@ -33,3 +33,11 @@
     font-size: 36px;
     margin-left: 50px;
   }
+
+   span{
+    position: absolute;
+    right: 19px;
+    top: 5px;
+    font-size: 1.45rem;
+    z-index: 1;
+}
