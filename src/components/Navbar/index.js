@@ -18,7 +18,7 @@ export default function Navbar() {
     return (
         <div>
             <div id='mySidenav' className='sidenav'>
-                <span onClick={closeNav}>X</span>
+                <span className='closebtn' onClick={closeNav}>X</span>
                 <h3>Home</h3>
                 <h3>About</h3>
                 <h3>Portfolio</h3>
