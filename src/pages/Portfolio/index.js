@@ -12,17 +12,32 @@ export default class Portfolio extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            currentProject: null,
-            desktop: null,
-            mobile: null,
-            github: null,
-            deployed: null,
-            discription: null,
+            view: 'yappe'
         }
     }
 
-    renderDisplay = (project) =>{
-        console.log(project);
+    handleChange = (project) => {
+        this.setState({ view: project })
+    }
+
+    renderDisplay = () => {
+        switch (this.state.view) {
+            case 'yappe':
+                console.log('yappe was choosen');
+                return <Display view='yappe'/>;
+            case 'trivia':
+                console.log('trivia was choosen');
+                return <Display view='trivia'/>;
+            case 'google':
+                console.log('google was choosen');
+                return <Display view='google'/>;
+            case 'notebook':
+                console.log('notebook was choosen');
+                return <Display view='notebook'/>;
+            default:
+                console.log('yappe was choosen');
+                return <Display view='yappe'/>;
+        }
     }
 
     render() {
@@ -32,12 +47,8 @@ export default class Portfolio extends Component {
                     <li>
                         <Card
                             key='yappe'
-                            onClick={() => this.renderDisplay('yappe')} 
+                            onClick={() => this.handleChange('yappe')}
                             className='project-card yappe'
-                            desktop='./yappePreview.jpg'
-                            mobile=''
-                            github=''
-                            deployed=''
                         >
                             <Card.Body>
                                 <FontAwesomeIcon icon={faPaw} />
@@ -47,7 +58,11 @@ export default class Portfolio extends Component {
                     </li>
 
                     <li>
-                        <Card className='project-card trivia'>
+                        <Card
+                            key='trivia'
+                            onClick={() => this.handleChange('trivia')}
+                            className='project-card trivia'
+                        >
                             <Card.Body>
                                 <FontAwesomeIcon icon={faGamepad} />
                                 <h4>Pop Culture Trivia</h4>
@@ -56,7 +71,11 @@ export default class Portfolio extends Component {
                     </li>
 
                     <li>
-                        <Card className='project-card notes'>
+                        <Card
+                            key='notebook'
+                            onClick={() => this.handleChange('notebook')}
+                            className='project-card notes'
+                        >
                             <Card.Body>
                                 <FontAwesomeIcon icon={faStickyNote} />
                                 <h4>Notebook</h4>
@@ -65,7 +84,11 @@ export default class Portfolio extends Component {
                     </li>
 
                     <li>
-                        <Card className='project-card google-books'>
+                        <Card
+                            key='google'
+                            onClick={() => this.handleChange('google')}
+                            className='project-card google-books'
+                        >
                             <Card.Body>
                                 <FontAwesomeIcon icon={faBookOpen} />
                                 <h4>Google Books React</h4>
@@ -74,7 +97,7 @@ export default class Portfolio extends Component {
                     </li>
                 </ul>
                 <div className='portfolio-display-div'>
-                    <Display />
+                    {this.renderDisplay()}
                 </div>
             </Container>
         )
