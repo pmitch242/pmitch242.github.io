@@ -23,19 +23,14 @@ export default class Portfolio extends Component {
     renderDisplay = () => {
         switch (this.state.view) {
             case 'yappe':
-                console.log('yappe was choosen');
                 return <Display view='yappe'/>;
             case 'trivia':
-                console.log('trivia was choosen');
                 return <Display view='trivia'/>;
             case 'google':
-                console.log('google was choosen');
                 return <Display view='google'/>;
             case 'notebook':
-                console.log('notebook was choosen');
                 return <Display view='notebook'/>;
             default:
-                console.log('yappe was choosen');
                 return <Display view='yappe'/>;
         }
     }

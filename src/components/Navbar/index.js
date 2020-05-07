@@ -9,7 +9,7 @@ export default function Navbar() {
     // open navbar
     function openNav(e) {
         e.preventDefault();
-        console.log(this); document.getElementById("mySidenav").style.width = "100%";
+        document.getElementById("mySidenav").style.width = "100%";
 
     }
 
