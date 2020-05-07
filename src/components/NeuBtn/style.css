@@ -2,15 +2,33 @@
   position: relative;
   display: inline-block;
   padding: 10px 30px;
+  width: 100%;
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 2px;
-  color: #5a84a2;
-  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: .75px;
+  color: #000000;
+  font-size: 25px;
   border-radius: 40px;
-  box-shadow: -2px -2px 8px rgba(255, 255, 255, 1),
-              -2px -2px 12px rgba(255, 255, 255, 0.5),
+  box-shadow: -2px -2px 8px rgb(0, 0, 0),
+   -2px -2px 12px rgba(49, 49, 49, 0.5),
+    inset 2px 2px 4px rgba(73, 73, 73, 0.1),
+     2px 2px 8px rgb(102, 102, 102);
+}
+
+.neu-btn:hover{
+  box-shadow: inset -2px -2px 8px rgb(0, 0, 0),
+              inset -2px -2px 12px rgba(44, 44, 44, 0.5),
               inset 2px 2px 4px rgba(255, 255, 255, 0.1),
-              2px 2px 8px rgba(0, 0, 0, 1);
+              inset 2px 2px 8px rgb(0, 0, 0);
+  text-decoration: none;
+  
+}
+
+.neu-btn:hover span {
+  color: #55da65;
+  display: inline-block;
+  transform: scale(0.9);
 }
