@@ -26,6 +26,7 @@
 
 .project-card {
     color: #989898;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     background-color: inherit;
     width: 10rem;
@@ -47,7 +48,10 @@
 }
 
 .project-card h4 {
-    font-size: 1.25rem;
+    font-size: 1.05rem;
+    letter-spacing: 1px;
+    color: #989898;
+    text-shadow: 0px 3px 16px rgba(0, 0, 0, 0.87);
 }
 
 .project-card:hover h4 {
@@ -59,12 +63,9 @@
     font-size: 2.5rem;
 }
 
-.project-card h4 {
-    color: #989898;
-    text-shadow: 0px 3px 16px rgba(0, 0, 0, 0.87);
-}
+.yappe h4 {
+    font-size: 1.15rem;
 
-.yappe h4, .notes h4 {
     margin-top: 12px;
 }
 
