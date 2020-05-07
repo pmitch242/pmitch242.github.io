@@ -6,8 +6,9 @@ import triviaDesktopImage from './images/trivia-desktop.PNG';
 import triviaMobileImage from './images/trivia-mobile.png';
 import googleDesktopImage from './images/google-desktop.PNG';
 
+import NeuBtn from '../NeuBtn';
 
-import './style.css'
+import './style.css';
 
 export default function Display(props) {
 
@@ -26,7 +27,7 @@ export default function Display(props) {
                         </div>
                     </div>
                     <div className="project-buttons-div">
-                        BUTTONS
+                        <NeuBtn name='yappE'/>
                     </div>
                 </div>
 
@@ -80,6 +81,7 @@ export default function Display(props) {
             //             BUTTONS
             //     </div>
             //     </div>
+
             default:
                 return <div>
                     <h2>yappE</h2>
