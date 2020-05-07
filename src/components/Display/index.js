@@ -1,9 +1,12 @@
 import React from 'react';
+
 import yappeDesktopImage from './images/yappe-desktop.png';
 import yappeMobileImage from './images/yappe-mobile.png';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faEnvelopeOpen as faEnvelopeOpenRegular, faFile } from '@fortawesome/free-regular-svg-icons'
-// import { faLinkedinIn, faGithub} from '@fortawesome/free-brands-svg-icons'
+import triviaDesktopImage from './images/trivia-desktop.PNG';
+import triviaMobileImage from './images/trivia-mobile.png';
+import googleDesktopImage from './images/google-desktop.PNG';
+
+
 import './style.css'
 
 export default function Display(props) {
@@ -33,11 +36,11 @@ export default function Display(props) {
                     <h2>Google Books (React)</h2>
                     <div className="previews-div">
                         <div className="desktop-view-div">
-                            <img alt='Desktop View' src={yappeDesktopImage}></img>
+                            <img alt='Desktop View' src={googleDesktopImage}></img>
                         </div>
-                        <div className="mobile-view-div">
-                            <img alt='Mobile View' src={yappeMobileImage}></img>
-                        </div>
+                        {/* <div className="mobile-view-div">
+                            <img alt='Mobile View' src={googleMobileImage}></img>
+                        </div> */}
                     </div>
                     <div className="project-buttons-div">
                         BUTTONS
@@ -50,10 +53,10 @@ export default function Display(props) {
                     <h2>Pop Culture Trivia</h2>
                     <div className="previews-div">
                         <div className="desktop-view-div">
-                            <img alt='Desktop View' src={yappeDesktopImage}></img>
+                            <img alt='Desktop View' src={triviaDesktopImage}></img>
                         </div>
                         <div className="mobile-view-div">
-                            <img alt='Mobile View' src={yappeMobileImage}></img>
+                            <img alt='Mobile View' src={triviaMobileImage}></img>
                         </div>
                     </div>
                     <div className="project-buttons-div">
@@ -62,21 +65,21 @@ export default function Display(props) {
                 </div>
 
             // notebook  display
-            case 'notebook':
-                return <div>
-                    <h2>Notebook</h2>
-                    <div className="previews-div">
-                        <div className="desktop-view-div">
-                            <img alt='Desktop View' src={yappeDesktopImage}></img>
-                        </div>
-                        <div className="mobile-view-div">
-                            <img alt='Mobile View' src={yappeMobileImage}></img>
-                        </div>
-                    </div>
-                    <div className="project-buttons-div">
-                        BUTTONS
-                </div>
-                </div>
+            // case 'notebook':
+            //     return <div>
+            //         <h2>Notebook</h2>
+            //         <div className="previews-div">
+            //             <div className="desktop-view-div">
+            //                 <img alt='Desktop View' src={yappeDesktopImage}></img>
+            //             </div>
+            //             <div className="mobile-view-div">
+            //                 <img alt='Mobile View' src={yappeMobileImage}></img>
+            //             </div>
+            //         </div>
+            //         <div className="project-buttons-div">
+            //             BUTTONS
+            //     </div>
+            //     </div>
             default:
                 return <div>
                     <h2>yappE</h2>

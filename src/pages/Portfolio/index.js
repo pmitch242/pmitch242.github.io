@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import $ from "jquery";
 import Display from '../../components/Display';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPaw, faGamepad, faBookOpen, faStickyNote } from '@fortawesome/free-solid-svg-icons';
+import { faPaw, faGamepad, faBookOpen } from '@fortawesome/free-solid-svg-icons';
 import { Container, Card } from 'react-bootstrap'
 // import projects from '../../project.json';
 import './style.css';
@@ -28,8 +28,8 @@ export default class Portfolio extends Component {
                 return <Display view='trivia'/>;
             case 'google':
                 return <Display view='google'/>;
-            case 'notebook':
-                return <Display view='notebook'/>;
+            // case 'notebook':
+            //     return <Display view='notebook'/>;
             default:
                 return <Display view='yappe'/>;
         }
@@ -65,7 +65,7 @@ export default class Portfolio extends Component {
                         </Card>
                     </li>
 
-                    <li>
+                    {/* <li>
                         <Card
                             key='notebook'
                             onClick={() => this.handleChange('notebook')}
@@ -76,7 +76,7 @@ export default class Portfolio extends Component {
                                 <h4>Notebook</h4>
                             </Card.Body>
                         </Card>
-                    </li>
+                    </li> */}
 
                     <li>
                         <Card
