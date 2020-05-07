@@ -27,7 +27,8 @@ export default function Display(props) {
                         </div>
                     </div>
                     <div className="project-buttons-div">
-                        <NeuBtn name='yappE'/>
+                        <NeuBtn name='Website'/>
+                        <NeuBtn name='GitHub'/>
                     </div>
                 </div>
 
