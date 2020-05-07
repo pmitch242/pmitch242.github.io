@@ -9,11 +9,12 @@
 }
 
 .project-title{
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
-    color: #6d6d6d;
+    color: #55da65;
     text-align: center;
-    font-weight: 700;
+    font-weight: 600;
+    text-shadow: 2px 7px 4px rgb(0, 0, 0);
 }
 
 .desktop-view-div {
