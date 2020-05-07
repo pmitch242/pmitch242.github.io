@@ -25,7 +25,7 @@
 }
 
 .project-card {
-    color: #989898;
+    color: #6d6d6d;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     background-color: inherit;
@@ -50,7 +50,7 @@
 .project-card h4 {
     font-size: 1.05rem;
     letter-spacing: 1px;
-    color: #989898;
+    color: #6d6d6d;
     text-shadow: 0px 3px 16px rgba(0, 0, 0, 0.87);
 }
 
@@ -59,7 +59,7 @@
 }
 
 .project-card svg {
-    color: #55da65;
+    color: #6d6d6d;
     font-size: 2.5rem;
 }
 

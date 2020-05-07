@@ -17,7 +17,7 @@ export default function Display(props) {
             // yappe display
             case 'yappe':
                 return <div>
-                    <h2>yappE</h2>
+                    <h2 className='project-title'>yappE</h2>
                     <div className="previews-div">
                         <div className="desktop-view-div">
                             <img alt='Desktop View' src={yappeDesktopImage}></img>
@@ -41,7 +41,7 @@ export default function Display(props) {
             // google books display
             case 'google':
                 return <div>
-                    <h2>Google Books (React)</h2>
+                    <h2 className='project-title'>Google Books (React)</h2>
                     <div className="previews-div">
                         <div className="desktop-view-div">
                             <img alt='Desktop View' src={googleDesktopImage}></img>
@@ -58,7 +58,7 @@ export default function Display(props) {
             // pop culture trivia display
             case 'trivia':
                 return <div>
-                    <h2>Pop Culture Trivia</h2>
+                    <h2 className='project-title'>Pop Culture Trivia</h2>
                     <div className="previews-div">
                         <div className="desktop-view-div">
                             <img alt='Desktop View' src={triviaDesktopImage}></img>
@@ -91,7 +91,7 @@ export default function Display(props) {
 
             default:
                 return <div>
-                    <h2>yappE</h2>
+                    <h2 className='project-title'>yappE</h2>
                     <div className="previews-div">
                         <div className="desktop-view-div">
                             <img alt='Desktop View' src={yappeDesktopImage}></img>
