@@ -1,12 +1,22 @@
 .yappe-color{
     color: #1ee09d;
 }
+.yappe-color-hover:hover{
+    color: #1ee09d;
+}
 .trivia-color{
+    color: #f90000;
+}
+.trivia-color-hover:hover{
     color: #f90000;
 }
 .google-color{
     color: #e9ecef;
 }
+.google-color-hover:hover{
+    color: #e9ecef;
+}
+
 
 .portfolio-container {
     padding: 0;

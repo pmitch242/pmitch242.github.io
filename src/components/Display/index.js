@@ -28,10 +28,12 @@ export default function Display(props) {
                     </div>
                     <div className="project-buttons-div">
                         <NeuBtn
+                            hover='yappe-color-hover'
                             name='Website'
                             link='https://yappeapp.herokuapp.com/'
                         />
                         <NeuBtn
+                            hover='yappe-color-hover'
                             name='GitHub'
                             link='https://github.com/anzook/yappe-app'
                         />
@@ -51,7 +53,16 @@ export default function Display(props) {
                         </div> */}
                     </div>
                     <div className="project-buttons-div">
-                        BUTTONS
+                        <NeuBtn
+                            hover='google-color-hover'
+                            name='Website'
+                            link='https://young-journey-33791.herokuapp.com/'
+                        />
+                        <NeuBtn
+                            hover='google-color-hover'
+                            name='GitHub'
+                            link='https://github.com/pmitch242/google-books'
+                        />
                     </div>
                 </div>
 
@@ -68,7 +79,16 @@ export default function Display(props) {
                         </div>
                     </div>
                     <div className="project-buttons-div">
-                        BUTTONS
+                        <NeuBtn
+                            hover='trivia-color-hover'
+                            name='Website'
+                            link='https://pmitch242.github.io/Pop-Culture-Trivia/'
+                        />
+                        <NeuBtn
+                            hover='trivia-color-hover'
+                            name='GitHub'
+                            link='https://pmitch242.github.io/Pop-Culture-Trivia/'
+                        />
                     </div>
                 </div>
 
@@ -101,8 +121,17 @@ export default function Display(props) {
                         </div>
                     </div>
                     <div className="project-buttons-div">
-                        BUTTONS
-                </div>
+                    <NeuBtn
+                            hover='yappe-color-hover'
+                            name='Website'
+                            link='https://yappeapp.herokuapp.com/'
+                        />
+                        <NeuBtn
+                            hover='yappe-color-hover'
+                            name='GitHub'
+                            link='https://github.com/anzook/yappe-app'
+                        />
+                    </div>
                 </div>
         }
     }
