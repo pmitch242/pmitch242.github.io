@@ -27,8 +27,14 @@ export default function Display(props) {
                         </div>
                     </div>
                     <div className="project-buttons-div">
-                        <NeuBtn name='Website'/>
-                        <NeuBtn name='GitHub'/>
+                        <NeuBtn
+                            name='Website'
+                            link='https://yappeapp.herokuapp.com/'
+                        />
+                        <NeuBtn
+                            name='GitHub'
+                            link='https://github.com/anzook/yappe-app'
+                        />
                     </div>
                 </div>
 
