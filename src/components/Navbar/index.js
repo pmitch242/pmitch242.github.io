@@ -30,7 +30,7 @@ export default function Navbar() {
                 <a href='/portfolio'>Portfolio</a>
             </div>
 
-            <span onClick={openNav}>
+            <span className='nav-icon-span' onClick={openNav}>
                 <FontAwesomeIcon icon={faBars}/>
             </span>
         </div>
