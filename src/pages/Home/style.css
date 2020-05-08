@@ -43,6 +43,11 @@
     text-shadow: 2px 4px 13px #000000;
 }
 
+.intro-name-div h1:hover,
+.intro-name-div h2:hover{
+    cursor: default;
+}
+
 .icon-div {
     width: fit-content;
     margin: auto;
