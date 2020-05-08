@@ -22,7 +22,7 @@ export default function Navbar(props) {
     return (
         <div>
             <div id='mySidenav' className='sidenav'>
-                <span className='closebtn' onClick={closeNav}>
+                <span className={`closebtn ${props.color}`} onClick={closeNav}>
                     <FontAwesomeIcon icon={faTimes}/>
                 </span>
                 <a href='/'>Home</a>
