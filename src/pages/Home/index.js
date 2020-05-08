@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+// import { Breakpoint } from 'react-socks';
+
+
 import { Container } from 'react-bootstrap'
 import LinksIcons from '../../components/LinkIcons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -13,7 +16,15 @@ export default class Home extends Component {
                     <h2>This is</h2>
                     <h1>PHILL</h1>
                     <LinksIcons />
+
+                    {/* <Breakpoint customQuery="(min-width: 992px)"> */}
                     <a href='/profile' className='arrow-next'><FontAwesomeIcon icon={faChevronDown} /></a>
+                    {/* </Breakpoint> */}
+
+                    {/* <Breakpoint customQuery="(max-width: 991px)">
+                        <a href='/about' className='arrow-next'><FontAwesomeIcon icon={faChevronDown} /></a>
+                    </Breakpoint> */}
+
                 </div>
             </Container>
         )

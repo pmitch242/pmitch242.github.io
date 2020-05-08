@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from './pages/Home';
 import Profile from './pages/Profile';
 import Portfolio from './pages/Portfolio'
+import About from './pages/About';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
             <Route exact path={'/'} ><Home /></Route>
             <Route exact path={'/profile'}>
               <Profile />
+            </Route>
+            <Route exact path={'/about'}>
+              <About />
             </Route>
             <Route exact path={'/portfolio'}>
               <Portfolio />

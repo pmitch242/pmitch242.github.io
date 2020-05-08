@@ -42,7 +42,7 @@ export default class Portfolio extends Component {
     render() {
         return (
             <Container fluid className='portfolio-container'>
-                <Breakpoint customQuery="(max-width: 991px)">
+                <Breakpoint customQuery="(max-width: 992px)">
                     <Navbar color={this.state.color}/>
                 </Breakpoint>
 

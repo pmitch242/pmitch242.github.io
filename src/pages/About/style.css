@@ -7,10 +7,8 @@ body{
 }
 
 .about-container{
-    height: 100vh;
     padding: .25rem;
     text-align: center;
-    overflow: auto;
 }
 
 .about-container .row{

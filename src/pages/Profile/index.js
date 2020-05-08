@@ -12,7 +12,10 @@ export default class Profile extends Component {
     render() {
         return (
             <Container fluid className='profile-container'>
-                <Navbar />
+                <Breakpoint customQuery="(max-width: 992px)">
+                    <Navbar />
+                </Breakpoint>
+
                 <Row>
                     <Col lg={8} className='first-half'>
                         <Breakpoint customQuery="(min-width: 992px)">
