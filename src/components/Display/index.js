@@ -87,7 +87,7 @@ export default function Display(props) {
                         <NeuBtn
                             hover='trivia-color-hover'
                             name='GitHub'
-                            link='https://pmitch242.github.io/Pop-Culture-Trivia/'
+                            link='https://github.com/pmitch242/Pop-Culture-Trivia'
                         />
                     </div>
                 </div>
