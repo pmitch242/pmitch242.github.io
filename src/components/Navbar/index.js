@@ -5,7 +5,7 @@ import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 import './style.css';
 
-export default function Navbar() {
+export default function Navbar(props) {
     // open navbar
     function openNav(e) {
         e.preventDefault();
@@ -30,7 +30,7 @@ export default function Navbar() {
                 <a href='/portfolio'>Portfolio</a>
             </div>
 
-            <span className='nav-icon-span' onClick={openNav}>
+            <span className={`nav-icon-span ${props.color}`} onClick={openNav}>
                 <FontAwesomeIcon icon={faBars}/>
             </span>
         </div>
