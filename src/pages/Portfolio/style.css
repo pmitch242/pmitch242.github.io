@@ -30,6 +30,10 @@
     margin-bottom: 0;
 }
 
+.desktop-port ul{
+    margin-top: 0px;
+}
+
 .portfolio-container ul li {
     margin: 20px 20px 25px auto;
 }

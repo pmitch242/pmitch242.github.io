@@ -16,7 +16,7 @@ export default class Portfolio extends Component {
         super(props);
         this.state = {
             view: 'yappe',
-            color: 'yappe-color'
+            color: 'yappe-color',
         }
     }
 
@@ -41,7 +41,7 @@ export default class Portfolio extends Component {
 
     render() {
         return (
-            <Container fluid className='portfolio-container'>
+            <Container fluid className={`portfolio-container ${this.props.desktop ? 'desktop-port' : ''}`}>
                 <Breakpoint customQuery="(max-width: 992px)">
                     <Navbar color={this.state.color}/>
                 </Breakpoint>

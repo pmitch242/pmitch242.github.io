@@ -19,7 +19,7 @@ export default class Profile extends Component {
                 <Row>
                     <Col lg={8} className='first-half'>
                         <Breakpoint customQuery="(min-width: 992px)">
-                            <Portfolio />
+                            <Portfolio desktop={true}/>
                         </Breakpoint>
                     </Col>
                     <Col >
