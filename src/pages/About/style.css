@@ -9,6 +9,8 @@ body{
 .about-container{
     padding: .25rem;
     text-align: center;
+    height: 100vh;
+    overflow-y: hidden;
 }
 
 .about-container .row{
@@ -27,13 +29,14 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     margin-bottom: 10px;
-    font-size: 2rem;
+    font-size: 125%;
     color: #55da65;
 }
 
 .about p{
     margin-bottom: 10px;
     font-weight: 400;
+    font-size: 2.25vh;
     letter-spacing: 1px;
 }
 

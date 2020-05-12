@@ -1,0 +1,66 @@
+.desktop-portfolio{
+  color:black
+}
+
+.desktop-portfolio.card {
+  margin-top: 50px;
+  width: 85%;
+  margin: 50px auto;
+}
+
+
+.desktop-portfolio.card-title.h5 {
+  margin-left: 9px;
+}
+
+.desktop-img{
+  width: 100%;
+};
+
+
+.desktop-portfolio .desktop-img-div {
+  width: 75%;
+  margin: auto;
+}
+
+.mobile-img-div {
+  position: absolute;
+  top: 45px;
+  right: 17%;
+  width: 25%;
+}
+
+.desktop-img-div {
+  width: 100%;
+  margin: auto;
+}
+
+/* .desktop-portfolio-image-div img .mobile-img{
+  width: 100%
+}; */
+
+.desktop-portfolio-btns{
+  width: 51%;
+  margin: auto;
+  margin-top: 65px;
+}
+
+.desktop-portfolio-btns .neu-btn{
+  width: 125px;
+  /* margin-right: 103px; */
+  font-size: 12px;
+  padding: 8px auto;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin: auto 0px;
+  margin-right: 6%;
+}
+
+.desktop-portfolio-btns .neu-btn:last-of-type{
+  margin-right: 0px;
+}
+
+
+.desktop-portfolio-btns .neu-btn span{
+  text-align: center;
+}

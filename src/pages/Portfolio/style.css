@@ -21,6 +21,11 @@
     padding: 0;
 }
 
+/* .first-half.col-lg-8 {
+    height: 100vh;
+    overflow: overlay;
+} */
+
 .portfolio-container ul {
     list-style: none;
     padding: 0;
