@@ -13,9 +13,16 @@
 }
 
 
-.desktop-portfolio.card-title.h5 {
-  margin-left: 9px;
+.desktop-project-title {
+  color: #9c9c9c;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
 }
+
+/* .desktop-portfolio.card-title {
+  margin-bottom: .75rem;
+  font-family: 'Montserrat', sans-serif;
+} */
 
 .desktop-img{
   width: 100%;

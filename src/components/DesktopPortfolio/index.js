@@ -15,7 +15,7 @@ export default function DesktopPortfolio(props) {
     return (
         <Card className='desktop-portfolio'>
             <Card.Body>
-                <Card.Title>Desktop Portfolio</Card.Title>
+                <h5 className='desktop-project-title'>Desktop Portfolio</h5>
 
                 <div className='desktop-portfolio-image-div'>
                     <div className='desktop-img-div'>
