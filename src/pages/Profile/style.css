@@ -9,19 +9,14 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #fff;
     background-color: #262626;
-    /* overflow: hidden; */
-
-    /* background: rgb(27,111,69);
-    background: -moz-linear-gradient(34deg, rgba(27,111,69,1) 0%, rgba(49,129,130,1) 70%, rgba(33,70,99,1) 100%);
-    background: -webkit-linear-gradient(34deg, rgba(27,111,69,1) 0%, rgba(49,129,130,1) 70%, rgba(33,70,99,1) 100%);
-    background: linear-gradient(34deg, rgba(27,111,69,1) 0%, rgba(49,129,130,1) 70%, rgba(33,70,99,1) 100%); */
 }
 
 .profile-container .profile-row{
-    background: rgb(27,111,69);
-    background: -moz-linear-gradient(34deg, rgba(27,111,69,1) 0%, rgba(49,129,130,1) 70%, rgba(33,70,99,1) 100%);
-    background: -webkit-linear-gradient(34deg, rgba(27,111,69,1) 0%, rgba(49,129,130,1) 70%, rgba(33,70,99,1) 100%);
-    background: linear-gradient(34deg, rgba(27,111,69,1) 0%, rgba(49,129,130,1) 70%, rgba(33,70,99,1) 100%);
+    background: rgb(35,173,105);
+    background: -moz-linear-gradient(15deg, rgba(35,173,105,1) 0%, rgba(52,143,144,1) 57%, rgba(33,92,139,1) 100%);
+    background: -webkit-linear-gradient(15deg, rgba(35,173,105,1) 0%, rgba(52,143,144,1) 57%, rgba(33,92,139,1) 100%);
+    background: linear-gradient(15deg, rgba(35,173,105,1) 0%, rgba(52,143,144,1) 57%, rgba(33,92,139,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#23ad69",endColorstr="#215c8b",GradientType=1);
 }
 
 .svg-div svg {

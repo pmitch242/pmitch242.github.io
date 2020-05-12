@@ -4,13 +4,22 @@
 
 body{
     background-color: #262626;
+    overflow-x: hidden;
 }
 
 .about-container{
     padding: .25rem;
     text-align: center;
     height: 100vh;
+    position: fixed;
+    width: 30vw;
     overflow-y: hidden;
+}
+
+.about-container-mobile{
+    position: relative;
+    width: 90vw;
+    height: fit-content;
 }
 
 .about-container .row{
@@ -38,6 +47,10 @@ body{
     font-weight: 400;
     font-size: 2.25vh;
     letter-spacing: 1px;
+}
+
+.about-container-mobile .about p{
+    font-size: 1.95vh;
 }
 
 /* .about p:last-of-type{

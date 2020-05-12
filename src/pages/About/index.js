@@ -1,13 +1,12 @@
-import React, { Component } from 'react';
+import React, { } from 'react';
 import Container  from 'react-bootstrap/Container';
 import LinkIcons from '../../components/LinkIcons'
 import './style.css'
 
-export default class About extends Component {
+export default function About(props) {
 
-    render() {
         return (
-            <Container className='about-container'>
+            <Container className={`about-container ${props.small ? "about-container-mobile" : ""}`}>
                 <h3>Phill Mitchell-Matsuyama</h3>
 
                 <div className='about'>
@@ -31,5 +30,4 @@ export default class About extends Component {
                 <LinkIcons />
             </Container>
         )
-    }
 }
