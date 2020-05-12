@@ -12,19 +12,15 @@ export default class Profile extends Component {
     render() {
         return (
             <Container fluid className='profile-container'>
-                {/* <Breakpoint customQuery="(max-width: 992px)"> */}
-                {/* <Navbar /> */}
                 <Row className='profile-row'>
-                    {/* <Col >
-                        <About />
-                    </Col> */}
-
-                    {/*  */}
                     <Col >
+
+                        {/* smaller screens */}
                         <Breakpoint customQuery="(max-width: 1004px)">
                             <About large={false} />
                         </Breakpoint>
 
+                        {/* larger screens */}
                         <Breakpoint customQuery="(min-width: 1005px)">
                             <About large={true} />
                         </Breakpoint>
@@ -33,6 +29,7 @@ export default class Profile extends Component {
 
 
                     <Col lg={8} className='first-half'>
+                        <DesktopPortfolio />
                         <DesktopPortfolio />
                         <DesktopPortfolio />
                     </Col>

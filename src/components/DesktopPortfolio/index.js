@@ -22,7 +22,13 @@ export default function DesktopPortfolio(props) {
                         <img className='desktop-img' alt='Desktop View' src={yappeDesktopImage}></img>
                     </div>
                     <div className='mobile-img-div'>
-                        <img className='mobile-img' style={{width: '100%'}} alt='Mobile View' src={yappeMobileImage}></img>
+                        <img className='mobile-img'
+                            style={{
+                                width: '100%',
+                                borderRadius: '10px',
+                                boxShadow: '0px 3px 30px 0px rgba(0,0,0,0.3)'
+                            }}
+                            alt='Mobile View' src={yappeMobileImage}></img>
                     </div>
                 </div>
 

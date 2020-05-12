@@ -6,6 +6,10 @@
   margin-top: 50px;
   width: 85%;
   margin: 50px auto;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.4);
+  -moz-box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.4);
+  box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.4);
 }
 
 
@@ -15,7 +19,13 @@
 
 .desktop-img{
   width: 100%;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 3px 14px 0px rgba(0,0,0,0.47);
+  -moz-box-shadow: 3px 3px 14px 0px rgba(0,0,0,0.47);
+  box-shadow: 3px 3px 14px 0px rgba(0,0,0,0.27);
 };
+
+
 
 
 .desktop-portfolio .desktop-img-div {
