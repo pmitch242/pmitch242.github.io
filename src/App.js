@@ -20,7 +20,7 @@ function App() {
               <Profile />
             </Route>
             <Route exact path={'/about'}>
-              <About />
+              <About about={true}/>
             </Route>
             <Route exact path={'/portfolio'}>
               <Portfolio />

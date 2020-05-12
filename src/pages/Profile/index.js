@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { Breakpoint } from 'react-socks';
 import { Container, Col, Row } from 'react-bootstrap';
-import Navbar from '../../components/Navbar';
+
 import DesktopPortfolio from '../../components/DesktopPortfolio';
-import Portfolio from '../Portfolio';
 import About from '../About';
 
 import './style.css';
@@ -23,11 +22,11 @@ export default class Profile extends Component {
                     {/*  */}
                     <Col >
                         <Breakpoint customQuery="(max-width: 1004px)">
-                            <About small={true} />
+                            <About large={false} />
                         </Breakpoint>
 
                         <Breakpoint customQuery="(min-width: 1005px)">
-                            <About small={false} />
+                            <About large={true} />
                         </Breakpoint>
 
                     </Col>
@@ -39,20 +38,6 @@ export default class Profile extends Component {
                     </Col>
 
                 </Row>
-
-                {/* <Breakpoint customQuery="(min-width: 992px)">
-                    <Row>
-                        <Col lg={8} className='first-half'>
-                            <Breakpoint customQuery="(min-width: 992px)">
-                                <DesktopPortfolio desktop={true} />
-                                <DesktopPortfolio desktop={true} />
-                            </Breakpoint>
-                        </Col>
-                        <Col >
-                            <About />
-                        </Col>
-                    </Row>
-                </Breakpoint> */}
             </Container>
         )
     }
