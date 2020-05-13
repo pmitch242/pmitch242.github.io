@@ -9,10 +9,10 @@ import './style.css';
 export default function DesktopPortfolio(props) {
     return (
         <div
-            style={{ height: '100vh', paddingTop: '7vh' }}
             className={`${props.large ? '' : 'desktop-portfolio-small'}`}>
 
             {/* PortfolioCard */}
+            <div style={{ height: '100vh', paddingTop: '7vh' }}>
             <PortfolioCard
                 project='yappe'
                 title='yappE'
@@ -20,6 +20,9 @@ export default function DesktopPortfolio(props) {
                 codeLink=''
                 large={props.large}
             />
+            </div>
+
+            <div style={{ height: '100vh', paddingTop: '7vh' }}>
             <PortfolioCard
                 project='trivia'
                 title='Pop Trivia Culture'
@@ -27,6 +30,9 @@ export default function DesktopPortfolio(props) {
                 codeLink=''
                 large={props.large}
             />
+            </div>
+
+            <div style={{ height: '100vh', paddingTop: '7vh' }}>
             <PortfolioCard
                 project='google'
                 title='Google'
@@ -34,6 +40,7 @@ export default function DesktopPortfolio(props) {
                 codeLink=''
                 large={props.large}
             />
+            </div>
 
             {/* ProjectSwitch */}
             <ProjectSwitch large={props.large} />
