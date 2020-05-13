@@ -19,17 +19,23 @@ export default function DesktopPortfolio(props) {
             style={{ height: '100vh', paddingTop: '7vh' }}
             className={`${props.large ? '' : 'desktop-portfolio-small'}`}
         >
+
+            {/* PortfolioCard */}
             <Card className='desktop-portfolio'>
                 <Card.Body>
                     <div className='project-header-div'>
                         <h5 className='desktop-project-title'>Desktop Portfolio</h5>
 
                         <div className='desktop-portfolio-btns'>
+
+                            {/* ProjectLinkButton */}
                             <a href='https://yappeapp.herokuapp.com/' className='neu-button-white'><span>Site</span></a>
                             <a href='https://github.com/anzook/yappe-app' className='neu-button-white'><span>Code</span></a>
+
                         </div>
                     </div>
 
+                    {/* PortfolioImages */}
                     <div className='desktop-portfolio-image-div'>
                         <div className='desktop-img-div'>
                             <img className='desktop-img' alt='Desktop View' src={yappeDesktopImage}></img>
@@ -49,11 +55,16 @@ export default function DesktopPortfolio(props) {
                 </Card.Body>
             </Card>
 
+
+            {/* ProjectSwitch */}
             <ul className={`project-select-ul ${props.large ? '' : 'hide'}`}>
                 <li><FontAwesomeIcon icon={faCircle} /></li>
                 <li><FontAwesomeIcon icon={faCircle} /></li>
                 <li><FontAwesomeIcon icon={faCircle} /></li>
             </ul>
+
+
+
         </div>
     )
 }
