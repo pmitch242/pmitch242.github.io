@@ -46,7 +46,7 @@ export default function About(props) {
             </div>
 
             <a href='mailto:phill.mitchell211@gmail.com' className='about-email-link'>
-                @ phill.mitchell211@gmail.com
+                <span>@</span> phill.mitchell211@gmail.com
             </a>
             {/* <LinkIcons /> */}
         </Container>
