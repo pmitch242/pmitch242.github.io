@@ -13,7 +13,7 @@ export default class Profile extends Component {
         return (
             <Container fluid className='profile-container'>
                 <Row className='profile-row'>
-                    <Col >
+                    <Col style={{ padding: '0px' }}>
 
                         {/* smaller screens */}
                         <Breakpoint customQuery="(max-width: 1004px)">

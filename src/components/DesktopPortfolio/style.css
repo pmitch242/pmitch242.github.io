@@ -3,9 +3,8 @@
 }
 
 .desktop-portfolio.card {
-  margin-top: 50px;
   width: 85%;
-  margin: 50px auto;
+  margin: auto;
   border-radius: 25px;
   -webkit-box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.4);
   -moz-box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.4);
@@ -15,7 +14,8 @@
 
 .desktop-project-title {
   color: #9c9c9c;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 1.75rem;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -33,7 +33,9 @@
 };
 
 
-
+/* .desktop-portfolio-image-div {
+  margin-bottom: 40px;
+} */
 
 .desktop-portfolio .desktop-img-div {
   width: 75%;
@@ -42,7 +44,7 @@
 
 .mobile-img-div {
   position: absolute;
-  top: 45px;
+  top: 80px;
   right: 17%;
   width: 25%;
 }
@@ -50,6 +52,7 @@
 .desktop-img-div {
   width: 100%;
   margin: auto;
+  margin-bottom: 45px;
 }
 
 /* .desktop-portfolio-image-div img .mobile-img{
@@ -57,27 +60,67 @@
 }; */
 
 .desktop-portfolio-btns{
-  width: 51%;
-  margin: auto;
-  margin-top: 65px;
+  margin: 10px 0;
+  display: flex;
+
+  margin: -3px 0 25px;
+  display: flex;
 }
 
-.desktop-portfolio-btns .neu-btn{
-  width: 125px;
-  /* margin-right: 103px; */
-  font-size: 12px;
-  padding: 8px auto;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  margin: auto 0px;
-  margin-right: 6%;
+.desktop-portfolio-btns .neu-button-white{
+  z-index: 1;
 }
 
-.desktop-portfolio-btns .neu-btn:last-of-type{
-  margin-right: 0px;
+.desktop-portfolio-btns .neu-button-white:first-of-type{
+  margin-right: 20px;
 }
 
+.project-select-ul{
+  position: fixed;
+  margin-bottom: 0;
+  margin-top: 7vh;
+  right: 1.5%;
+  top: 30%;
+  list-style: none;
+  padding: 0;
+}
 
-.desktop-portfolio-btns .neu-btn span{
-  text-align: center;
+.neu-button-white{
+  padding: 0px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  letter-spacing: .75px;
+  color: #9c9c9c;
+  border-bottom: solid #ffffff 2px;
+  transition: 0.5s;
+}
+
+/* .neu-button-white:hover{
+  text-decoration: none;
+  background: #ffffff;
+  box-shadow: inset 4px 4px 9px #a3a3a3, 
+              inset -4px -4px 9px #ffffff;
+} */
+
+.neu-button-white:hover {
+  padding-right: 45px;
+  border-radius: 4px;
+  text-decoration: none;
+  border-bottom: solid #1edc9b 2px;
+}
+
+.neu-button-white:hover span{
+  color: #1edc9b;
+}
+
+.project-select-ul li {
+  /* text-transform: uppercase; */
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #ededed;
+}
+
+.project-select-ul li:last-of-type {
+  margin-bottom: 0;
 }

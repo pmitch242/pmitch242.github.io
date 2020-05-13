@@ -1,10 +1,13 @@
 import React, { } from 'react';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import {faAt} from '@fortawesome/free-solid-svg-icons'
 
 import Container from 'react-bootstrap/Container';
 import LinkIcons from '../../components/LinkIcons'
 import Navbar from '../../components/Navbar';
 
 import './style.css'
+
 
 export default function About(props) {
 
@@ -17,7 +20,7 @@ export default function About(props) {
     }
 
     return (
-        <Container className={`about-container ${props.large ? "" : "about-container-mobile"}`}>
+        <Container className={`about-container ${props.large ? "" : "about-container-mobile"} ${props.about ? "about-page-container" : " "}`}>
 
             {addNav()}
 
@@ -34,14 +37,18 @@ export default function About(props) {
                     University.
                     </p>
                 <p>
-                    Despite the long hours (and occasional temper tantrums) that comes with being
+                    Despite the long hours (and occasional temper tantrums) that come with being
                     a developer, I’ve never enjoyed my work as thoroughly as I do when creating and designing an application. Front-End
                     engineering requires me to think creatively and analytically about the user's experience. I believe
                     everything can always be improved, and I’m drawn to the nuance and attention to detail
                     required to excel as a front-end developer.
                     </p>
             </div>
-            <LinkIcons />
+
+            <a href='mailto:phill.mitchell211@gmail.com' className='about-email-link'>
+                @ phill.mitchell211@gmail.com
+            </a>
+            {/* <LinkIcons /> */}
         </Container>
     )
 }

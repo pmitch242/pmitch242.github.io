@@ -2,6 +2,9 @@ import React from 'react';
 
 import NeuBtn from '../NeuBtn';
 import { Card } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircle } from '@fortawesome/free-solid-svg-icons';
+// faPaw, faGamepad, faBookOpen
 
 import yappeDesktopImage from './images/yappe-desktop.png';
 import yappeMobileImage from './images/yappe-mobile.png';
@@ -13,40 +16,54 @@ import './style.css';
 
 export default function DesktopPortfolio(props) {
     return (
-        <Card className='desktop-portfolio'>
-            <Card.Body>
-                <h5 className='desktop-project-title'>Desktop Portfolio</h5>
+        <div style={{ height: '100vh', paddingTop: '7vh' }}>
+            <Card className='desktop-portfolio'>
+                <Card.Body>
+                    <div className='project-header-div'>
+                        <h5 className='desktop-project-title'>Desktop Portfolio</h5>
 
-                <div className='desktop-portfolio-image-div'>
-                    <div className='desktop-img-div'>
-                        <img className='desktop-img' alt='Desktop View' src={yappeDesktopImage}></img>
+                        <div className='desktop-portfolio-btns'>
+                            <a href='https://yappeapp.herokuapp.com/' className='neu-button-white'><span>Site</span></a>
+                            <a href='https://github.com/anzook/yappe-app' className='neu-button-white'><span>Code</span></a>
+                            {/* <NeuBtn
+                            className='test'
+                            hover='yappe-color-hover'
+                            name='Website'
+                            link='https://yappeapp.herokuapp.com/'
+                        />
+                        <NeuBtn
+                            hover='yappe-color-hover'
+                            name='GitHub'
+                            link='https://github.com/anzook/yappe-app'
+                        /> */}
+                        </div>
                     </div>
-                    <div className='mobile-img-div'>
-                        <img className='mobile-img'
-                            style={{
-                                width: '100%',
-                                borderRadius: '10px',
-                                boxShadow: '0px 3px 30px 0px rgba(0,0,0,0.3)'
-                            }}
-                            alt='Mobile View' src={yappeMobileImage}></img>
-                    </div>
-                </div>
 
-                <div className='desktop-portfolio-btns'>
-                    <NeuBtn
-                        className='test'
-                        hover='yappe-color-hover'
-                        name='Website'
-                        link='https://yappeapp.herokuapp.com/'
-                    />
-                    <NeuBtn
-                        hover='yappe-color-hover'
-                        name='GitHub'
-                        link='https://github.com/anzook/yappe-app'
-                    />
-                </div>
-            </Card.Body>
-        </Card>
+                    <div className='desktop-portfolio-image-div'>
+                        <div className='desktop-img-div'>
+                            <img className='desktop-img' alt='Desktop View' src={yappeDesktopImage}></img>
+                        </div>
+                        <div className='mobile-img-div'>
+                            <img className='mobile-img'
+                                style={{
+                                    width: '100%',
+                                    borderRadius: '10px',
+                                    boxShadow: '0px 3px 30px 0px rgba(0,0,0,0.3)'
+                                }}
+                                alt='Mobile View' src={yappeMobileImage}>
+                            </img>
+                        </div>
+                    </div>
+
+                </Card.Body>
+            </Card>
+
+            <ul className='project-select-ul'>
+                <li><FontAwesomeIcon icon={faCircle} /></li>
+                <li><FontAwesomeIcon icon={faCircle} /></li>
+                <li><FontAwesomeIcon icon={faCircle} /></li>
+            </ul>
+        </div>
     )
 }
 
