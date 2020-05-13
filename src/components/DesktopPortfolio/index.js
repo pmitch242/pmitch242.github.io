@@ -1,6 +1,5 @@
 import React from 'react';
 
-import NeuBtn from '../NeuBtn';
 import { Card } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircle } from '@fortawesome/free-solid-svg-icons';
@@ -16,7 +15,10 @@ import './style.css';
 
 export default function DesktopPortfolio(props) {
     return (
-        <div style={{ height: '100vh', paddingTop: '7vh' }}>
+        <div
+            style={{ height: '100vh', paddingTop: '7vh' }}
+            className={`${props.large ? '' : 'desktop-portfolio-small'}`}
+        >
             <Card className='desktop-portfolio'>
                 <Card.Body>
                     <div className='project-header-div'>
@@ -25,17 +27,6 @@ export default function DesktopPortfolio(props) {
                         <div className='desktop-portfolio-btns'>
                             <a href='https://yappeapp.herokuapp.com/' className='neu-button-white'><span>Site</span></a>
                             <a href='https://github.com/anzook/yappe-app' className='neu-button-white'><span>Code</span></a>
-                            {/* <NeuBtn
-                            className='test'
-                            hover='yappe-color-hover'
-                            name='Website'
-                            link='https://yappeapp.herokuapp.com/'
-                        />
-                        <NeuBtn
-                            hover='yappe-color-hover'
-                            name='GitHub'
-                            link='https://github.com/anzook/yappe-app'
-                        /> */}
                         </div>
                     </div>
 
@@ -58,7 +49,7 @@ export default function DesktopPortfolio(props) {
                 </Card.Body>
             </Card>
 
-            <ul className='project-select-ul'>
+            <ul className={`project-select-ul ${props.large ? '' : 'hide'}`}>
                 <li><FontAwesomeIcon icon={faCircle} /></li>
                 <li><FontAwesomeIcon icon={faCircle} /></li>
                 <li><FontAwesomeIcon icon={faCircle} /></li>

@@ -3,7 +3,7 @@ import React, { } from 'react';
 // import {faAt} from '@fortawesome/free-solid-svg-icons'
 
 import Container from 'react-bootstrap/Container';
-import LinkIcons from '../../components/LinkIcons'
+// import LinkIcons from '../../components/LinkIcons'
 import Navbar from '../../components/Navbar';
 
 import './style.css'

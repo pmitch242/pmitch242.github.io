@@ -40,6 +40,10 @@ body{
 
 .about-container-mobile h3{
     margin-top: 2vh;
+    color: #ffffff;
+    font-size: 1.35rem;    margin-top: 2vh;
+    color: #ffffff;
+    font-size: 1.35rem;
 }
 
 
@@ -68,7 +72,8 @@ body{
 }
 
 .about-container-mobile .about p{
-    font-size: 1.85vh;
+    font-size: 1.8vh;
+    color: #ffffff;
 }
 
 /* .about p:last-of-type{
@@ -134,6 +139,10 @@ body{
     letter-spacing: 1px;
     font-size: 1.2rem;
     font-weight: 600;
+}
+
+.about-container-mobile .about-email-link{
+    font-size: 1.11rem;
 }
 
 .about-email-link span{
