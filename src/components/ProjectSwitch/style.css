@@ -1,11 +1,18 @@
 .dot:hover{
     transform: scale(1.35);
     cursor: pointer;
+    transition: .25s;
     color: #1ee09d;
-    transition: .25s
 }
-.yappeDot{};
 
-.triviaDot{};
+.dot .yappe-dot:hover{
+    color: #1ee09d;
+};
 
-.googleDot{};
+.dot .trivia-dot:hover{
+    color: #d5fa00;
+};
+
+.google-dot:hover{
+    color: #5aaaff;
+};
