@@ -1,0 +1,11 @@
+.dot:hover{
+    transform: scale(1.35);
+    cursor: pointer;
+    color: #1ee09d;
+    transition: .25s
+}
+.yappeDot{};
+
+.triviaDot{};
+
+.googleDot{};
