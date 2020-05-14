@@ -19,21 +19,21 @@ export default function ProjectSwitch(props) {
             case 'trivia':
                 $('html, body').animate({
                     scrollTop: $("#desktop-trivia-div").offset().top
-                }, 500);
+                }, 750);
                 break;
 
             case 'google':
                 console.log('google dot was clicked');
                 $('html, body').animate({
                     scrollTop: $("#desktop-google-div").offset().top
-                }, 500);
+                }, 750);
                 break;
 
             default:
                 console.log('yappe dot was clicked');
                 $('html, body').animate({
                     scrollTop: $("#desktop-yappe-div").offset().top
-                }, 500);
+                }, 750);
                 break;
         }
     }
