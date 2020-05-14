@@ -26,8 +26,8 @@ export default function DesktopPortfolio(props) {
             <PortfolioCard
                 project='trivia'
                 title='Pop Trivia Culture'
-                siteLink=''
-                codeLink=''
+                siteLink='https://pmitch242.github.io/Pop-Culture-Trivia/'
+                codeLink='https://github.com/pmitch242/Pop-Culture-Trivia'
                 large={props.large}
             />
             </div>
@@ -36,8 +36,8 @@ export default function DesktopPortfolio(props) {
             <PortfolioCard
                 project='google'
                 title='Google'
-                siteLink=''
-                codeLink=''
+                siteLink='https://young-journey-33791.herokuapp.com/'
+                codeLink='https://github.com/pmitch242/google-books'
                 large={props.large}
             />
             </div>
