@@ -16,8 +16,8 @@ export default function DesktopPortfolio(props) {
             <PortfolioCard
                 project='yappe'
                 title='yappE'
-                siteLink=''
-                codeLink=''
+                siteLink='https://yappeapp.herokuapp.com/'
+                codeLink='https://github.com/anzook/yappe-app'
                 large={props.large}
             />
             </div>

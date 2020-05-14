@@ -15,8 +15,8 @@ export default function PortfolioCard(props) {
 
                     <div className='desktop-portfolio-btns'>
                         {/* ProjectLinkButton */}
-                        <ProjectLinkButton link={props.siteLink}>Site</ProjectLinkButton>
-                        <ProjectLinkButton link={props.codeLink}>Code</ProjectLinkButton>
+                        <ProjectLinkButton link={props.siteLink} text='Site'/>
+                        <ProjectLinkButton link={props.codeLink} text='Code'/>
 
                     </div>
                 </div>

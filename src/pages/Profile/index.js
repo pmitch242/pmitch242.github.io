@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Breakpoint } from 'react-socks';
 import { Container, Col, Row } from 'react-bootstrap';
 
@@ -8,40 +8,38 @@ import About from '../About';
 import './style.css';
 
 
-export default class Profile extends Component {
-    render() {
-        return (
-            <Container fluid className='profile-container'>
-                <Row className='profile-row'>
-                    <Col style={{ padding: '0px' }}>
+export default function Profile(props) {
+    return (
+        <Container fluid className='profile-container'>
+            <Row className='profile-row'>
+                <Col style={{ padding: '0px' }}>
 
-                        {/* smaller screens */}
-                        <Breakpoint customQuery="(max-width: 1004px)">
-                            <About large={false} />
-                        </Breakpoint>
+                    {/* smaller screens */}
+                    <Breakpoint customQuery="(max-width: 1004px)">
+                        <About large={false} />
+                    </Breakpoint>
 
-                        {/* larger screens */}
-                        <Breakpoint customQuery="(min-width: 1005px)">
-                            <About large={true} />
-                        </Breakpoint>
+                    {/* larger screens */}
+                    <Breakpoint customQuery="(min-width: 1005px)">
+                        <About large={true} />
+                    </Breakpoint>
 
-                    </Col>
+                </Col>
 
 
-                    <Col lg={8} className='first-half'>
-                        {/* smaller screens */}
-                        <Breakpoint customQuery="(max-width: 1004px)">
-                            <DesktopPortfolio large={false} />
-                        </Breakpoint>
+                <Col lg={8} className='first-half'>
+                    {/* smaller screens */}
+                    <Breakpoint customQuery="(max-width: 1004px)">
+                        <DesktopPortfolio large={false} />
+                    </Breakpoint>
 
-                        {/* larger screens */}
-                        <Breakpoint customQuery="(min-width: 1005px)">
-                            <DesktopPortfolio large={true} />
-                        </Breakpoint>
-                    </Col>
+                    {/* larger screens */}
+                    <Breakpoint customQuery="(min-width: 1005px)">
+                        <DesktopPortfolio large={true} />
+                    </Breakpoint>
+                </Col>
 
-                </Row>
-            </Container>
-        )
-    }
+            </Row>
+        </Container>
+    )
 }

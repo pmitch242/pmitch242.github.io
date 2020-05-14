@@ -104,13 +104,6 @@
   transition: 0.5s;
 }
 
-/* .neu-button-white:hover{
-  text-decoration: none;
-  background: #ffffff;
-  box-shadow: inset 4px 4px 9px #a3a3a3, 
-              inset -4px -4px 9px #ffffff;
-} */
-
 .neu-button-white:hover {
   padding-right: 45px;
   border-radius: 4px;
