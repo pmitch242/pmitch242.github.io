@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Breakpoint } from 'react-socks';
 import { Container, Col, Row } from 'react-bootstrap';
 
@@ -8,7 +8,13 @@ import About from '../About';
 import './style.css';
 
 
-export default function Profile(props) {
+export default function Profile() {
+    const [project, setProject] = useState('yappe');
+
+    function changeView(project) {
+        setProject(project);
+    }
+
     return (
         <Container fluid className='profile-container'>
             <Row className='profile-row'>
@@ -30,12 +36,12 @@ export default function Profile(props) {
                 <Col lg={8} className='first-half'>
                     {/* smaller screens */}
                     <Breakpoint customQuery="(max-width: 1004px)">
-                        <DesktopPortfolio large={false} />
+                        <DesktopPortfolio action={changeView} large={false} />
                     </Breakpoint>
 
                     {/* larger screens */}
                     <Breakpoint customQuery="(min-width: 1005px)">
-                        <DesktopPortfolio large={true} />
+                        <DesktopPortfolio action={changeView} large={true} />
                     </Breakpoint>
                 </Col>
 

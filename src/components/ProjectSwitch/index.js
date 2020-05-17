@@ -23,14 +23,12 @@ export default function ProjectSwitch(props) {
                 break;
 
             case 'google':
-                console.log('google dot was clicked');
                 $('html, body').animate({
                     scrollTop: $("#desktop-google-div").offset().top
                 }, 750);
                 break;
 
             default:
-                console.log('yappe dot was clicked');
                 $('html, body').animate({
                     scrollTop: $("#desktop-yappe-div").offset().top
                 }, 750);
@@ -40,13 +38,25 @@ export default function ProjectSwitch(props) {
 
     return (
         <ul className={`project-select-ul ${props.large ? '' : 'hide'}`}>
-            <li className='dot yappe-dot' onClick={() => scroll('yappe')}>
+            <li className='dot yappe-dot'
+                onClick={() => {
+                    scroll('yappe');
+                    props.action('yappe');
+                }}>
                 <FontAwesomeIcon icon={faCircle} />
             </li>
-            <li className='dot trivia-dot' onClick={() => scroll('trivia')}>
+            <li className='dot trivia-dot'
+                onClick={() => {
+                    scroll('trivia');
+                    props.action('trivia');
+                }}>
                 <FontAwesomeIcon icon={faCircle} />
             </li>
-            <li className='dot google-dot' onClick={() => scroll('google')}>
+            <li className='dot google-dot'
+                onClick={() => {
+                    scroll('google');
+                    props.action('google');
+                }}>
                 <FontAwesomeIcon icon={faCircle} />
             </li>
         </ul>
