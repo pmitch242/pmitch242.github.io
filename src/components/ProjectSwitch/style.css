@@ -1,18 +1,44 @@
-.dot:hover{
+.active-icon-switch{
+    font-size: 30px;
+}
+
+.yappe-li .active-icon-switch{
+    color: #1ee09d;
+    filter: drop-shadow( 0 1px 2px #212529);
+}
+
+.trivia-li .active-icon-switch{
+    color: #d5fa00;
+    filter: drop-shadow( 0 1px 2px #212529);
+};
+
+.google-li .active-icon-switch{
+    color: #5aaaff;
+    filter: drop-shadow( 0 1px 2px #212529);
+}
+
+.google-li .active-icon-switch{
+    color: #5aaaff;
+    filter: drop-shadow( 0 1px 2px #212529);
+}
+
+.yappe-dot:hover{
     transform: scale(1.35);
     cursor: pointer;
     transition: .25s;
     color: #1ee09d;
 }
 
-.dot .yappe-dot:hover{
-    color: #1ee09d;
-};
-
-.dot .trivia-dot:hover{
+.trivia-dot:hover{
+    transform: scale(1.35);
+    cursor: pointer;
+    transition: .25s;
     color: #d5fa00;
-};
+}
 
 .google-dot:hover{
+    transform: scale(1.35);
+    cursor: pointer;
+    transition: .25s;
     color: #5aaaff;
-};
+}
