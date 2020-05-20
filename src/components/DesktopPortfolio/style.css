@@ -127,6 +127,7 @@
 
 .project-select-ul li .google-active{
   color: #5aaaff;
+  filter: drop-shadow( 0 1px 2px #212529);
 }
 
 .project-select-ul li:last-of-type {
