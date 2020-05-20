@@ -125,6 +125,10 @@
   text-shadow: 2px 2px 4px #000000;
 }
 
+.project-select-ul li .google-active{
+  color: #5aaaff;
+}
+
 .project-select-ul li:last-of-type {
   margin-bottom: 0;
 }
