@@ -51,7 +51,7 @@ export default function ProjectSwitch(props) {
                 {select !== 'yappe' &&
                     <FontAwesomeIcon className='yappe-dot' icon={faCircle} />}
                 {select === 'yappe' &&
-                    <FontAwesomeIcon className='active-icon-switch' icon={faPaw} />}
+                    <FontAwesomeIcon className='active-icon-switch yappe-active' icon={faPaw} />}
             </li>
             <li className='trivia-li'
                 onClick={() => {
@@ -62,7 +62,7 @@ export default function ProjectSwitch(props) {
                     <FontAwesomeIcon className='trivia-dot' icon={faCircle} />}
 
                 {select === 'trivia' &&
-                    <FontAwesomeIcon className='active-icon-switch' icon={faGamepad} />}
+                    <FontAwesomeIcon className='active-icon-switch trivia-active' icon={faGamepad} />}
             </li>
             <li className='google-li'
                 onClick={() => {
@@ -74,7 +74,7 @@ export default function ProjectSwitch(props) {
                     <FontAwesomeIcon className='google-dot' icon={faCircle} />}
 
                 {select === 'google' &&
-                    <FontAwesomeIcon className='active-icon-switch' icon={faBookOpen} />}
+                    <FontAwesomeIcon className='active-icon-switch google-active' icon={faBookOpen} />}
             </li>
         </ul>
     )
