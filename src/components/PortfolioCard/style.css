@@ -3,8 +3,20 @@
     padding-top: 10px;
 }
 
+.project-details-container h4{
+    width: fit-content;
+    color: #636363;
+    padding-right: 10px;
+    padding-bottom: 4px;
+    border-radius: 4px;
+    border-bottom: solid #1ee09d 2px;
+}
+
 .project-details-container p{
     margin-bottom: 0px;
+    font-weight: 500;
+    font-size: .95vw;
+    letter-spacing: 1px;
 }
 
 .tech-list-ul {
@@ -14,13 +26,12 @@
 }
 
 .tech-list-ul li {
-    border-right: solid 1px;
-    margin-right: 10px;
-    padding-right: 10px;
+    margin-right: 20px;
+    font-weight: 500;
+    font-size: .95vw;
+    letter-spacing: 1px;
 }
 
 .tech-list-ul li:last-of-type{
-    border-right: none;
     margin-right: 0;
-    padding-right: 0;
 }
