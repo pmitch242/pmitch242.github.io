@@ -24,18 +24,22 @@ export default function PortfolioCard(props) {
                 {/* PortfolioImages */}
                 <PortfolioImages project={props.project} />
 
-                <Container>
+                <Container className='project-details-container'>
                     <Row>
                         <Col>
-                            <h4>Description</h4>
-                            <p>{props.des}</p>
+                            <div className='des-div'>
+                                <h4>Description</h4>
+                                <p>{props.des}</p>
+                            </div>
                         </Col>
                         <Col>
-                            <h4>Main Tech</h4>
-                            <div className='tech-list-div'>
-                                <ul className='tech-list-ul'>
-                                    {techList}
-                                </ul>
+                            <div className='tech-div'>
+                                <h4>Main Tech</h4>
+                                <div className='tech-list-div'>
+                                    <ul className='tech-list-ul'>
+                                        {techList}
+                                    </ul>
+                                </div>
                             </div>
                         </Col>
                     </Row>
