@@ -1,9 +1,6 @@
 import React, { } from 'react';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import {faAt} from '@fortawesome/free-solid-svg-icons'
-
 import Container from 'react-bootstrap/Container';
-// import LinkIcons from '../../components/LinkIcons'
+
 import Navbar from '../../components/Navbar';
 
 import './style.css'
@@ -27,7 +24,7 @@ export default function About(props) {
             <h3>Phill Mitchell-Matsuyama</h3>
 
             <div className='about'>
-                <h1>Front-end Developer</h1>
+                <h1>Front End | Full Stack Developer</h1>
                 <p>
                     Hi! I’m Phill (they/them), a front-end developer living in Baltimore, MD. Originally from The
                     Bahamas, I moved to the states in 2014 to attend college at Minnesota State University,
@@ -45,9 +42,32 @@ export default function About(props) {
                     </p>
             </div>
 
-            <a href='mailto:phill.mitchell211@gmail.com' className='about-email-link'>
-                <span>@</span> phill.mitchell211@gmail.com
-            </a>
+            <div className='skills-div'>
+                <h4>Skills</h4>
+                <ul>
+                    <li>React.js</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>ES6</li>
+                    <li>AJAX</li>
+                    <li>JSON</li>
+                    <li>JQuery</li>
+                    <li>Node.js</li>
+                    <li>RESTful APIs</li>
+                    <li>Express.js</li>
+                    <li>MySQL</li>
+                    <li>Sequelize</li>
+                    <li>MongoDB</li>
+                    <li>Mongoose</li>
+                </ul>
+            </div>
+
+            <div>
+                <a href='mailto:phill.mitchell211@gmail.com' className='about-email-link'>
+                    <span>@</span> phill.mitchell211@gmail.com
+                </a>
+            </div>
             {/* <LinkIcons /> */}
         </Container>
     )

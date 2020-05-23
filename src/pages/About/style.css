@@ -8,7 +8,7 @@ body{
     height: 100vh;
     position: fixed;
     width: 30vw;
-    overflow-y: hidden;
+    overflow: hidden;
     background-color: #fff;
     -webkit-box-shadow: 4px 0px 24px -6px rgba(0,0,0,0.75);
     -moz-box-shadow: 4px 0px 24px -6px rgba(0,0,0,0.75);
@@ -50,16 +50,13 @@ body{
     margin-top: 45px;
 }
 
-.about {
-    margin-bottom: 3.15vh;
-}
-
-.about h1{
+.about h1, .skills-div h4{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     margin-bottom: 25px;
     font-size: 1.35rem;
     color: #1ee09d;
+    text-align: center;
 }
 
 .about p{
@@ -74,6 +71,33 @@ body{
     font-size: 1.8vh;
     color: #ffffff;
 }
+
+.skills-div {
+    margin-bottom: 10px;
+}
+
+.skills-div h4 {
+    margin-bottom: 10px;
+}
+
+.skills-div ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.skills-div li {
+    padding-right: 10px;
+    margin-right: 10px;
+    font-weight: 500;
+    font-size: .95vw;
+    color: #636363;
+    letter-spacing: 1px;
+}
+
 
 /* .about p:last-of-type{
     margin-bottom: 10px;
@@ -133,11 +157,12 @@ body{
 }
 
 .about-email-link{
+    color: #000000b5;
     display: block;
-    color: #1ee09d;
+    text-align: center;
     letter-spacing: 1px;
-    font-size: 1.3vw;
-    font-weight: 600;
+    font-size: 1vw;
+    font-weight: 400;
 }
 
 .about-container-mobile .about-email-link{
@@ -145,16 +170,16 @@ body{
 }
 
 .about-email-link span{
-    color: #9c9c9c;
+    color: #1ee09d;
     letter-spacing: 1px;
     font-size: 1.75rem;
     position: relative;
-    font-weight: 600;
-    bottom: -3px;
+    font-weight: 300;
+    bottom: -5px;
 }
 
 .about-email-link:hover{
     /* color: #000; */
     text-decoration: none;
-    color: #1ee09d;
+    color: #9c9c9c;
 }
