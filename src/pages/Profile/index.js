@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { Breakpoint } from 'react-socks';
 import { Container, Col, Row } from 'react-bootstrap';
 
