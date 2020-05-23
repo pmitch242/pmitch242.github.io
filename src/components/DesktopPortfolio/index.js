@@ -16,10 +16,11 @@ export default function DesktopPortfolio(props) {
                 <PortfolioCard
                     project='yappe'
                     title='yappE'
+                    des='App to help pet owners track care and well-being of their pets.'
+                    tech={['React.js','Node.js','Sequelize','Passport','Chart.js']}
                     siteLink='https://yappeapp.herokuapp.com/'
                     codeLink='https://github.com/anzook/yappe-app'
                     large={props.large}
-                    onclick={() => props.action('testing')}
                 />
             </div>
 
@@ -27,6 +28,8 @@ export default function DesktopPortfolio(props) {
                 <PortfolioCard
                     project='trivia'
                     title='Pop Trivia Culture'
+                    des='One-player jeopardy-style pop culture quiz game.'
+                    tech={['JQuery','HTML','CSS','JSON','AJAX']}
                     siteLink='https://pmitch242.github.io/Pop-Culture-Trivia/'
                     codeLink='https://github.com/pmitch242/Pop-Culture-Trivia'
                     large={props.large}
@@ -37,6 +40,8 @@ export default function DesktopPortfolio(props) {
                 <PortfolioCard
                     project='google'
                     title='Google'
+                    des={`A simple app that searches and saves books through Google Books' API.`}
+                    tech={['Node.js','Express.js','MySQL','Inquirer']}
                     siteLink='https://young-journey-33791.herokuapp.com/'
                     codeLink='https://github.com/pmitch242/google-books'
                     large={props.large}
