@@ -2,6 +2,7 @@ import React, { } from 'react';
 import Container from 'react-bootstrap/Container';
 
 import Navbar from '../../components/Navbar';
+import LinkIcons from '../../components/LinkIcons';
 
 import './style.css'
 
@@ -64,11 +65,12 @@ export default function About(props) {
             </div>
 
             <div>
+                <LinkIcons />
+
                 <a href='mailto:phill.mitchell211@gmail.com' className='about-email-link'>
                     <span>@</span> phill.mitchell211@gmail.com
-                </a>
+               </a>
             </div>
-            {/* <LinkIcons /> */}
         </Container>
     )
 }

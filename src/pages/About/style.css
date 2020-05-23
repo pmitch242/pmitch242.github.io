@@ -28,7 +28,7 @@ body{
 }
 
 .about-container h3{
-    margin-top: 7vh;
+    margin-top: 3vh;
     margin-bottom: 6px;
     font-size: 1.35rem;
     color: #9c9c9c;
@@ -73,7 +73,7 @@ body{
 }
 
 .skills-div {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .skills-div h4 {
@@ -98,33 +98,14 @@ body{
     letter-spacing: 1px;
 }
 
-
-/* .about p:last-of-type{
-    margin-bottom: 10px;
-} */
-
-/* .about a{
-    font-size: 1.25rem;
-    color: #55da65;
-    font-weight: bolder;
-    border: 2.25px solid #55da65;
-    border-radius: 20px;
-    letter-spacing: .05rem;
-    padding: 3px 25px;
-    text-decoration: none;
-} */
-
-/* .about a:hover{
-    color: #06b92d;
-    border: #06b92d 2.25px solid;
-} */
-
 .about-container .icon-div{
-    margin: 10px auto 0;
+    margin: 10px auto -15px;
 }
 
 .about-container .icon-div li{
-    margin: 0 35px;
+    margin: 0 15px;
+    z-index: 10;
+
 }
 
 .about-container .icon-div li:first-of-type{
@@ -136,12 +117,8 @@ body{
 }
 
 .about-container .icon-div li a{
-    color: #747474;
+    color: #636363;
     font-size: 1.5rem;
-}
-
-.about-container .email-icon:hover{
-    color: #ea4335;
 }
 
 .about-container .linkedIn-icon:hover{
@@ -149,20 +126,21 @@ body{
 }
 
 .about-container .resume-icon:hover{
-    color: #fbb034;
+    color: #750000;
 }
 
 .about-container .github-icon:hover{
     color: #000000;
 }
 
+
 .about-email-link{
-    color: #000000b5;
+    color: #636363;
     display: block;
     text-align: center;
     letter-spacing: 1px;
     font-size: 1vw;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .about-container-mobile .about-email-link{
@@ -174,12 +152,12 @@ body{
     letter-spacing: 1px;
     font-size: 1.75rem;
     position: relative;
-    font-weight: 300;
+    font-weight: 600;
     bottom: -5px;
 }
 
 .about-email-link:hover{
     /* color: #000; */
     text-decoration: none;
-    color: #9c9c9c;
+    color: #464646;
 }
