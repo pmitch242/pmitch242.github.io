@@ -12,7 +12,7 @@ export default function DesktopPortfolio(props) {
             className={`${props.large ? '' : 'desktop-portfolio-small'}`}>
 
             {/* PortfolioCard */}
-            <div id='desktop-yappe-div' style={{ height: '100vh', paddingTop: '7vh' }}>
+            <div id='desktop-yappe-div' style={{ height: '100vh', paddingTop: '8vh' }}>
                 <PortfolioCard
                     project='yappe'
                     title='yappE'
@@ -24,7 +24,7 @@ export default function DesktopPortfolio(props) {
                 />
             </div>
 
-            <div id='desktop-trivia-div' style={{ height: '100vh', paddingTop: '7vh' }}>
+            <div id='desktop-trivia-div' style={{ height: '100vh', paddingTop: '9vh' }}>
                 <PortfolioCard
                     project='trivia'
                     title='Pop Trivia Culture'
@@ -36,7 +36,7 @@ export default function DesktopPortfolio(props) {
                 />
             </div>
 
-            <div id='desktop-google-div' style={{ height: '100vh', paddingTop: '7vh' }}>
+            <div id='desktop-google-div' style={{ height: '100vh', paddingTop: '8vh' }}>
                 <PortfolioCard
                     project='google'
                     title='Google'

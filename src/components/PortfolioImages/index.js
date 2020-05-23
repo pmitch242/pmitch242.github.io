@@ -32,7 +32,7 @@ export default function PortfolioImages(props) {
             case 'yappe':
                 return <img className='mobile-img'
                     style={{
-                        width: '100%',
+                        width: '90%',
                         borderRadius: '10px',
                         boxShadow: '0px 3px 30px 0px rgba(0,0,0,0.3)'
                     }}
@@ -41,7 +41,7 @@ export default function PortfolioImages(props) {
             case 'trivia':
                 return <img className='mobile-img'
                     style={{
-                        width: '100%',
+                        width: '90%',
                         borderRadius: '10px',
                         boxShadow: '0px 3px 30px 0px rgba(0,0,0,0.3)'
                     }}
@@ -52,7 +52,7 @@ export default function PortfolioImages(props) {
             default:
                 return <img className='mobile-img'
                     style={{
-                        width: '100%',
+                        width: '90%',
                         borderRadius: '10px',
                         boxShadow: '0px 3px 30px 0px rgba(0,0,0,0.3)'
                     }}

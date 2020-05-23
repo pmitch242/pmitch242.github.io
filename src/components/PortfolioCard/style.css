@@ -1,3 +1,12 @@
+.project-details-container {
+    margin-top: 40px;
+    padding-top: 10px;
+}
+
+.project-details-container p{
+    margin-bottom: 0px;
+}
+
 .tech-list-ul {
     list-style: none;
     padding: 0;
