@@ -9,13 +9,13 @@
     padding-right: 10px;
     padding-bottom: 4px;
     border-radius: 4px;
-    border-bottom: solid #1ee09d 2px;
+    font-size: 1.65vw;
 }
 
 .project-details-container p{
     margin-bottom: 0px;
     font-weight: 500;
-    font-size: .95vw;
+    font-size: .9vw;
     letter-spacing: 1px;
 }
 
@@ -28,17 +28,14 @@
     list-style: none;
     padding: 0;
     display: flex;
-}
-
-.desktop-portfolio-small .tech-list-ul{
-    flex-wrap: wrap;    
+    flex-wrap: wrap
 }
 
 
 .tech-list-ul li {
     margin-right: 20px;
     font-weight: 500;
-    font-size: .95vw;
+    font-size: .9vw;
     letter-spacing: 1px;
 }
 

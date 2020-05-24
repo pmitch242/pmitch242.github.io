@@ -31,7 +31,7 @@ body{
 .about-container h3{
     margin-top: 3vh;
     margin-bottom: 6px;
-    font-size: 1.35rem;
+    font-size: 1.5vw;
     color: #9c9c9c;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -41,9 +41,7 @@ body{
 .about-container-mobile h3{
     margin-top: 2vh;
     color: #ffffff;
-    font-size: 1.35rem;    margin-top: 2vh;
-    color: #ffffff;
-    font-size: 1.35rem;
+    font-size: 1.25vw;
 }
 
 
@@ -55,7 +53,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     margin-bottom: 25px;
-    font-size: 1.35rem;
+    font-size: 1.45vw;
     color: #1ee09d;
     text-align: center;
 }
@@ -63,8 +61,8 @@ body{
 .about p{
     margin-bottom: 10px;
     font-weight: 500;
-    font-size: .95vw;
-    color: #636363;
+    font-size: .9vw;
+    color: #000000;
     letter-spacing: 1px;
 }
 
@@ -94,8 +92,8 @@ body{
     padding-right: 10px;
     margin-right: 10px;
     font-weight: 500;
-    font-size: .95vw;
-    color: #636363;
+    font-size: .9vw;
+    color: #000000;
     letter-spacing: 1px;
 }
 

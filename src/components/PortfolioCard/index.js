@@ -26,13 +26,13 @@ export default function PortfolioCard(props) {
 
                 <Container className='project-details-container'>
                     <Row>
-                        <Col>
+                        <Col sm={6}>
                             <div className='des-div'>
                                 <h4 style={{borderBottom:`${props.color} 2px solid`}}>Description</h4>
                                 <p>{props.des}</p>
                             </div>
                         </Col>
-                        <Col>
+                        <Col sm={6}>
                             <div className='tech-div'>
                                 <h4 style={{borderBottom:`${props.color} 2px solid`}}>Technologies</h4>
                                 <div className='tech-list-div'>

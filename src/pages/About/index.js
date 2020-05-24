@@ -1,5 +1,8 @@
 import React, { } from 'react';
 import Container from 'react-bootstrap/Container';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+
 
 import Navbar from '../../components/Navbar';
 import LinkIcons from '../../components/LinkIcons';
@@ -39,7 +42,7 @@ export default function About(props) {
             <h3>Phill Mitchell-Matsuyama</h3>
 
             <div className='about'>
-                <h1 style={{color: theme()}}>Front End | Full Stack Developer</h1>
+                <h1 style={{ color: theme() }}>Front End | Full Stack Developer</h1>
                 <p>
                     Hi! I’m Phill (they/them), a front-end developer living in Baltimore, MD. Originally from The
                     Bahamas, I moved to the states in 2014 to attend college at Minnesota State University,
@@ -58,7 +61,7 @@ export default function About(props) {
             </div>
 
             <div className='skills-div'>
-                <h4 style={{color: theme()}}>Skills</h4>
+                <h4 style={{ color: theme() }}>Skills</h4>
                 <ul>
                     <li>React.js</li>
                     <li>HTML</li>
@@ -82,7 +85,9 @@ export default function About(props) {
                 <LinkIcons />
 
                 <a href='mailto:phill.mitchell211@gmail.com' className='about-email-link'>
-                    <span style={{color: theme()}}>@</span> phill.mitchell211@gmail.com
+                    <span style={{ color: theme() }}>
+                        <FontAwesomeIcon icon={faEnvelope} />
+                    </span> phill.mitchell211@gmail.com
                </a>
             </div>
         </Container>

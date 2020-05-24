@@ -7,12 +7,12 @@
 }
 
 .desktop-portfolio.card {
-  width: 85%;
+  width: 70%;
   margin: auto;
   border-radius: 25px;
+  box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.4);
   -webkit-box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.4);
   -moz-box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.4);
-  box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.4);
 }
 
 
