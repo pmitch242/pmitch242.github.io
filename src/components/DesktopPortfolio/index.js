@@ -50,7 +50,7 @@ export default function DesktopPortfolio(props) {
                     project='google'
                     title='Google'
                     des={`A simple application that searches and saves books through Google Books' API.`}
-                    tech={['Node.js', 'Express.js', 'MySQL', 'Inquirer']}
+                    tech={['React.js', 'MongoDB','Bootstrap', 'Node.js', 'Express.js']}
                     siteLink='https://young-journey-33791.herokuapp.com/'
                     codeLink='https://github.com/pmitch242/google-books'
                     color='#5aaaff'
