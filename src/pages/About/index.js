@@ -76,7 +76,7 @@ export default function About(props) {
                     </p>
             </div>
 
-            <div className='skills-div'>
+            <div className={`skills-div ${props.large ? "" : "skills-div-mobile"}`}>
                 <h4 style={{ color: theme() }}>Skills</h4>
                 <ul>
                     <li>React.js</li>

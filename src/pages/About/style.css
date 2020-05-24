@@ -30,9 +30,9 @@ body{
 .about-container-mobile{
     position: relative;
     overflow: hidden;
-    width: 90vw;
+    width: 100vw;
+    height: -moz-fit-content;
     height: fit-content;
-    text-align: center;
     background-color: transparent;
     box-shadow: none;
 }
@@ -54,7 +54,7 @@ body{
 .about-container-mobile h3{
     margin-top: 2vh;
     color: #ffffff;
-    font-size: 1.25vw;
+    font-size: 23px;
 }
 
 
@@ -72,6 +72,10 @@ body{
     text-align: left;
 }
 
+.about h1{
+    font-size: 15px;
+}
+
 .skills-div h4{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -79,6 +83,10 @@ body{
     font-size: 1.45vw;
     color: #1ee09d;
     text-align: center;
+}
+
+.skills-div-mobile h4{
+    font-size: 23px;
 }
 
 .about p{
@@ -90,7 +98,7 @@ body{
 }
 
 .about-container-mobile .about p{
-    font-size: 1.8vh;
+    font-size: 12px;
     color: #ffffff;
 }
 
@@ -122,7 +130,7 @@ body{
 }
 
 .about-container-mobile .skills-div li {
-    font-size: 1.8vh;
+    font-size: 12px;
     color: #ffffff;
 }
 
