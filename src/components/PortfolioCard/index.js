@@ -34,7 +34,7 @@ export default function PortfolioCard(props) {
                         </Col>
                         <Col>
                             <div className='tech-div'>
-                                <h4>Main Tech</h4>
+                                <h4>Technologies</h4>
                                 <div className='tech-list-div'>
                                     <ul className='tech-list-ul'>
                                         {techList}

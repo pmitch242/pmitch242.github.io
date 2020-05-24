@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 // faPaw, faGamepad, faBookOpen
 
 import PortfolioCard from '../PortfolioCard';
@@ -12,14 +12,14 @@ export default function DesktopPortfolio(props) {
             document.body.style.overflowY = 'hidden'
         }
         else{
-            document.body.style.overflowY = 'auto'
+            document.body.style.overflowY = 'auto';
+            document.body.style.overflowX = 'hidden';
         }
 
     return (
         <div className={`${props.large ? '' : 'desktop-portfolio-small'}`}>
-            {/* {sizeQuery} */}
             {/* PortfolioCard */}
-            <div id='desktop-yappe-div' style={{ height: '100vh', paddingTop: '8vh' }}>
+            <div id='desktop-yappe-div' style={props.large ? { height: '100vh', paddingTop: '8vh' } : { height: 'fit-content', paddingTop: '8vh'}}>
                 <PortfolioCard
                     project='yappe'
                     title='yappE'
@@ -31,7 +31,7 @@ export default function DesktopPortfolio(props) {
                 />
             </div>
 
-            <div id='desktop-trivia-div' style={{ height: '100vh', paddingTop: '9vh' }}>
+            <div id='desktop-trivia-div' style={props.large ? { height: '100vh', paddingTop: '8vh' } : { height: 'fit-content', paddingTop: '8vh'}}>
                 <PortfolioCard
                     project='trivia'
                     title='Pop Trivia Culture'
@@ -43,7 +43,7 @@ export default function DesktopPortfolio(props) {
                 />
             </div>
 
-            <div id='desktop-google-div' style={{ height: '100vh', paddingTop: '8vh' }}>
+            <div id='desktop-google-div' style={props.large ? { height: '100vh', paddingTop: '8vh' } : { height: 'fit-content', paddingTop: '8vh', marginBottom: '40px'}}>
                 <PortfolioCard
                     project='google'
                     title='Google'

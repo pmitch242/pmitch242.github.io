@@ -16,6 +16,11 @@
 }
 
 
+.desktop-portfolio-small .desktop-portfolio.card {
+  width: 100%;
+}
+
+
 .desktop-project-title {
   color: #1ee09d;
   font-weight: 600;

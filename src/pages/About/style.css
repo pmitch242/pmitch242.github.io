@@ -19,6 +19,7 @@ body{
     position: relative;
     width: 90vw;
     height: fit-content;
+    text-align: center;
     background-color: transparent;
     box-shadow: none;
 }
@@ -98,6 +99,11 @@ body{
     letter-spacing: 1px;
 }
 
+.about-container-mobile .skills-div li {
+    font-size: 1.8vh;
+    color: #ffffff;
+}
+
 .about-container .icon-div{
     margin: 10px auto -15px;
 }
@@ -119,6 +125,10 @@ body{
 .about-container .icon-div li a{
     color: #636363;
     font-size: 1.5rem;
+}
+
+.about-container-mobile .icon-div li a{
+    color: #1f1f1fe3;
 }
 
 .about-container .linkedIn-icon:hover{
@@ -144,6 +154,7 @@ body{
 }
 
 .about-container-mobile .about-email-link{
+    color: #1f1f1fe3;
     font-size: 1.11rem;
 }
 
