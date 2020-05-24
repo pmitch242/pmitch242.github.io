@@ -59,7 +59,8 @@ export default function DesktopPortfolio(props) {
             </div>
 
             {/* ProjectSwitch */}
-            <ProjectSwitch action={props.action} large={props.large} />
+            {props.large === true && 
+                <ProjectSwitch action={props.action} large={props.large} />}
 
         </div>
     )
