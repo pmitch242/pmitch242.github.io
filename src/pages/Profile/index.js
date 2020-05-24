@@ -22,12 +22,12 @@ export default function Profile() {
 
                     {/* smaller screens */}
                     <Breakpoint customQuery="(max-width: 1004px)">
-                        <About large={false} />
+                        <About large={false} theme={project}/>
                     </Breakpoint>
 
                     {/* larger screens */}
                     <Breakpoint customQuery="(min-width: 1005px)">
-                        <About large={true} />
+                        <About large={true} theme={project}/>
                     </Breakpoint>
 
                 </Col>
