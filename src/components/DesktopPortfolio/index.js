@@ -48,7 +48,7 @@ export default function DesktopPortfolio(props) {
             <div id='desktop-google-div' style={props.large ? { height: '100vh', paddingTop: '8vh' } : { height: 'fit-content', paddingTop: '8vh', marginBottom: '40px'}}>
                 <PortfolioCard
                     project='google'
-                    title='Google'
+                    title='Google Book Search'
                     des={`A simple application that searches and saves books through Google Books' API.`}
                     tech={['React.js', 'MongoDB','Bootstrap', 'Node.js', 'Express.js']}
                     siteLink='https://young-journey-33791.herokuapp.com/'
