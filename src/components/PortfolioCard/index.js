@@ -13,7 +13,7 @@ export default function PortfolioCard(props) {
         <Card className='desktop-portfolio'>
             <Card.Body>
                 <div className='project-header-div'>
-                    <h5 className='desktop-project-title' style={{color: props.color}}>{props.title}</h5>
+                    <h5 className='desktop-project-title {}' style={{color: props.color}}>{props.title}</h5>
 
                     <div className='desktop-portfolio-btns'>
                         <ProjectLinkButton link={props.siteLink} text='Site' style={{border: props.color}}/>

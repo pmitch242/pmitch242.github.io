@@ -23,16 +23,10 @@
 
 
 .desktop-project-title {
-  color: #1ee09d;
   font-weight: 600;
   font-size: 1.75rem;
   font-family: 'Montserrat', sans-serif;
 }
-
-/* .desktop-portfolio.card-title {
-  margin-bottom: .75rem;
-  font-family: 'Montserrat', sans-serif;
-} */
 
 .desktop-img{
   width: 100%;

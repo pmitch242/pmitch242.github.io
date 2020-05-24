@@ -40,7 +40,7 @@ export default function DesktopPortfolio(props) {
                     tech={['JQuery', 'HTML', 'CSS', 'JSON', 'AJAX']}
                     siteLink='https://pmitch242.github.io/Pop-Culture-Trivia/'
                     codeLink='https://github.com/pmitch242/Pop-Culture-Trivia'
-                    color='#d5fa00'
+                    color='#c1e200'
                     large={props.large}
                 />
             </div>

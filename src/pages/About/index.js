@@ -18,9 +18,23 @@ export default function About(props) {
                 case 'yappe':
                     return '#1ee09d';
                 case 'trivia':
-                    return '#d5fa00';
+                    return '#c1e200';
                 case 'google':
                     return '#5aaaff';
+                default: return;
+            }
+        }
+    }
+
+    let backTheme = () => {
+        if (props.large) {
+            switch (props.theme) {
+                case 'yappe':
+                    return '#1ee09d26';
+                case 'trivia':
+                    return '#c1e2001c';
+                case 'google':
+                    return '#5aaaff26';
                 default: return;
             }
         }
@@ -39,7 +53,7 @@ export default function About(props) {
 
             {addNav()}
 
-            <h1 className='background-title'>ABOUT</h1>
+            <h1 style={{ color: backTheme() }} className='background-title'>ABOUT</h1>
 
             <h3>Phill Mitchell-Matsuyama</h3>
 
