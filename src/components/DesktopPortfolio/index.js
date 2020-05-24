@@ -27,6 +27,7 @@ export default function DesktopPortfolio(props) {
                     tech={['React.js', 'Node.js', 'Sequelize', 'Passport', 'Chart.js']}
                     siteLink='https://yappeapp.herokuapp.com/'
                     codeLink='https://github.com/anzook/yappe-app'
+                    color='#1ee09d'
                     large={props.large}
                 />
             </div>
@@ -39,6 +40,7 @@ export default function DesktopPortfolio(props) {
                     tech={['JQuery', 'HTML', 'CSS', 'JSON', 'AJAX']}
                     siteLink='https://pmitch242.github.io/Pop-Culture-Trivia/'
                     codeLink='https://github.com/pmitch242/Pop-Culture-Trivia'
+                    color='#d5fa00'
                     large={props.large}
                 />
             </div>
@@ -51,6 +53,7 @@ export default function DesktopPortfolio(props) {
                     tech={['Node.js', 'Express.js', 'MySQL', 'Inquirer']}
                     siteLink='https://young-journey-33791.herokuapp.com/'
                     codeLink='https://github.com/pmitch242/google-books'
+                    color='#5aaaff'
                     large={props.large}
                 />
             </div>

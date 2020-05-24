@@ -13,10 +13,10 @@ export default function PortfolioCard(props) {
         <Card className='desktop-portfolio'>
             <Card.Body>
                 <div className='project-header-div'>
-                    <h5 className='desktop-project-title'>{props.title}</h5>
+                    <h5 className='desktop-project-title' style={{color: props.color}}>{props.title}</h5>
 
                     <div className='desktop-portfolio-btns'>
-                        <ProjectLinkButton link={props.siteLink} text='Site' />
+                        <ProjectLinkButton link={props.siteLink} text='Site' style={{border: props.color}}/>
                         <ProjectLinkButton link={props.codeLink} text='Code' />
                     </div>
                 </div>
@@ -28,13 +28,13 @@ export default function PortfolioCard(props) {
                     <Row>
                         <Col>
                             <div className='des-div'>
-                                <h4>Description</h4>
+                                <h4 style={{borderBottom:`${props.color} 2px solid`}}>Description</h4>
                                 <p>{props.des}</p>
                             </div>
                         </Col>
                         <Col>
                             <div className='tech-div'>
-                                <h4>Technologies</h4>
+                                <h4 style={{borderBottom:`${props.color} 2px solid`}}>Technologies</h4>
                                 <div className='tech-list-div'>
                                     <ul className='tech-list-ul'>
                                         {techList}

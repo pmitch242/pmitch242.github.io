@@ -116,11 +116,11 @@
   padding-right: 45px;
   border-radius: 4px;
   text-decoration: none;
-  border-bottom: solid #1edc9b 2px;
+  border-bottom: solid #636363 2px;
 }
 
 .neu-button-white:hover span{
-  color: #1edc9b;
+  color: #636363;
 }
 
 .project-select-ul li {
