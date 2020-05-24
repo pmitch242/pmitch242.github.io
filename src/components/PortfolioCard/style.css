@@ -12,6 +12,10 @@
     font-size: 1.65vw;
 }
 
+.details-h4-mobile{
+    font-size: 22px!important;
+}
+
 .project-details-container p{
     margin-bottom: 0px;
     font-weight: 500;
