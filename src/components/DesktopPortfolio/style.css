@@ -13,6 +13,7 @@
   box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.4);
   -webkit-box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.4);
   -moz-box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.4);
+  background: #fffffff7;
 }
 
 
@@ -108,8 +109,8 @@
   font-weight: 600;
   letter-spacing: .75px;
   color: #9c9c9c;
-  border-bottom: solid #ffffff 2px;
-  transition: 0.5s;
+  border-bottom: solid #ffffff00 2px;
+  transition: 0.35s;
 }
 
 .neu-button-white:hover {
