@@ -39,10 +39,12 @@ export default function About(props) {
 
             {addNav()}
 
+            <h1 className='background-title'>ABOUT</h1>
+
             <h3>Phill Mitchell-Matsuyama</h3>
 
             <div className='about'>
-                <h1 style={{ color: theme() }}>Front End | Full Stack Developer</h1>
+                <h1 style={{ color: theme() }}>[ Front End | Full Stack Developer ]</h1>
                 <p>
                     Hi! I’m Phill (they/them), a front-end developer living in Baltimore, MD. Originally from The
                     Bahamas, I moved to the states in 2014 to attend college at Minnesota State University,
@@ -81,7 +83,7 @@ export default function About(props) {
                 </ul>
             </div>
 
-            <div>
+            <div style={{marginBottom: '15px'}}>
                 <LinkIcons />
 
                 <a href='mailto:phill.mitchell211@gmail.com' className='about-email-link'>

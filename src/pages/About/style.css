@@ -3,20 +3,33 @@ body{
     overflow-x: hidden;
 }
 
+.background-title {
+    position: fixed;
+    font-size: 9vw;
+    font-weight: bolder;
+    color: rgba(30, 224, 157, 0.15);
+    bottom: 3%;
+    left: -1%;
+    z-index: -1;
+    cursor: default;
+}
+
 .about-container{
-    padding: 0 1rem;
+    padding: 0 1.75rem;
     height: 100vh;
     position: fixed;
     width: 30vw;
     overflow: hidden;
+    overflow-y: auto;
     background-color: #fff;
+    box-shadow: 4px 0px 24px -6px rgba(0,0,0,0.75);
     -webkit-box-shadow: 4px 0px 24px -6px rgba(0,0,0,0.75);
     -moz-box-shadow: 4px 0px 24px -6px rgba(0,0,0,0.75);
-    box-shadow: 4px 0px 24px -6px rgba(0,0,0,0.75);
 }
 
 .about-container-mobile{
     position: relative;
+    overflow: hidden;
     width: 90vw;
     height: fit-content;
     text-align: center;
@@ -30,8 +43,8 @@ body{
 
 .about-container h3{
     margin-top: 3vh;
-    margin-bottom: 6px;
-    font-size: 1.5vw;
+    margin-bottom: 0px;
+    font-size: 1.55vw;
     color: #9c9c9c;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -49,19 +62,29 @@ body{
     margin-top: 45px;
 }
 
-.about h1, .skills-div h4{
+
+.about h1{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
+    color: rgb(30, 224, 157);
+    font-size: 1vw;
+    text-align: left;
+}
+
+.skills-div h4{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-bottom: 10px;
     font-size: 1.45vw;
     color: #1ee09d;
     text-align: center;
 }
 
 .about p{
-    margin-bottom: 10px;
+    margin-bottom: 11px;
     font-weight: 500;
-    font-size: .9vw;
+    font-size: .85vw;
     color: #000000;
     letter-spacing: 1px;
 }
@@ -72,7 +95,8 @@ body{
 }
 
 .skills-div {
-    margin-bottom: 15px;
+    margin-top: 5vh;
+    margin-bottom: 35px;
 }
 
 .skills-div h4 {
@@ -85,12 +109,12 @@ body{
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .skills-div li {
     padding-right: 10px;
-    margin-right: 10px;
+    margin-right: 5px;
     font-weight: 500;
     font-size: .9vw;
     color: #000000;
