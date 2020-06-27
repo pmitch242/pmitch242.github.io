@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 // import { Breakpoint } from 'react-socks';
 
 
@@ -18,7 +19,9 @@ export default class Home extends Component {
                     <LinksIcons />
 
                     {/* <Breakpoint customQuery="(min-width: 992px)"> */}
-                    <a href='/profile' className='arrow-next'><FontAwesomeIcon icon={faChevronDown} /></a>
+                    <Link to='/profile' className='arrow-next'>
+                        <FontAwesomeIcon icon={faChevronDown} />
+                    </Link>
                     {/* </Breakpoint> */}
 
                     {/* <Breakpoint customQuery="(max-width: 991px)">

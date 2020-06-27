@@ -4,8 +4,6 @@ import { BreakpointProvider } from 'react-socks';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from './pages/Home';
 import Profile from './pages/Profile';
-import Portfolio from './pages/Portfolio'
-import About from './pages/About';
 
 function App() {
   return (
@@ -14,20 +12,9 @@ function App() {
         <BreakpointProvider>
 
           <Switch>
-
-            <Route exact path={'/'} ><Home /></Route>
-            <Route exact path={'/profile'}>
-              <Profile />
-            </Route>
-            <Route exact path={'/about'}>
-              <About about={true}/>
-            </Route>
-            <Route exact path={'/portfolio'}>
-              <Portfolio />
-            </Route>
-            <Route >
-              <h1>No page found</h1>
-            </Route>
+            <Route exact path={'/'} component={Home} />
+            <Route exact path={'/profile'} component={Profile} />
+            <Route ><h1>No page found</h1></Route>
           </Switch>
         </BreakpointProvider>
       </div>
