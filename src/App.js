@@ -1,25 +1,44 @@
-import React from 'react';
+import React from 'react'
+import { BreakpointProvider } from 'react-socks'
+import { Route, withRouter } from "react-router-dom"
+import { TransitionGroup, CSSTransition } from 'react-transition-group'
+
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BreakpointProvider } from 'react-socks';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 import Home from './pages/Home';
 import Profile from './pages/Profile';
 
-function App() {
-  return (
-    <Router>
-      <div>
-        <BreakpointProvider>
+import './style.css'
 
-          <Switch>
-            <Route exact path={'/'} component={Home} />
-            <Route exact path={'/profile'} component={Profile} />
-            <Route ><h1>No page found</h1></Route>
-          </Switch>
-        </BreakpointProvider>
+function App(props) {
+  const routes = [
+    { path: '/', Component: Home, transition: 'fade' },
+    { path: '/profile', Component: Profile, transition: 'fade' },
+  ]
+
+  return (
+    <BreakpointProvider >
+      <div className='app'>
+      {routes.map(({ path, Component, transition }) => (
+        <Route key={path} exact path={path}>
+          {({match}) => (
+            <CSSTransition
+              in={match != null}
+              timeout={300}
+              classNames='page'
+              unmountOnExit
+            >
+              <div className="page">
+                <Component />
+              </div>
+            </CSSTransition>
+          )}
+        </Route>
+      ))
+      }
       </div>
-    </Router>
+    </BreakpointProvider >
   );
 }
 
-export default App;
+export default withRouter(App);

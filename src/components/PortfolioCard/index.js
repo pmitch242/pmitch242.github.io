@@ -7,7 +7,7 @@ import PortfolioImages from '../PortfolioImages';
 import './style.css'
 
 export default function PortfolioCard(props) {
-    const techList = props.tech.map((tech) => <li>{tech}</li>);
+    const techList = props.tech.map((tech) => <li key={tech}>{tech}</li>);
 
     return (
         <Card className='desktop-portfolio'>
